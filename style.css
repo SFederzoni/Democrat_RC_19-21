@@ -1,0 +1,496 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left, #right {
+    width: 45%;
+}
+
+#right img {
+    max-width: 100%;
+}
+
+rs:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.tabulator{
+  width: 50%;
+}
+
+
+/* Basic parameters */
+
+body {
+	width: 100%;
+	padding:0;
+	margin:0;
+	margin-bottom: 30px;
+	background: #F1F1F1;
+}
+
+div, p,{
+  font-size: 17px;
+  color: black;
+  text-align : justify ;
+  left : 2px;
+  right : 2px;
+  margin-right: 30px;
+  
+}
+
+
+
+li{
+  font-size: 17px;
+  color: black;
+  text-align : justify ;
+  left : 2px;
+  right : 2px;
+  margin-bottom: 3px;
+  
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 26px;
+  /*color: rgb(57, 62, 120);*/
+  color: #5D5D5D;
+}
+
+ul {
+	padding-right: 35px;
+}
+
+ol {
+	padding-right: 35px;
+}
+.id-copies li{
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(57, 62, 120);
+  font-style: italic;
+}
+
+a:hover {
+   text-decoration: underline;
+   color: green;
+}
+
+a:visited {
+	color: purple;
+}
+
+.container_nav { 
+  height: 110px;
+  position: sticky; top: 0px;
+  display: flex; 
+  justify-content:center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: white;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+a.button_nav {	
+	all: unset;
+	width: 150px;
+	height: 110px;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 4px;
+	border-bottom: solid;
+	border-bottom-color: rgb(57, 62, 120);
+	font-weight: bold;
+	font-family: Arial;
+	color: grey;
+	}
+		
+
+ a.button_nav:hover{
+	background-color: rgb(57, 62, 120);
+	color: white;
+	cursor: pointer;
+  transition: 1s;
+	}
+
+.image_nav {
+  margin: 0px 30px 0px 10px;
+}
+
+.image_nav img{
+  width: 450px;
+}
+
+.general-background {
+	display: block;
+	width: 96%;
+	margin-left: 20px;
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 30px;
+  justify-content: center;
+  padding-left: 20px;
+  font-size: 17px;
+  color: black;
+  text-align : left ;
+  left : 2px;
+  right : 2px;
+  margin-right: 30px;
+
+
+}
+
+.general-background p{
+  font-size: 17px;
+  color: black;
+  text-align : justify ;
+  left : 2px;
+  right : 2px;
+  margin-right: 70px;
+}
+
+
+.tabulator{
+  width: 50%;
+}
+
+/*NAVIGATOR */
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+width:145px;
+height: 45px;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu-demo2 li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu-demo2 li:nth-child(3){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu-demo2 li:last-child{
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#2A2333;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#333A40;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#9F391A;
+}
+#menu-demo2 li:last-child li{
+background:#677F35;
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#65537A;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#729EBF;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#CFFF6A;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:6px 10px;
+color:#fff;
+font-family:arial;
+font-size: 16px;
+text-align: center;
+justify-content: center;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#000;
+}
+
+
+
+/* --------- Page home.html ---------- */
+
+/* lists */
+
+.flex-listes_dans_texte li{
+	text-align: justify;
+  list-style-type : square;
+  margin: 0; 
+	
+}
+
+
+.CodeEcoles ul {
+	padding:0;
+	margin: 0;
+}
+
+.operators {
+  list-style-type: none;
+}
+
+/* images */
+
+.consigne img {
+  margin-top: 60px;
+  display: block;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+/*tableau - composition du corpus  */
+
+table.TableauQuantitatif3e {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 1px solid #1C6EA4;
+  
+}
+
+table.TableauQuantitatif3e td, th {
+    border: 1px solid #D2D2D2;
+    border-collapse: collapse;
+}
+
+table.TableauQuantitatif3e  th {
+	font-size: 12px;
+    font-family: 'Arial';
+	font-weight: bold;
+	color: white;
+	text-align: center;
+    background: #006666;
+    padding: 10px 15px;
+}
+
+table.TableauQuantitatif3e td {
+  font-size: 13px;
+  color: #4A4A4A;
+  text-align: right;
+  padding: 6px 30px;
+}
+
+
+/* ----Page transcription.html ------*/
+
+
+
+/* noms des fichiers */
+
+img.nom-fichier {
+	width: 500px;
+	margin:auto;
+}
+
+/* les tableaux */ 
+
+
+/* tableau Tabulator */
+
+#tabulator-table {
+	width: 1250px;
+	padding-left: 0px;
+	background: #F1F1F1;
+}
+
+
+#tabulator-table2 {
+  width:100%;
+  padding-left: 0px;
+  background: #F1F1F1;
+}
+
+/*Transcriptions*/
+
+
+#tabulator-table {
+    background-color:white;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.05),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+    height: 520px !important
+
+}
+
+#tabulator-table .tabulator-header .tabulator-col {
+	background:#62baac;
+	height:60px;
+}
+
+#tabulator-table .tabulator-header div{
+	color: white;
+	font-size: 13px;
+	font-family: 'Arial';
+    text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#tabulator-table .tabulator-header .tabulator-col-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#tabulator-table .tabulator-cell {
+	cursor: auto;
+    font-size: 16px ;
+    color: #4A4A4A;
+}
+
+/*COREF*/
+
+
+#tabulator-table2 {
+    background-color:white;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.05),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+    height: 520px !important
+
+}
+
+#tabulator-table2 .tabulator-header .tabulator-col {
+  background:#62baac);
+  height:60px;
+}
+
+#tabulator-table2 .tabulator-header div{
+  color: white;
+  font-size: 13px;
+  font-family: 'Arial';
+    text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#tabulator-table2 .tabulator-header .tabulator-col-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tabulator-table2 .tabulator-cell {
+  cursor: auto;
+    font-size: 16px ;
+    color: #4A4A4A;
+}
+
+
+
+.section-plans {
+  background-color: white;
+  padding: 4rem 0 4rem 0;
+}
+
+/* CSS pour ajouter une flèche au filtre déroulant */
+.tabulator-table2 .tabulator-table2-col .tabulator-table2-col-content {
+    position: relative;
+}
+
+.tabulator-table2 .tabulator-table2-col .tabulator-table2-header-filter {
+    padding-right: 20px; /* Ajoute un espace pour la flèche */
+    position: relative;
+}
+
+.tabulator-table2 .tabulator-table2-col .tabulator-table2-header-filter::after {
+    content: '\25BC'; /* Unicode pour une flèche vers le bas */
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+
+/*----Page Costitution----*/
+
+img.chaineTraitement  {
+  margin-top: 60px;
+  padding-left : 60px; 
+  display: block;
+  align-content: center;
+  text-align: center;
+  width: 90%;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democrat RC 19-21</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+<!-- Navigation -->
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img src="./images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Présentation</a></li>
+                    <li><a href="./constitution.html">Constitution</a></li>
+                    <li><a href="./exploration.html">Exploration</a></li>
+                    <li><a href="./telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+    
+</header>
+<div class="contenu_page">
+<!--Introduction : présentation de la ressource et de la page web-->
+<section id="Introduction">
+	Cette page pormet de explorer et faire des analyses simples des chaînes de référence dans la ressource Democrat RC 19-21. Cette ressource a été dévéloppée dans le cadre de la thèse de Silvia Federzoni. La ressource est constituée de toutes les chaînes de référence d'au moins 3 maillons annotées dans le corpus Democrat. 
+	
+	<p>Dans cette page il est possible d'intérroger la ressource pour faire des analyses des CR qui y sont contenues. L'onglet "statistiques" permet de visualiser les résultats obtenus dans le cadre de la thèse de Silvia Federzoni.</p>
+</section>
+
+<!--Script JS pour gérer le changement de contenu selon les onglets choisis-->
+<script src="script.js"></script>
+
+
+    <!-- Lien vers le fichier JavaScript -->
+<div id="graphiqueInteractif"></div>
+<!--
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    // Tes données
+    var data = [{
+        x: [1, 2, 3, 4],
+        y: [10, 11, 12, 13],
+        type: 'scatter'
+    }];
+
+    // Configuration du layout
+    var layout = {
+        title: 'Mon Graphique Interactif'
+    };
+
+    // Création du graphique interactif avec Plotly
+    Plotly.newPlot('graphiqueInteractif', data, layout);
+</script>-->
+
+<p><dl>
+	<dt>Queso</dt>
+	<dd>Mot espagnol pour fromage.</dd>
+	
+	<dt>Ordenador</dt>
+	<dd>Mot espagnol pour ordinateur</dd>
+
+Liens : 	
+Interne - href="#anchorname"
+Local - href="../img/foto.jpg"
+Global - href="http://www.tutorialehtml.com/"
+</dt></p>
+
+
+<div>
+	<hr>
+	<p><font size="-1">Site développé par S. Federzoni  (<a href="mailto:silvia.federzoni89@gmail.com?subject=Questions&body=DemRC19-21 Questions">contact</a>)</font></p>
+</div>
+</div>
+</body>
+</html>
