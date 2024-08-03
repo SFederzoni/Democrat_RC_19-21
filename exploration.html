@@ -3,17 +3,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-	<link href="style.css" type="text/css" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 	<link href="https://unpkg.com/tabulator-tables@4.2.7/dist/css/tabulator.min.css" rel="stylesheet">
 	<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.7/dist/js/tabulator.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <title>Liste des Références</title>
-
+    <title>Exploration DemRC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democrat RC 19-21</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="style_1.css">
 </head>
 <body>
-    <h1>Liste des Références</h1>
+<!-- Navigation -->
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img src="./images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Présentation</a></li>
+                    <li><a href="./constitution.html">Constitution</a></li>
+                    <li><a href="./exploration.html">Exploration</a></li>
+                    <li><a href="./telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+    <h1>Exploration DemRC</h1>
     <table>
        	<td width="55%">
 		<div id="tabulator-table2"></div>
@@ -37,97 +65,17 @@ const animacyOptions = [{'value': '###', 'label': '###'}, {'value': 'Humain Coll
 
 
     
-    	var minMaxFilterEditor = function(cell, onRendered, success, cancel, editorParams){
-
-		var end;
-
-		var container = document.createElement("span");
-
-		//create and style inputs
-		var start = document.createElement("input");
-		start.setAttribute("type", "number");
-		start.setAttribute("placeholder", "Min");
-		start.setAttribute("min", 0);
-		start.setAttribute("max", 895);
-		start.style.padding = "4px";
-		start.style.width = "50%";
-		start.style.boxSizing = "border-box";
-
-		start.value = cell.getValue();
-		//console.log(start.value)
-
-		function buildValues(){
-			success({
-				start:start.value,
-				end:end.value,
-			});
-		}
-
-		function keypress(e){
-			if(e.keyCode == 13){
-				buildValues();
-			}
-
-			if(e.keyCode == 27){
-				cancel();
-			}
-		}
-
-		end = start.cloneNode();
-		end.value=cell.getValue()[1]
-		end.setAttribute("placeholder", "Groupe");
-
-		start.addEventListener("change", buildValues);
-		start.addEventListener("blur", buildValues);
-		start.addEventListener("keydown", keypress);
-
-		end.addEventListener("change", buildValues);
-		end.addEventListener("blur", buildValues);
-		end.addEventListener("keydown", keypress);
-
-
-		container.appendChild(start);
-		container.appendChild(end);
-
-		return container;
-	 };
-
-	//custom max min filter function
-	function minMaxFilterFunction(headerValue, rowValue, rowData, filterParams){
-		//headerValue - the value of the header filter element
-		//rowValue - the value of the column in this row
-		//rowData - the data for the row being filtered
-		//filterParams - params object passed to the headerFilterFuncParams property
-
-			if(rowValue){
-				if(headerValue.start != "" && headerValue.end !=""){
-						return rowValue[0] >= headerValue.start && rowValue[1] >= headerValue.end;
-				}else{
-					if(headerValue.end != ""){
-						//console.log(rowValue[1])
-						return rowValue[1] >= headerValue.end;
-					}
-					if(headerValue.start != ""){
-						return rowValue[0] >= headerValue.start;
-					}
-				}
-			}
-
-		return false; //must return a boolean, true if it passes the filter.
-	};
-
-// Fonction de filtre personnalisé
-function comparisonFilter(headerValue, rowValue, rowData, filterParams) {
-    if (!headerValue) {
+    function comparisonFilter(headerValue, rowValue, rowData, filterParams) {
+    if (!headerValue.value) {
         return true; // Ne rien filtrer si la valeur du filtre est vide
     }
 
-    const comparisonType = filterParams.comparisonType;
-    const value = parseFloat(headerValue);
+    const comparisonType = headerValue.comparisonType;
+    const value = parseFloat(headerValue.value);
 
     switch (comparisonType) {
-        case '=':
-            return rowValue === value;
+        case '==':
+            return rowValue == value;
         case '>':
             return rowValue > value;
         case '<':
@@ -141,212 +89,188 @@ function comparisonFilter(headerValue, rowValue, rowData, filterParams) {
     }
 }
 
+const createClearableFilter = (filterType, filterOptions) => {
+    return function(cell, onRendered, success, cancel, editorParams) {
+        var container = document.createElement("div");
+        container.style.display = "flex";
+        container.style.alignItems = "center";
 
-// ajouter le parsing des fichiers input pour remplir le tableau tabulator en JS 
-// ajouter les fonctions qui calculent les nouveaux attributs pour l'exploration
+        var filterElement;
+        if (filterType === 'input') {
+            filterElement = document.createElement("input");
+            filterElement.setAttribute("type", "text");
+            filterElement.addEventListener("change", function(e) {
+                success(filterElement.value);
+            });
+        } else if (filterType === 'select') {
+            filterElement = document.createElement("select");
+            var emptyOption = document.createElement("option");
+            emptyOption.value = "";
+            emptyOption.text = "Tous";
+            filterElement.appendChild(emptyOption);
+
+            filterOptions.forEach(option => {
+                var opt = document.createElement("option");
+                opt.value = option.value;
+                opt.text = option.label;
+                filterElement.appendChild(opt);
+            });
+
+            filterElement.addEventListener("change", function(e) {
+                success(filterElement.value);
+            });
+        }
+
+        var clearButton = document.createElement("button");
+        clearButton.textContent = "Clear";
+        clearButton.style.marginLeft = "5px";
+        clearButton.addEventListener("click", function() {
+            filterElement.value = "";
+            success("");
+        });
+
+        container.appendChild(filterElement);
+        container.appendChild(clearButton);
+
+        return container;
+    }
+}
+
+const createNumberFilter = () => {
+    return function(cell, onRendered, success, cancel, editorParams) {
+        var container = document.createElement("div");
+        container.style.display = "flex";
+        container.style.alignItems = "center";
+
+        var operatorSelect = document.createElement("select");
+        ["==", ">", ">=", "<", "<="].forEach(op => {
+            var opt = document.createElement("option");
+            opt.value = op;
+            opt.text = op;
+            operatorSelect.appendChild(opt);
+        });
+
+        var numberInput = document.createElement("input");
+        numberInput.setAttribute("type", "number");
+        numberInput.style.marginLeft = "5px";
+        numberInput.style.width = "50px";
+
+        var applyButton = document.createElement("button");
+        applyButton.textContent = "Apply";
+        applyButton.style.marginLeft = "5px";
+        applyButton.addEventListener("click", function() {
+            success({
+                comparisonType: operatorSelect.value,
+                value: numberInput.value
+            });
+        });
+
+        var clearButton = document.createElement("button");
+        clearButton.textContent = "Clear";
+        clearButton.style.marginLeft = "5px";
+        clearButton.addEventListener("click", function() {
+            operatorSelect.value = "==";
+            numberInput.value = "";
+            success("");
+        });
+
+        container.appendChild(operatorSelect);
+        container.appendChild(numberInput);
+        container.appendChild(applyButton);
+        container.appendChild(clearButton);
+
+        return container;
+    }
+}
 
 const table = new Tabulator("#tabulator-table2", {
-		data:local_data,
-	    //groupBy:"type_texte",
-    	layout:"fitColumns",
-		columns:[
-			
-			{title:"ID", field:"id",formatter:"link", headerFilter:true,width:"35%", formatterParams:{label:function(cell){return cell.getValue()},url:function(cell){return "./fichiers_html/" + cell.getValue()+".html"}}},
-			{title:"Nb maillons", field:"extent",formatter:"progress",formatterParams:{color:["#ff9671"], legend:true, legendColor:"black",
-    legendAlign:"center",}, width:"18%", sorter:"number"},
-			{title:"Type de texte",  field:"type_texte",formatter:"lookup", sorter:"text",headerFilter: "select",
-            headerFilterParams: {
-                values: typeTexteOptions.reduce((obj, option) => {
-                    obj[option.value] = option.label;
-                    return obj;
-                }, {})
-            }},
-			{title:"Genre textuel", field:"genre",formatter:"lookup", sorter:"text",headerFilter: "select",
-            headerFilterParams: {
-                values: genreTexteOptions.reduce((obj, option) => {
-                    obj[option.value] = option.label;
-                    return obj;
-                }, {})
-            }},
-			
-			{title:"Référent", field:"concretness",formatter:"lookup", sorter:"text",headerFilter: "select",
-            headerFilterParams: {
-                values: concretnessOptions.reduce((obj, option) => {
-                    obj[option.value] = option.label;
-                    return obj;
-                }, {})
-            }},
-		    {title:"Référent", field:"animacy",formatter:"lookup", sorter:"text", headerFilter: "select",
-            headerFilterParams: {
-                values: animacyOptions.reduce((obj, option) => {
-                    obj[option.value] = option.label;
-                    return obj;
-                }, {})
-            }},
+    data: local_data,
+    layout: "fitColumns",
+    columns: [
+        {
+            title: "ID",
+            field: "id",
+            formatter: "link",
+            headerFilter: true,
+            width: "18%",
+            formatterParams: {
+                label: function(cell) { return cell.getValue() },
+                url: function(cell) { return "./fichiers_html/" + cell.getValue() + ".html" }
+            }
+        },
+        {
+            title: "Nb maillons",
+            field: "extent",
+            formatter: "progress",
+            formatterParams: {
+                color: ["#FA9038"],
+                legend: true,
+                legendColor: "black",
+                legendAlign: "center",
+            },
+            width: "26%",
+            sorter: "number",
+            headerFilter: createNumberFilter(),
+            headerFilterFunc: comparisonFilter
+        },
+        {
+            title: "Type de texte",
+            field: "type_texte",
+            formatter: "lookup",
+            sorter: "text",
+            headerFilter: createClearableFilter('select', typeTexteOptions),
+            width: "20%"
+            
+        },
+        {
+            title: "Genre textuel",
+            field: "genre",
+            formatter: "lookup",
+            sorter: "text",
+            headerFilter: createClearableFilter('select', genreTexteOptions),
+            width: "25%"
+            
+        },
+        {
+            title: "Référent",
+            field: "concretness",
+            formatter: "lookup",
+            sorter: "text",
+            headerFilter: createClearableFilter('select', concretnessOptions),
+            width: "12%"
+            
+        },
+        {
+            title: "Référent",
+            field: "animacy",
+            formatter: "lookup",
+            sorter: "text",
+            headerFilter: createClearableFilter('select', animacyOptions),
+            width: "14%"
+           
+        },
         {
             title: "Sequences 7 maillons",
             field: "id",
-            formatter: function (cell, formatterParams, onRendered) {
+            formatter: function(cell, formatterParams, onRendered) {
                 const id = cell.getValue();
-                const imgSrc = "./sequences_individuelles/" + id + ".svg";
+                const imgSrc = "./images/sequences_individuelles/" + id + ".svg";
                 return `<img src="${imgSrc}" alt="Image" style="height: auto; width: 150px;" />`;
-            }
+            },
+            width: "15%"
+           
+        }, 
+         {
+            title: "Patron",
+         //   field: "patrons",
+          // formatter: "lookup",
+           // sorter: "text",
+            //headerFilter: createClearableFilter('select', patronOptions),
+            width: "14%"
+           
         }
     ]
 });
-
-//Define variables for input elements
-var ref = document.getElementById("filter-ref");
-var compar = document.getElementById("filter-compar");
-var consigne = document.getElementById("filter-consigne");
-
-var ref_il = document.getElementById("filter-ref_2");
-var compar_il = document.getElementById("filter-compar_2");
-var consigne_il = document.getElementById("filter-consigne_2");
-
-var ref_lenf = document.getElementById("filter-ref_3");
-var compar_lenf = document.getElementById("filter-compar_3");
-var consigne_lenf = document.getElementById("filter-consigne_3");
-
-
-
-//Update filters on value change
-document.getElementById("filter-ref").addEventListener("change", updateFilter);
-document.getElementById("filter-compar").addEventListener("change", updateFilter);
-document.getElementById("filter-consigne").addEventListener("change", updateFilter);
-
-// //Update filters on value change
-document.getElementById("filter-ref_2").addEventListener("change", updateFilter_il);
-document.getElementById("filter-compar_2").addEventListener("change", updateFilter_il);
-document.getElementById("filter-consigne_2").addEventListener("change", updateFilter_il);
-
-document.getElementById("filter-ref_3").addEventListener("change", updateFilter_lenf);
-document.getElementById("filter-compar_3").addEventListener("change", updateFilter_lenf);
-document.getElementById("filter-consigne_3").addEventListener("change", updateFilter_lenf);
-
-//Clear filters on "Clear Filters" button click
-document.getElementById("filter-clear").addEventListener("click", function(){
-  ref.value = "";
-  compar.value = "=";
-  consigne.value = "";
-
-   ref_il.value = "";
-  compar_il.value = "=";
-  consigne_il.value = "";
-
-    ref_lenf.value = "";
-  compar_lenf.value = "=";
-  consigne_lenf.value = "";
-
-  table.clearFilter();
-});
-
-
-
-//Trigger setFilter function with correct parameters
-function updateFilter(){
-  var reftype = ref.options[ref.selectedIndex].value;
-  var compartype = compar.options[compar.selectedIndex].value;
-  var p= consigne.options[consigne.selectedIndex].value
-
-  if(ref && p){
-  	//console.log("nouveau filtre")
-  	//console.log(reftype,compartype,p)
-  	var filters=table.getFilters();
-  	//console.log(filters)
-  	for (var j = 0; j < filters.length; j++){
-  		var obj=filters[j]
-  		
-	if (String(obj.type.filterref)==reftype){
-		//console.log("ancien filtre : ")
-		//console.log(obj.type.filterref,obj.type.filtercompar,obj.type.filterconsigne)
-		table.removeFilter(filterPosition,obj.type);
-		var new_filters=table.getFilters()
-		//console.log(new_filters)
-	}
-
-	}
-
-    table.addFilter(filterPosition,{filterref:reftype,filtercompar:compartype,filterconsigne:p});
-    console.log(table.getFilters())
-  }
-}
-
-function updateFilter_il(){
-  var reftype = ref_il.options[ref_il.selectedIndex].value;
-  var compartype = compar_il.options[compar_il.selectedIndex].value;
-  var p= consigne_il.options[consigne_il.selectedIndex].value
-
-  if(ref && p){
-  	var filters=table.getFilters();
-  	for (var j = 0; j < filters.length; j++){
-  		var obj=filters[j]
-  		
-	if (String(obj.type.filterref)==reftype){
-		table.removeFilter(filterPosition,obj.type);
-		var new_filters=table.getFilters()
-	}
-
-	}
-
-    table.addFilter(filterPosition,{filterref:reftype,filtercompar:compartype,filterconsigne:p});
-    console.log(table.getFilters())
-  }
-}
-
-function updateFilter_lenf(){
-  var reftype = ref_lenf.options[ref_lenf.selectedIndex].value;
-  var compartype = compar_lenf.options[compar_lenf.selectedIndex].value;
-  var p= consigne_lenf.options[consigne_lenf.selectedIndex].value
-
-  if(ref && p){
-  	var filters=table.getFilters();
-  	for (var j = 0; j < filters.length; j++){
-  		var obj=filters[j]
-  		
-	if (String(obj.type.filterref)==reftype){
-		table.removeFilter(filterPosition,obj.type);
-		var new_filters=table.getFilters()
-	}
-
-	}
-
-    table.addFilter(filterPosition,{filterref:reftype,filtercompar:compartype,filterconsigne:p});
-    console.log(table.getFilters())
-  }
-}
-
-function filterPosition(data, filterParams){
-    //data - the data for the row being filtered
-    //filterParams - params object passed to the filter
-    var ref_start=filterParams.filterref
-    var typ_compar=filterParams.filtercompar
-    var p = filterParams.filterconsigne
-
-    //console.log(ref_start,typ_compar,p)
-    
-
-    if (data[ref_start] && data[p] != null){
-    if (typ_compar=="="){
-
-    	//console.log(data[ref_start] == data[p])
-    	return data[ref_start] == data[p]
-    	
-    }
-    if (typ_compar==">"){
-    	//console.log(data[ref_start] > data[p])
-    	return data[ref_start] > data[p]
-
-    	
-    }
-    if (typ_compar=="<"){
-    	//console.log(data[ref_start] < data[p])
-    	return data[ref_start] < data[p]
-    	
-    }
-}
-}
-
 
 
 
@@ -368,7 +292,11 @@ function filterPosition(data, filterParams){
 	  });
 	});
 </script>
-
+<div>
+	<hr>
+	<p><font size="-1">Site développé par S. Federzoni  (<a href="mailto:silvia.federzoni89@gmail.com?subject=Questions&body=DemRC19-21 Questions">contact</a>)</font></p>
+</div>
+</div>
     
 </body>
 </html>
