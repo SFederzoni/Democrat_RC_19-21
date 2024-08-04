@@ -65,6 +65,29 @@ hr {
   z-index: 1;
 }
 
+.navigation_pages{ 
+  height: 9.5px;
+  width:1050px;
+  position: flex; 
+  top: 72px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  background: #FA9038 ;
+  margin-bottom: 25px;
+  margin-left: 350px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 1;
+  
+}
+
+.titre_CR{
+	color:black;
+	text-align: center;
+}
+
+
 /* Reset des marges et des paddings par défaut pour éviter des différences entre navigateurs 
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -84,6 +107,23 @@ body, h1, h2, h3, p, ul, li {
     z-index: 1;
 }
 
+#prevButton, #nextButton{
+	text-decoration: none; /* Supprimer la soulignement des liens */
+    color: #fff; /* Couleur du texte des liens */
+    padding: 10px; /* Espace autour du texte des liens */
+    background-color: #158095; /* Couleur de fond des liens */
+    border-radius: 10px 100px / 120px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Animation pour le changement de couleur de fond */
+	box-shadow: 0 0 0px rgba(0,0,0,0.9);
+}
+
+button {
+    border-radius: 10px 100px / 120px; /* Coins arrondis */
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: #96B0B7;
+}
 
 /* Style du logo */
 .logo_navigation {
@@ -148,7 +188,6 @@ body, h1, h2, h3, p, ul, li {
 .menu-button {
     display: none; /* Cacher par défaut sur les écrans plus larges */
     font-size: 20px;
-    background: red;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -186,6 +225,7 @@ body, h1, h2, h3, p, ul, li {
         border-radius: 5px;
     }
 }
+		
 		
 #content {
     display: flex;

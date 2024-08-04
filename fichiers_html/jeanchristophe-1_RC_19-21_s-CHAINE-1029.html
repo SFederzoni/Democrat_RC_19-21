@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>jeanchristophe-1_RC_19-21_s-CHAINE-1029</title>
+    <script src="../js/data.js"></script>
+    <script src="../js/navigation.js"></script>
     <style> 
         body {
         padding: 1em 1em 1em 1em;
@@ -17,9 +19,17 @@
 				  background-repeat: no-repeat;
 				  text-align: justify;
         }
+        table, th, td {
+		border: 1.5px groove ;
+		border-radius: 5px;
+		border-color: #158095;
+		}
         td {
     		vertical-align: top;
     		text-align: center;
+    		border-radius: 5px;
+    		border-color: #158095;
+    		border:3;
         }
         td p{
         margin: .5rem .5rem .5rem .5rem;
@@ -30,29 +40,18 @@
             width: 100%;
             padding: 10px;
             background-color: #f0f0f0;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px  #ccc;
             text-align: center;
         }
-        .left-panel {
-            width: 30%;
-            padding: 10px;
-            border-right: 1px solid #ccc;
-        }
-        .content {
-            width: 50%;
-            padding: 10px;
-        }
-        .right-panel {
-            width: 20%;
-            padding: 10px;
-        }
+
+        
 .mention {
     color: #00887f;
     position: relative;
     cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
 }
 
-.mention:hover::after{
+.mention:hover::after {
     content: attr(data-id); /* Affiche l'ID par défaut */
     position: absolute;
     background-color: #f0f0f0;
@@ -83,13 +82,13 @@
         }
     </style>
     <link rel="stylesheet" href="../style_1.css">
-
+    
 </head>
 <body>
 <header class="container">
 
     <div class="navigation">
-        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="logo_navigation"><a href="../index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
         <div class="menu-container">
             <div class="menu-button"></div>
             <nav class="menu">
@@ -112,8 +111,11 @@
 
 </header>
 <div class="contenu_page">
-    <h2>Jean-Christophe (1) : s-CHAINE-1029<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
-    <table border="1">
+    <h3 class="titre_CR">Jean-Christophe (1) : s-CHAINE-1029</h3>
+    <div class="navigation_pages">
+     <button id="prevButton"><font size=3px>CR précédente</font></button> <button id="nextButton"><font size=3px>CR suivante</font></button> </h2>
+    </div>
+    <table>
     <tr>
 <td><div id="stats_texte"><p>
         Longueur nb maillons : <b>3 mentions</b><br>
