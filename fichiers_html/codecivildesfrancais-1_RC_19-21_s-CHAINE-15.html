@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>codecivildesfrancais-1_RC_19-21_s-CHAINE-15</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Code civil des français (Code Napoléon) : s-CHAINE-15<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>26 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-19</b><br>
+        Id dernier maillon : <b>u-MENTION-2987</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/codecivildesfrancais-1_RC_19-21_s-CHAINE-15.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+Elles seront exécutées dans chaque partie de <span class="mention" data-id="u-MENTION-19" data-info="suj"><b>[la République]</b></span> , du moment où la promulgation en pourra être connue. <br>
+ 
+ </p><p class="no-text">[26 phrases]</p><br><p>
+Tout individu né en <span class="mention" data-id="u-MENTION-110" data-info="suj"><b>[France]</b></span> d'un étranger, pourra, dans l'année qui suivra l'époque de sa majorité, réclamer la qualité de Français ; pourvu que, dans le cas où il résiderait en <span class="mention" data-id="u-MENTION-120" data-info="suj"><b>[France]</b></span> il déclare que son intention est d' <span class="mention" data-id="u-MENTION-124" data-info="suj"><b>[y]</b></span> fixer son domicile, et que, dans le cas où il résiderait en pays étranger, il fasse sa soumission de fixer en <span class="mention" data-id="u-MENTION-132" data-info="suj"><b>[France]</b></span> son domicile, et qu'il l' <span class="mention" data-id="u-MENTION-137" data-info="suj"><b>[y]</b></span> établisse dans l'année, à compter de l'acte de soumission. <br>
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+L'étranger jouira en <span class="mention" data-id="u-MENTION-157" data-info="suj"><b>[France]</b></span> des mêmes droits civils que ceux qui sont ou seront accordés aux Français par les traités de la nation à laquelle cet étranger appartiendra. <br>
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+L'étranger qui aura été admis par le Gouvernement à établir son domicile en <span class="mention" data-id="u-MENTION-179" data-info="suj"><b>[France]</b></span>  <span class="mention" data-id="u-MENTION-180" data-info="suj"><b>[y]</b></span> jouira de tous les droits civils, tant qu'il continuera d' <span class="mention" data-id="u-MENTION-183" data-info="suj"><b>[y]</b></span> résider. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+L'étranger, même non résidant en France, pourra être cité devant les tribunaux français, pour l'exécution des obligations par lui contractées en <span class="mention" data-id="u-MENTION-190" data-info="suj"><b>[France]</b></span> avec un Français ; il pourra être traduit devant les tribunaux de <span class="mention" data-id="u-MENTION-194" data-info="suj"><b>[France]</b></span> , pour les obligations par lui contractées en pays étranger envers des Français. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Un Français pourra être traduit devant un tribunal de <span class="mention" data-id="u-MENTION-202" data-info="suj"><b>[France]</b></span> , pour des obligations par lui contractées en pays étranger, même avec un étranger. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+En toutes matières, autres que celles de commerce, l'étranger qui sera demandeur, sera tenu de donner caution pour le paiement des frais et dommages-intérêts résultant du procès, à moins qu'il ne possède en <span class="mention" data-id="u-MENTION-220" data-info="suj"><b>[France]</b></span> des immeubles d'une valeur suffisante pour assurer ce paiement. <br>
+ 
+ </p><p class="no-text">[8 phrases]</p><br><p>
+Le Français qui aura perdu sa qualité de Français, pourra toujours la recouvrer en rentrant en <span class="mention" data-id="u-MENTION-261" data-info="suj"><b>[France]</b></span> avec l'autorisation du Gouvernement, et en déclarant qu'il veut s' <span class="mention" data-id="u-MENTION-265" data-info="suj"><b>[y]</b></span> fixer, et qu'il renonce à toute distinction contraire à la loi française. <br>
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Si elle devient veuve, elle recouvrera la qualité de Française, pourvu qu'elle réside en <span class="mention" data-id="u-MENTION-282" data-info="suj"><b>[France]</b></span> , ou qu'elle <span class="mention" data-id="u-MENTION-284" data-info="suj"><b>[y]</b></span> rentre avec l'autorisation du Gouvernement, et en déclarant qu'elle veut s' <span class="mention" data-id="u-MENTION-288" data-info="suj"><b>[y]</b></span> fixer. <br>
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Il ne pourra rentrer en <span class="mention" data-id="u-MENTION-320" data-info="suj"><b>[France]</b></span> qu'avec la permission du Gouvernement, et recouvrer la qualité de Français qu'en remplissant les conditions imposées à l'étranger pour devenir citoyen ; le tout sans préjudice des peines prononcées par la foi criminelle contre les Français qui ont porté ou porteront les armes contre <span class="mention" data-id="u-MENTION-334" data-info="suj"><b>[leur patrie]</b></span>  <br>
+ 
+ </p><p class="no-text">[77 phrases]</p><br><p>
+Tout acte de l'état civil des Français en pays étranger sera valable s'il a été reçu conformément aux lois françaises, par les agens diplomatiques, ou par les commissaires des relations commerciales de <span class="mention" data-id="u-MENTION-765" data-info="suj"><b>[la République]</b></span>  <br>
+ 
+ </p><p class="no-text">[116 phrases]</p><br><p>
+Des actes de l'état civil concernant les militaires hors du territoire de <span class="mention" data-id="u-MENTION-1726" data-info="suj"><b>[la république]</b></span>  <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Les actes de l'état civil faits hors du territoire de <span class="mention" data-id="u-MENTION-1731" data-info="suj"><b>[la République]</b></span> , concernant des militaires ou autres personnes employées à la suite des armées, seront rédigés dans les formes prescrites par les dispositions précédentes ; sauf les exceptions contenues dans les articles suivans. <br>
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+Il sera tenu, dans chaque corps de troupes, un registre pour les actes de l'état civil relatifs aux individus de ce corps, et un autre à l'état-major de l'armée ou d'un corps d'armée, pour les actes civils relatifs aux officiers sans troupes et aux employés : ces registres seront conservés de la même manière que les autres registres des corps et états-majors, et déposés aux archives de la guerre, à la rentrée des corps ou armées sur le territoire de <span class="mention" data-id="u-MENTION-1790" data-info="suj"><b>[la République]</b></span>  <br>
+ 
+ </p><p class="no-text">[204 phrases]</p><br><p>
+Dans les trois mois après le retour du Français sur le territoire de <span class="mention" data-id="u-MENTION-2987" data-info="suj"><b>[la République]</b></span> , l'acte de célébration du mariage contracté en pays étranger, sera transcrit sur le registre public des mariages du lieu de son domicile. <br>
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/codecivildesfrancais-1_RC_19-21_s-CHAINE-15.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

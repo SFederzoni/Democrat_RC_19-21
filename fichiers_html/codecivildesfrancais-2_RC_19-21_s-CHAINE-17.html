@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>codecivildesfrancais-2_RC_19-21_s-CHAINE-17</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Code civil des français (Code napoléon) : s-CHAINE-17<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>19 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-27</b><br>
+        Id dernier maillon : <b>u-MENTION-1445</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/codecivildesfrancais-2_RC_19-21_s-CHAINE-17.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+ <span class="mention" data-id="u-MENTION-27" data-info="suj"><b>[Les époux]</b></span> pourront réciproquement demander le divorce pour excès, sévices ou injures graves, de l'un d' <span class="mention" data-id="u-MENTION-33" data-info="suj"><b>[eux]</b></span> envers l'autre. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+La condamnation de l'un <span class="mention" data-id="u-MENTION-38" data-info="suj"><b>[des époux]</b></span> à une peine infamante, sera pour l'autre époux une cause de divorce. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Le consentement mutuel et persévérant <span class="mention" data-id="u-MENTION-45" data-info="suj"><b>[des époux]</b></span> , exprimé de la manière prescrite par la loi, sous les conditions et après les épreuves qu'elle détermine prouvera suffisamment que la vie commune <span class="mention" data-id="u-MENTION-53" data-info="suj"><b>[leur]</b></span> est insupportable et qu'il existe, par rapport à <span class="mention" data-id="u-MENTION-54" data-info="suj"><b>[eux]</b></span> une cause péremptoire de divorce. <br>
+ 
+ </p><p class="no-text">[40 phrases]</p><br><p>
+À chaque acte de la cause, <span class="mention" data-id="u-MENTION-367" data-info="suj"><b>[les parties]</b></span> pourront, après le rapport du juge, et avant que le commissaire du Gouvernement ait pris la parole, proposer ou faire proposer <span class="mention" data-id="u-MENTION-373" data-info="suj"><b>[leurs]</b></span> moyens respectifs, d'abord sur les fins de non-recevoir, et ensuite sur le fond mais en aucun cas le conseil du demandeur ne sera admis, si le demandeur n'est pas comparant en personne. <br>
+ 
+ </p><p class="no-text">[28 phrases]</p><br><p>
+Après une année d'épreuve, si <span class="mention" data-id="u-MENTION-585" data-info="suj"><b>[les parties]</b></span> ne se sont pas réunies, l'époux demandeur pourra faire citer l'autre époux à comparaître au tribunal, dans les délais de la loi, pour y entendre prononcer le jugement définitif, qui pour lors admettra le divorce. <br>
+ 
+ </p><p class="no-text">[92 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-1311" data-info="suj"><b>[Les époux]</b></span>  <span class="mention" data-id="u-MENTION-1312" data-info="suj"><b>[qui]</b></span> divorceront pour quelque cause que ce soit, ne pourront plus se réunir. <br>
+ 
+ </p><p class="no-text">[8 phrases]</p><br><p>
+Pour quelque cause que le divorce ait lieu, hors le cas du consentement mutuel, l'époux contre lequel le divorce aura été admis, perdra tous les avantages que l'autre époux lui avait faits, soit par <span class="mention" data-id="u-MENTION-1365" data-info="suj"><b>[leur]</b></span> contrat de mariage, soit depuis le mariage contracté. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+L'époux qui aura obtenu le divorce, conservera les avantages à lui faits par l'autre époux, encore qu' <span class="mention" data-id="u-MENTION-1375" data-info="suj"><b>[ils]</b></span> aient été stipulés réciproques et que la réciprocité n'ait pas lieu. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Si <span class="mention" data-id="u-MENTION-1378" data-info="suj"><b>[les époux]</b></span> ne s'étaient fait aucun avantage, ou si ceux stipulés ne paraissaient pas suffisans pour assurer la subsistance de l'époux qui a obtenu le divorce, le tribunal pourra lui accorder, sur les biens de l'autre époux, une pension alimentaire, qui ne pourra excéder le tiers des revenus de cet autre époux.
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Quelle que soit la personne à laquelle les enfans seront confiés <span class="mention" data-id="u-MENTION-1419" data-info="suj"><b>[les père et mère]</b></span> conserveront respectivement le droit de surveiller l'entretien et l'éducation de <span class="mention" data-id="u-MENTION-1427" data-info="suj"><b>[leurs]</b></span> enfans et <span class="mention" data-id="u-MENTION-1428" data-info="suj"><b>[seront]</b></span> tenus d'y contribuer à proportion de <span class="mention" data-id="u-MENTION-1432" data-info="suj"><b>[leurs]</b></span> faculté. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+La dissolution du mariage par le divorce admis en justice ne privera les enfans nés de ce mariage, d'aucuns des avantages qui leur étaient assurés par les lois, ou par les conventions matrimoniales de <span class="mention" data-id="u-MENTION-1445" data-info="suj"><b>[leurs père et mère]</b></span> ; mais il n'y aura d'ouverture aux droits des encans que de la même manière et dans les mêmes circonstances où ils se seraient ouverts s'il n'y avait pas eu de divorce. <br>
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/codecivildesfrancais-2_RC_19-21_s-CHAINE-17.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

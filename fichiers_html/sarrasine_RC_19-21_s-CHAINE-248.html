@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>sarrasine_RC_19-21_s-CHAINE-248</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Sarrasine : s-CHAINE-248<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>13 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-334</b><br>
+        Id dernier maillon : <b>u-MENTION-1278</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/sarrasine_RC_19-21_s-CHAINE-248.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+ <span class="mention" data-id="u-MENTION-334" data-info="suj"><b>[Filippo]</b></span> , frère de Marianina, tenait, comme <span class="mention" data-id="u-MENTION-337" data-info="suj"><b>[sa]</b></span> sœur, de la beauté merveilleuse de la comtesse.
+ 
+ </p><p>
+Pour tout dire en un mot, <span class="mention" data-id="u-MENTION-342" data-info="suj"><b>[ce jeune homme]</b></span> était une image vivante de l’ Antinoüs, avec des formes plus grêles.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Si <span class="mention" data-id="u-MENTION-355" data-info="suj"><b>[Filippo]</b></span> restait, dans tous les cœurs de jeunes filles, comme un type, <span class="mention" data-id="u-MENTION-359" data-info="suj"><b>[il]</b></span> demeurait également dans le souvenir de toutes les mères, comme le meilleur parti de France. <br>
+ 
+ </p><p class="no-text">[37 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-641" data-info="suj"><b>[Filippo]</b></span> , Marianina, madame de Lanty et un vieux domestique avaient seuls le privilége d’ aider l’ inconnu à marcher, à se lever, à s’ asseoir.
+ 
+ </p><p class="no-text">[7 phrases]</p><br><p>
+Ou bien <span class="mention" data-id="u-MENTION-699" data-info="suj"><b>[Filippo]</b></span> s’ élançait en se glissant à travers la foule, pour le joindre, et <span class="mention" data-id="u-MENTION-702" data-info="suj"><b>[restait]</b></span> auprès de lui, tendre et attentif, comme si le contact des hommes ou le moindre souffle dût briser cette créature bizarre.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Si madame de Lanty n’ était pas là, <span class="mention" data-id="u-MENTION-726" data-info="suj"><b>[le comte]</b></span> employait mille stratagèmes pour arriver à lui ; mais <span class="mention" data-id="u-MENTION-729" data-info="suj"><b>[il]</b></span> avait l’ air de s’ en faire écouter difficilement, et le traitait comme un enfant gâté dont la mère écoute les caprices ou redoute la mutinerie.
+ 
+ </p><p>
+Quelques indiscrets s’ étant hasardés à questionner étourdiment <span class="mention" data-id="u-MENTION-738" data-info="suj"><b>[le comte de Lanty]</b></span> , <span class="mention" data-id="u-MENTION-739" data-info="suj"><b>[cet homme froid et réservé]</b></span> n’ avait jamais paru comprendre l’ interrogation des curieux.
+ 
+ </p><p class="no-text">[79 phrases]</p><br><p>
+A ce bruit, Marianina, <span class="mention" data-id="u-MENTION-1278" data-info="suj"><b>[Filippo]</b></span> et madame de Lanty jetèrent les yeux sur nous, et leurs regards furent comme des éclairs.
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/sarrasine_RC_19-21_s-CHAINE-248.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

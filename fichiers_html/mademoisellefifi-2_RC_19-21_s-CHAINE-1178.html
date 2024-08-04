@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>mademoisellefifi-2_RC_19-21_s-CHAINE-1178</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Mademoiselle Fifi, nouveaux contes (2) : s-CHAINE-1178<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>30 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-2368</b><br>
+        Id dernier maillon : <b>u-MENTION-2652</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/mademoisellefifi-2_RC_19-21_s-CHAINE-1178.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+Et voici la quatrième : <br>
+« Mon ami, je suis malade, toute souffrante, et je ne quitte pas <span class="mention" data-id="u-MENTION-2368" data-info="suj"><b>[mon lit]</b></span>  
+ </p><p class="no-text">[7 phrases]</p><br><p>
+« Étant depuis trois jours en <span class="mention" data-id="u-MENTION-2401" data-info="suj"><b>[mon lit]</b></span> , c'est à <span class="mention" data-id="u-MENTION-2403" data-info="suj"><b>[mon lit]</b></span> que je pense, et même dans le sommeil j' <span class="mention" data-id="u-MENTION-2407" data-info="suj"><b>[y]</b></span> médite encore. <br>
+ 
+ </p><p>
+« <span class="mention" data-id="u-MENTION-2408" data-info="suj"><b>[Le lit]</b></span> , mon ami, c'est toute notre vie.
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+« Vous connaissez <span class="mention" data-id="u-MENTION-2430" data-info="suj"><b>[mon lit]</b></span> , mon ami.
+ 
+ </p><p>
+Vous ne vous figurerez jamais que de choses j' <span class="mention" data-id="u-MENTION-2437" data-info="suj"><b>[y]</b></span> ai découvertes depuis trois jours, et comme je <span class="mention" data-id="u-MENTION-2440" data-info="suj"><b>[l']</b></span> aime davantage.
+ 
+ </p><p class="no-text">[16 phrases]</p><br><p>
+Et quand au lit nous serons Entrelacés, nous ferons Les lascifs, selon les guises Des amants qui librement Pratiquent folâtrement Sous les draps cent mignardises <br>
+« Ces vers -là, je les voudrais avoir brodés en ce plafond de <span class="mention" data-id="u-MENTION-2576" data-info="suj"><b>[mon lit]</b></span> , <span class="mention" data-id="u-MENTION-2578" data-info="suj"><b>[d'où]</b></span> Pyrame et Thisbé me regardent sans fin avec leurs yeux de tapisserie. <br>
+ 
+ </p><p>
+« Et songez à la mort, mon ami, à tous ceux qui ont exhalé vers Dieu leur dernier souffle en <span class="mention" data-id="u-MENTION-2595" data-info="suj"><b>[ce lit]</b></span>  
+ </p><p>
+Car <span class="mention" data-id="u-MENTION-2596" data-info="suj"><b>[il]</b></span> est aussi <span class="mention" data-id="u-MENTION-2597" data-info="suj"><b>[le tombeau des espérances finies]</b></span> , <span class="mention" data-id="u-MENTION-2599" data-info="suj"><b>[la porte]</b></span>  <span class="mention" data-id="u-MENTION-2600" data-info="suj"><b>[qui]</b></span> ferme tout après avoir été celle qui ouvre le monde.
+ 
+ </p><p>
+Que de cris, que d'angoisses, de souffrances, de désespoirs épouvantables, de gémissements d'agonie, de bras tendus vers les choses passées, d'appels aux bonheurs terminés à jamais ; que de convulsions, de râles, de grimaces, de bouches tordues, d'yeux retournés, dans <span class="mention" data-id="u-MENTION-2619" data-info="suj"><b>[ce lit]</b></span> , <span class="mention" data-id="u-MENTION-2620" data-info="suj"><b>[où]</b></span> je vous écris, depuis trois siècles qu' <span class="mention" data-id="u-MENTION-2625" data-info="suj"><b>[il]</b></span> prête aux hommes <span class="mention" data-id="u-MENTION-2628" data-info="suj"><b>[son]</b></span> abri! <br>
+!
+ 
+ </p><p>
+« <span class="mention" data-id="u-MENTION-2629" data-info="suj"><b>[Le lit]</b></span> , songez <span class="mention" data-id="u-MENTION-2631" data-info="suj"><b>[-y]</b></span> , <span class="mention" data-id="u-MENTION-2632" data-info="suj"><b>[c']</b></span> est <span class="mention" data-id="u-MENTION-2633" data-info="suj"><b>[le symbole de la vie]</b></span> ; je me suis aperçue de cela depuis trois jours.
+ 
+ </p><p>
+Rien n'est excellent hors <span class="mention" data-id="u-MENTION-2638" data-info="suj"><b>[du lit]</b></span>  <br>
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2644" data-info="suj"><b>[Il]</b></span> est <span class="mention" data-id="u-MENTION-2645" data-info="suj"><b>[le refuge des malades]</b></span> , <span class="mention" data-id="u-MENTION-2647" data-info="suj"><b>[un lieu de douleurs aux corps épuisés]</b></span>  <br>
+ 
+ </p><p>
+« <span class="mention" data-id="u-MENTION-2650" data-info="suj"><b>[Le lit]</b></span> , <span class="mention" data-id="u-MENTION-2651" data-info="suj"><b>[c']</b></span> est <span class="mention" data-id="u-MENTION-2652" data-info="suj"><b>[l'homme]</b></span>  
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/mademoisellefifi-2_RC_19-21_s-CHAINE-1178.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

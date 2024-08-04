@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>nemoville_RC_19-21_s-CHAINE-381</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Némoville : s-CHAINE-381<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>13 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-893</b><br>
+        Id dernier maillon : <b>u-MENTION-1991</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/nemoville_RC_19-21_s-CHAINE-381.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+» <br>
+ <br>
+— « Je te dis que c'est le « Nautilus », j'ai vu son nom écrit à l'arrière ainsi que sa devise « Mobilis in mobile. » Maintenant, je me rappelle le récit fait par un certain Cyrus Smith, dans lequel il est question de la mort <span class="mention" data-id="u-MENTION-893" data-info="suj"><b>[du capitaine Nemo]</b></span> , et de l'engloutissement de <span class="mention" data-id="u-MENTION-896" data-info="suj"><b>[son]</b></span> sous-marin, sur les côtes d'une île inconnue du Pacifique, il y a une couple d'années.
+ 
+ </p><p>
+» <br>
+ <br>
+— « Oui, oui, je me souviens aussi, s'écria Paul, mais alors le « Nautilus » est une tombe, puisqu'il porte dans ses flancs la dépouille de <span class="mention" data-id="u-MENTION-909" data-info="suj"><b>[son propriétaire]</b></span> , le capitaine Nemo.
+ 
+ </p><p class="no-text">[24 phrases]</p><br><p>
+Tous connaissaient l'histoire du « Nautilus » et <span class="mention" data-id="u-MENTION-1128" data-info="suj"><b>[du capitaine Nemo]</b></span> , et au grand étonnement de Paul, lorsque Roger, sans beaucoup de préambules, proposa son plan de ville sous-marine, il ne rencontra pas l'opposition qu'il avait redoutée. <br>
+ <br>
+ 
+ </p><p class="no-text">[105 phrases]</p><br><p>
+Certes, nous n'avons pas adopté le système <span class="mention" data-id="u-MENTION-1711" data-info="suj"><b>[du capitaine Nemo]</b></span> ; nous faisons quelques excursions à terre quand cela nous plaît, mais nous préférons la vie dans la mer, qui nous est bonne.
+ 
+ </p><p class="no-text">[34 phrases]</p><br><p>
+… Vous avez nommé votre ville, je le vois, d'après <span class="mention" data-id="u-MENTION-1968" data-info="suj"><b>[le capitaine Nemo]</b></span>  
+ </p><p>
+» <br>
+ <br>
+— « Nous <span class="mention" data-id="u-MENTION-1970" data-info="suj"><b>[lui]</b></span> devions bien cela, répliqua Roger, puisque nous <span class="mention" data-id="u-MENTION-1974" data-info="suj"><b>[lui]</b></span> avions pris <span class="mention" data-id="u-MENTION-1976" data-info="suj"><b>[son]</b></span> bateau, dont <span class="mention" data-id="u-MENTION-1978" data-info="suj"><b>[il]</b></span> n'avait plus que faire, il est vrai.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Nous avons donné <span class="mention" data-id="u-MENTION-1986" data-info="suj"><b>[au capitaine]</b></span> des funérailles dignes de <span class="mention" data-id="u-MENTION-1989" data-info="suj"><b>[ses]</b></span> goûts et de <span class="mention" data-id="u-MENTION-1991" data-info="suj"><b>[ses]</b></span> exploits, et nous avons utilisé le bateau pour fuir les régions dangereuses où le naufrage nous avait jetés.
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/nemoville_RC_19-21_s-CHAINE-381.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

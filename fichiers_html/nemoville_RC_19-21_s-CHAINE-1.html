@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>nemoville_RC_19-21_s-CHAINE-1</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Némoville : s-CHAINE-1<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>30 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-1</b><br>
+        Id dernier maillon : <b>u-MENTION-3199</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/nemoville_RC_19-21_s-CHAINE-1.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+L'Abbé Bernard <br>
+ <br>
+ <span class="mention" data-id="u-MENTION-1" data-info="suj"><b>[On]</b></span> était au vingt-quatre octobre 1875, à huit heures du soir.
+ 
+ </p><p class="no-text">[35 phrases]</p><br><p>
+L'abbé n'essaya même pas de se défendre ; <span class="mention" data-id="u-MENTION-214" data-info="suj"><b>[on]</b></span> ne pouvait lui vouloir aucun mal, à lui qui n'avait fait que du bien toute sa vie.
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+» <br>
+ <br>
+ <span class="mention" data-id="u-MENTION-247" data-info="suj"><b>[On]</b></span> fit quelques pas — une cinquantaine, peut-être — puis, le prêtre sentit qu' <span class="mention" data-id="u-MENTION-251" data-info="suj"><b>[on]</b></span> enlevait son bandeau ; il vit qu'il se trouvait dans une chambre vivement éclairée à l'électricité, au milieu de laquelle, sur un lit d'une extrême propreté, reposait un mourant. <br>
+ <br>
+ 
+ </p><p class="no-text">[6 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-290" data-info="suj"><b>[On]</b></span> pouvait voir à l'arrière du bateau, son nom, écrit en larges lettres noires, sur le bois peinturé en blanc : « Queen of the Waves », il appartenait à une compagnie de San-Francisco. <br>
+ <br>
+ 
+ </p><p class="no-text">[9 phrases]</p><br><p>
+… En vain les lunettes marines fouillaient -elles l'horizon : <span class="mention" data-id="u-MENTION-337" data-info="suj"><b>[on]</b></span> ne voyait rien, rien.
+ 
+ </p><p class="no-text">[8 phrases]</p><br><p>
+… Mais qu'importe : continent ou île, ce morceau de terre, c'était le salut, si <span class="mention" data-id="u-MENTION-370" data-info="suj"><b>[on]</b></span> pouvait l'atteindre. <br>
+ <br>
+ 
+ </p><p class="no-text">[15 phrases]</p><br><p>
+Cette terre, sur les côtes de laquelle le « Queen of the Waves » avait fait naufrage, était étrange : ce n'était partout qu'arbres renversés, excavations profondes ; en certains endroits, <span class="mention" data-id="u-MENTION-452" data-info="suj"><b>[on]</b></span> eût dit que le granit, qui formait la base du sol, avait été ouvert, séparé en deux par quelque cataclysme.
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Et pour le moment, les naufragés durent céder à une préoccupation plus impérieuse : celle de se réconforter par un peu de nourriture et de se reposer, car tous étaient, <span class="mention" data-id="u-MENTION-478" data-info="suj"><b>[on]</b></span> le devine, exténués de fatigue.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Lorsqu'on eut déjeuné, et, cette fois, on se paya le luxe de café brûlant, il fut décidé qu' <span class="mention" data-id="u-MENTION-510" data-info="suj"><b>[on]</b></span> irait en excursion de découverte.
+ 
+ </p><p class="no-text">[5 phrases]</p><br><p>
+Du haut de cette montagne, <span class="mention" data-id="u-MENTION-548" data-info="suj"><b>[on]</b></span> verrait la terre s'étendre à perte de vue, ou bien <span class="mention" data-id="u-MENTION-550" data-info="suj"><b>[on]</b></span> apercevrait la mer l'entourant, hélas!!
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+Il fut décidé qu' <span class="mention" data-id="u-MENTION-567" data-info="suj"><b>[on]</b></span> laisserait Turko en campement ; mais lorsque le chien vit partir son maître, il fut impossible de le retenir.
+ 
+ </p><p class="no-text">[18 phrases]</p><br><p>
+Constatation peu réjouissante <span class="mention" data-id="u-MENTION-685" data-info="suj"><b>[on]</b></span> en conviendra, dans de telles circonstances. <br>
+ <br>
+ 
+ </p><p>
+L'Océan offrait, cependant une particularité, qui ne manqua pas d'intéresser les deux amis malgré les angoisses de l'heure présente ; l'eau était si limpide que le regard pouvait plonger à une grande profondeur : quand les vagues se retiraient, <span class="mention" data-id="u-MENTION-698" data-info="suj"><b>[on]</b></span> voyait même le fond de la mer, <span class="mention" data-id="u-MENTION-701" data-info="suj"><b>[on]</b></span> apercevait les poissons qui nageaient entre deux eaux.
+ 
+ </p><p class="no-text">[43 phrases]</p><br><p>
+» <br>
+ <br>
+— « Tu perds la tête, je crois, lui dit son compagnon, qui ne partageait pas son enthousiasme pour le domaine des poissons, mais si tu pouvais promettre aux futurs habitants de ta ville, de les débarrasser de beaucoup d'ennuis qu' <span class="mention" data-id="u-MENTION-1011" data-info="suj"><b>[on]</b></span> trouve sur cette terre, je crois que la moitié de l'univers te suivrait avec enthousiasme.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Il ne serait pas si difficile de construire d'autres sous-marins, que nous pourrions relier entre eux par des couloirs-tubes, détachables à loisir ; quand l'un des sous-marins voudrait remonter à la surface, il n'aurait qu'à se détacher des autres ; si la ville entière avait quelquefois, la fantaisie d'aller faire une expédition chez les terriens, <span class="mention" data-id="u-MENTION-1038" data-info="suj"><b>[on]</b></span> n'aurait encore qu'à détacher les tubes, et chaque habitant de la ville voyagerait ainsi avec toute sa maison.
+ 
+ </p><p class="no-text">[144 phrases]</p><br><p>
+On prolongea le déjeuner, qui fut des plus joyeux — <span class="mention" data-id="u-MENTION-1898" data-info="suj"><b>[on]</b></span> n'avait pas l'avantage d'un nouvel hôte souvent à Némoville — et le curé plut à Roger et à Paul par son esprit autant que par sa bonté, dont il donna bientôt des preuves.
+ 
+ </p><p class="no-text">[35 phrases]</p><br><p>
+Au moment où les voyageurs allaient se rembarquer, cet homme vint à eux et leur dit : « Est -il vrai qu'il existe une ville sous-marine où l' <span class="mention" data-id="u-MENTION-2128" data-info="suj"><b>[on]</b></span> peut vivre en paix, loin de toutes les conventions du monde, loin de toutes les niaiseries et de toutes les faussetés qui fleurissent sur la terre??
+ 
+ </p><p class="no-text">[20 phrases]</p><br><p>
+Depuis la mort de son père, <span class="mention" data-id="u-MENTION-2237" data-info="suj"><b>[on]</b></span> eût dit qu'elle subissait l'influence de ce personnage, qui n'était guère sympathique ; quelqu'un avait même insinué que la fille de M. Richard éprouvait un sentiment plus doux pour le gouverneur, parce que, certains jours, elle avait rougi de plaisir en l'apercevant. <br>
+ <br>
+ 
+ </p><p class="no-text">[23 phrases]</p><br><p>
+La bonté de la jeune fille perdait sans doute un peu de son mérite par cette pensée intéressée, mais <span class="mention" data-id="u-MENTION-2414" data-info="suj"><b>[qui]</b></span> saurait la blâmer, connaissant le sentiment qu'elle avait au cœur. <br>
+ <br>
+ 
+ </p><p class="no-text">[35 phrases]</p><br><p>
+non, répliqua-t -elle, <span class="mention" data-id="u-MENTION-2694" data-info="suj"><b>[on]</b></span> est si bien ici, je me sens si en sûreté auprès de Marcelle ……
+ 
+ </p><p class="no-text">[32 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2896" data-info="suj"><b>[On]</b></span> n'y était pas grandement, surtout le dimanche, car les habitants de Némoville aimaient à assister à la messe et quelques-uns étaient obligés d'entendre l'office divin dans le couloir. <br>
+ <br>
+ 
+ </p><p>
+Or, ce jour du vingt-quatre décembre, l'abbé était très occupé, car <span class="mention" data-id="u-MENTION-2908" data-info="suj"><b>[on]</b></span> lui avait demandé de célébrer la messe de minuit, et il aurait voulu donner à cette messe autant de solennité que le permettaient les lieux. <br>
+ <br>
+ 
+ </p><p class="no-text">[10 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2966" data-info="suj"><b>[On]</b></span> entendit dans les couloirs des bruits de pas, c'étaient les Némovilliens qui venaient présenter leurs hommages à leur curé, et Roger, au nom de tous, offrit au prêtre l'église sous-marine : « Nous y avons tous travaillé, expliqua-t -il ; les uns ont modelé les statues, les autres ont fait les plans et les enfants eux -mêmes ont fait leur part, en recueillant sur la grève les colimaçons qui ornent le maître-autel.
+ 
+ </p><p class="no-text">[11 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-3043" data-info="suj"><b>[On]</b></span> avait fait transporter l'orgue du « Nautilus » dans l'église et préparé une belle messe, car les musiciens ne manquaient pas à Némoville.
+ 
+ </p><p>
+Le gouverneur et son secrétaire ayant pris place aux bancs armoriés qu' <span class="mention" data-id="u-MENTION-3055" data-info="suj"><b>[on]</b></span> avait préparés pour eux, une main habile joua les premiers accords d'un chant de Noël.
+ 
+ </p><p>
+À ce moment, la porte de la chapelle se rouvrit, et l' <span class="mention" data-id="u-MENTION-3063" data-info="suj"><b>[on]</b></span> vit apparaître M. Duflot, dans une chaise à roulette, que poussait son fidèle domestique.
+ 
+ </p><p class="no-text">[20 phrases]</p><br><p>
+Il n'était pas de ceux qui semblent avoir tout vu à travers un verre grossissant, et qui tiennent leurs auditeurs pour des nigauds : il parlait quand <span class="mention" data-id="u-MENTION-3199" data-info="suj"><b>[on]</b></span> l'interrogeait, et savait se taire au bon moment. <br>
+ <br>
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/nemoville_RC_19-21_s-CHAINE-1.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

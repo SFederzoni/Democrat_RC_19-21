@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>pauline_RC_19-21_s-CHAINE-100</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Pauline : s-CHAINE-100<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>24 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-142</b><br>
+        Id dernier maillon : <b>u-MENTION-2495</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/pauline_RC_19-21_s-CHAINE-100.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+— Oui, <span class="mention" data-id="u-MENTION-142" data-info="suj"><b>[c']</b></span> était <span class="mention" data-id="u-MENTION-143" data-info="suj"><b>[une triste ville]</b></span> , pensa la voyageuse, <span class="mention" data-id="u-MENTION-145" data-info="suj"><b>[une ville aux rues anguleuses et sombres, au pavé raboteux]</b></span> ; une ville laide et pauvre, comme <span class="mention" data-id="u-MENTION-149" data-info="suj"><b>[celle -ci]</b></span> m'est apparue à travers la vapeur qui couvrait les glaces de ma voiture.
+ 
+ </p><p>
+Seulement, il y a dans <span class="mention" data-id="u-MENTION-156" data-info="suj"><b>[celle -ci]</b></span> un ou deux, peut-être trois réverbères, et, là-bas, il n'y en avait pas un seul.
+ 
+ </p><p class="no-text">[31 phrases]</p><br><p>
+comment nommez -vous <span class="mention" data-id="u-MENTION-297" data-info="suj"><b>[cette ville]</b></span> ??
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+? <br>
+ <br>
+— Mais non pas, madame ; vous êtes à <span class="mention" data-id="u-MENTION-303" data-info="suj"><b>[Saint-Front]</b></span> , route de Paris, hôtel du Lion-Couronné. <br>
+ <br>
+ 
+ </p><p class="no-text">[17 phrases]</p><br><p>
+— À <span class="mention" data-id="u-MENTION-357" data-info="suj"><b>[Saint-Front]</b></span> !!
+ 
+ </p><p class="no-text">[7 phrases]</p><br><p>
+Dites -moi, ma chère, ajouta-t -elle en s'adressant à la fille d'auberge, connaissez -vous dans <span class="mention" data-id="u-MENTION-386" data-info="suj"><b>[cette ville]</b></span> mademoiselle Pauline D ……
+ 
+ </p><p>
+? <br>
+ <br>
+— Je n' <span class="mention" data-id="u-MENTION-389" data-info="suj"><b>[y]</b></span> connais personne, madame, répondit la fille ; je ne suis dans ce pays que depuis huit jours. <br>
+ <br>
+ 
+ </p><p class="no-text">[8 phrases]</p><br><p>
+n'était point mariée, et qu'elle habitait toujours <span class="mention" data-id="u-MENTION-427" data-info="suj"><b>[la ville]</b></span>  
+ </p><p class="no-text">[7 phrases]</p><br><p>
+C'est dans <span class="mention" data-id="u-MENTION-488" data-info="suj"><b>[cette triste ville]</b></span> que je l'ai vue dépérir de misère et que j'ai failli la perdre.
+ 
+ </p><p class="no-text">[34 phrases]</p><br><p>
+Aussitôt que l'horloge de <span class="mention" data-id="u-MENTION-671" data-info="suj"><b>[la ville]</b></span> eut sonné sept heures, elle acheva sa toilette à la hâte ; et, laissant ses domestiques maudire l'auberge et souffrir les incommodités du déplacement avec cette impatience et cette hauteur qui caractérisent les laquais de bonne maison, elle s'enfonça dans une des rues tortueuses qui s'ouvraient devant elle, marchant sur la pointe du pied avec l'adresse d'une Parisienne, et faisant ouvrir de gros yeux à tous les bourgeois de <span class="mention" data-id="u-MENTION-698" data-info="suj"><b>[la ville]</b></span> , pour qui une figure nouvelle était un grave événement. <br>
+ <br>
+ 
+ </p><p class="no-text">[107 phrases]</p><br><p>
+Elle vint habiter <span class="mention" data-id="u-MENTION-1286" data-info="suj"><b>[Saint-Front]</b></span> , <span class="mention" data-id="u-MENTION-1287" data-info="suj"><b>[où]</b></span> elle réussit à vivre quatre ans en qualité de sous-maîtresse dans un pensionnat de jeunes filles, et où elle contracta une étroite amitié avec l'aînée de ses élèves, Pauline, âgée de quinze ans comme elle. <br>
+ <br>
+ 
+ </p><p class="no-text">[95 phrases]</p><br><p>
+Cependant le bruit de l'aventure qui avait amené à <span class="mention" data-id="u-MENTION-2016" data-info="suj"><b>[Saint-Front]</b></span> , route de Paris, une dame en chaise de poste qui croyait aller à Villiers, route de Lyon, s'était répandue dans <span class="mention" data-id="u-MENTION-2024" data-info="suj"><b>[la petite ville]</b></span> et <span class="mention" data-id="u-MENTION-2025" data-info="suj"><b>[y]</b></span> donnait lieu, depuis quelques heures, à d'étranges commentaires.
+ 
+ </p><p>
+Par quel hasard, par quel prodige, cette dame de la chaise de poste, après être arrivée là sans le vouloir, se décidait -elle à <span class="mention" data-id="u-MENTION-2034" data-info="suj"><b>[y]</b></span> rester toute la journée??
+ 
+ </p><p class="no-text">[17 phrases]</p><br><p>
+Le domestique, fin matois, véritable Frontin de comédie, s'amusa de la curiosité des citadins de <span class="mention" data-id="u-MENTION-2150" data-info="suj"><b>[Saint-Front]</b></span> , et leur fit à chacun un conte différent.
+ 
+ </p><p>
+Mille versions circulèrent et se croisèrent dans <span class="mention" data-id="u-MENTION-2156" data-info="suj"><b>[la ville]</b></span>  
+ </p><p class="no-text">[44 phrases]</p><br><p>
+Les dames de <span class="mention" data-id="u-MENTION-2456" data-info="suj"><b>[la ville]</b></span> s'étaient flattées d'avoir à critiquer cette toilette et cette tournure qu'on avait annoncées si étranges ; elles étaient forcées d'admirer et de dévorer du regard ces étoffes moelleuses négligées dans leur richesse, ces coupes élégantes d'ajustements sans roideur et sans étalage, nuance à laquelle n'arrivera jamais l'élégante de petite ville, même lorsqu'elle copie exactement l'élégante des grandes villes ; enfin toutes ces recherches de la chaussure, de la manchette et de la coiffure, que les femmes sans goût exagèrent jusqu'à l'absurde ou suppriment jusqu'à la malpropreté.
+ 
+ </p><p>
+Ce qui frappait et intimidait plus que tout le reste, c'était l'aisance parfaite de Laurence, ce ton de la meilleure compagnie qu'on ne s'attend guère en province à trouver chez une comédienne, et que, certes, on ne trouvait chez aucune femme à <span class="mention" data-id="u-MENTION-2495" data-info="suj"><b>[Saint-Front]</b></span>  
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/pauline_RC_19-21_s-CHAINE-100.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

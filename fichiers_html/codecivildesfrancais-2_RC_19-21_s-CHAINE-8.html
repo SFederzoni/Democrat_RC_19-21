@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>codecivildesfrancais-2_RC_19-21_s-CHAINE-8</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Code civil des français (Code napoléon) : s-CHAINE-8<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>41 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-9</b><br>
+        Id dernier maillon : <b>u-MENTION-1695</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/codecivildesfrancais-2_RC_19-21_s-CHAINE-8.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+ <span class="mention" data-id="u-MENTION-9" data-info="suj"><b>[Le mari]</b></span> pourra demander le divorce pour cause d'adultère de <span class="mention" data-id="u-MENTION-14" data-info="suj"><b>[sa]</b></span> femme. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+La femme pourra demander le divorce pour cause d'adultère de <span class="mention" data-id="u-MENTION-20" data-info="suj"><b>[son mari]</b></span> , lorsqu' <span class="mention" data-id="u-MENTION-22" data-info="suj"><b>[il]</b></span> aura tenu <span class="mention" data-id="u-MENTION-24" data-info="suj"><b>[sa]</b></span> concubine dans la maison commune. <br>
+ 
+ </p><p class="no-text">[186 phrases]</p><br><p>
+Quelle que soit la personne à laquelle les enfans seront confiés <span class="mention" data-id="u-MENTION-1420" data-info="suj"><b>[les père]</b></span> et mère conserveront respectivement le droit de surveiller l'entretien et l'éducation de leurs enfans et seront tenus d'y contribuer à proportion de leurs faculté. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+La dissolution du mariage par le divorce admis en justice ne privera les enfans nés de ce mariage, d'aucuns des avantages qui leur étaient assurés par les lois, ou par les conventions matrimoniales de <span class="mention" data-id="u-MENTION-1446" data-info="suj"><b>[leurs père]</b></span> et mère ; mais il n'y aura d'ouverture aux droits des encans que de la même manière et dans les mêmes circonstances où ils se seraient ouverts s'il n'y avait pas eu de divorce. <br>
+ 
+ </p><p class="no-text">[11 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-1540" data-info="suj"><b>[Le mari]</b></span> restera <span class="mention" data-id="u-MENTION-1541" data-info="suj"><b>[le maître d'arrêter l'effet de cette condamnation]</b></span> , en consentant à reprendre <span class="mention" data-id="u-MENTION-1545" data-info="suj"><b>[sa]</b></span> femme. <br>
+ 
+ </p><p class="no-text">[11 phrases]</p><br><p>
+L'enfant conçu pendant le mariage, a pour <span class="mention" data-id="u-MENTION-1581" data-info="suj"><b>[père]</b></span>  <span class="mention" data-id="u-MENTION-1582" data-info="suj"><b>[le mari]</b></span>  <br>
+ 
+ </p><p>
+Néanmoins <span class="mention" data-id="u-MENTION-1583" data-info="suj"><b>[celui -ci]</b></span> pourra désavouer l'enfant, s' <span class="mention" data-id="u-MENTION-1585" data-info="suj"><b>[il]</b></span> prouve que, pendant le temps qui a couru depuis le trois-centième jusqu'au cent-quatre-vingtième jour avant la naissance de cet enfant, <span class="mention" data-id="u-MENTION-1592" data-info="suj"><b>[il]</b></span> était, soit par cause d'éloignement, soit par l'effet de quelque accident, dans l'impossibilité physique de cohabiter avec <span class="mention" data-id="u-MENTION-1599" data-info="suj"><b>[sa]</b></span> femme. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-1601" data-info="suj"><b>[Le mari]</b></span> ne pourra, en alléguant <span class="mention" data-id="u-MENTION-1603" data-info="suj"><b>[son]</b></span> impuissance naturelle, désavouer l'enfant : <span class="mention" data-id="u-MENTION-1605" data-info="suj"><b>[il]</b></span> ne pourra le désavouer même pour cause d'adultère, à moins que la naissance ne <span class="mention" data-id="u-MENTION-1610" data-info="suj"><b>[lui]</b></span> ait été cachée, auquel cas <span class="mention" data-id="u-MENTION-1613" data-info="suj"><b>[il]</b></span> sera admis à proposer tous les faits propres à justifier qu' <span class="mention" data-id="u-MENTION-1615" data-info="suj"><b>[il]</b></span> n'en est pas <span class="mention" data-id="u-MENTION-1616" data-info="suj"><b>[le père]</b></span>  <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+L'enfant né avant le cent-quatre-vingtième jour du mariage, ne pourra être désavoué par <span class="mention" data-id="u-MENTION-1621" data-info="suj"><b>[le mari]</b></span> , dans les cas suivans : 1.
+ 
+ </p><p>
+° s' <span class="mention" data-id="u-MENTION-1624" data-info="suj"><b>[il]</b></span> a eu connaissance de la grossesse avant le mariage ; 2.
+ 
+ </p><p>
+° s' <span class="mention" data-id="u-MENTION-1627" data-info="suj"><b>[il]</b></span> a assisté à l'acte de naissance, et si cet acte est signé de <span class="mention" data-id="u-MENTION-1631" data-info="suj"><b>[lui]</b></span> ou contient <span class="mention" data-id="u-MENTION-1634" data-info="suj"><b>[sa]</b></span> déclaration qu' <span class="mention" data-id="u-MENTION-1636" data-info="suj"><b>[il]</b></span> ne sait signer ; 3.
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Dans les divers cas où <span class="mention" data-id="u-MENTION-1647" data-info="suj"><b>[le mari]</b></span> est autorisé à réclamer, <span class="mention" data-id="u-MENTION-1648" data-info="suj"><b>[il]</b></span> devra le faire, dans le mois, s' <span class="mention" data-id="u-MENTION-1651" data-info="suj"><b>[il]</b></span> se trouve sur les lieux de la naissance de l'enfant ; <br>
+Dans les deux mois après <span class="mention" data-id="u-MENTION-1657" data-info="suj"><b>[son]</b></span> retour, si, à la même époque, <span class="mention" data-id="u-MENTION-1659" data-info="suj"><b>[il]</b></span> est absent ; <br>
+Dans les deux mois après la découverte de la fraude, si on <span class="mention" data-id="u-MENTION-1664" data-info="suj"><b>[lui]</b></span> avait caché la naissance de l'enfant. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Si <span class="mention" data-id="u-MENTION-1668" data-info="suj"><b>[le mari]</b></span> est mort avant d'avoir fait <span class="mention" data-id="u-MENTION-1670" data-info="suj"><b>[sa]</b></span> réclamation, mais étant encore dans le délai utile pour la faire, les héritiers auront deux mois pour contester la légitimité de l'enfant, à compter de l'époque où cet enfant se serait mis en possession des biens <span class="mention" data-id="u-MENTION-1682" data-info="suj"><b>[du mari]</b></span> , ou de l'époque où les héritiers seraient troublés par l'enfant dans cette possession. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Tout acte extrajudiciaire contentant le désaveu de la part <span class="mention" data-id="u-MENTION-1692" data-info="suj"><b>[du mari]</b></span> ou de <span class="mention" data-id="u-MENTION-1694" data-info="suj"><b>[ses]</b></span> héritiers, sera comme non avenu, s' <span class="mention" data-id="u-MENTION-1695" data-info="suj"><b>[il]</b></span> n'est suivi, dans le délai d'un mois, d'une action en justice, dirigée contre un tuteur ad hoc donné à l'enfant, et en présence de sa mère. <br>
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/codecivildesfrancais-2_RC_19-21_s-CHAINE-8.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ventredeparis_RC_19-21_s-CHAINE-111</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Le ventre de Paris : s-CHAINE-111<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>36 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-200</b><br>
+        Id dernier maillon : <b>u-MENTION-2978</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/ventredeparis_RC_19-21_s-CHAINE-111.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+Il parut se consulter ; puis, en hésitant : <br>
+ <br>
+— Par là, du côté <span class="mention" data-id="u-MENTION-200" data-info="suj"><b>[des Halles]</b></span>  <br>
+ <br>
+ 
+ </p><p class="no-text">[7 phrases]</p><br><p>
+… Je vais <span class="mention" data-id="u-MENTION-222" data-info="suj"><b>[aux Halles]</b></span> , je vous déballerai avec mes légumes. <br>
+ <br>
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Puisque je vous dis que je vais <span class="mention" data-id="u-MENTION-246" data-info="suj"><b>[aux Halles]</b></span> !!
+ 
+ </p><p class="no-text">[12 phrases]</p><br><p>
+Depuis que j'ai perdu mon pauvre homme, je vais tous les matins <span class="mention" data-id="u-MENTION-325" data-info="suj"><b>[aux Halles]</b></span>  
+ </p><p class="no-text">[92 phrases]</p><br><p>
+Puis, s'asseyant près de lui : <br>
+ <br>
+— Dites donc, s'il y a longtemps que vous êtes absent de Paris, vous ne connaissez peut-être pas <span class="mention" data-id="u-MENTION-853" data-info="suj"><b>[les nouvelles Halles]</b></span> ??
+ 
+ </p><p>
+Voici cinq ans au plus que <span class="mention" data-id="u-MENTION-854" data-info="suj"><b>[c']</b></span> est bâti ……
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-872" data-info="suj"><b>[C']</b></span> est très-grand, mais il <span class="mention" data-id="u-MENTION-873" data-info="suj"><b>[y]</b></span> fait rudement froid, l'hiver.
+ 
+ </p><p class="no-text">[31 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-1047" data-info="suj"><b>[Les Halles]</b></span> dormaient toujours.
+ 
+ </p><p class="no-text">[29 phrases]</p><br><p>
+Il revoyait les fenêtres luisantes des boulevards, les femmes rieuses, la ville gourmande qu'il avait laissée par cette lointaine nuit de janvier ; et il lui semblait que tout cela avait grandi, s'était épanoui dans cette énormité <span class="mention" data-id="u-MENTION-1240" data-info="suj"><b>[des Halles]</b></span> , dont il commençait à entendre le souffle colossal, épais encore de l'indigestion de la veille. <br>
+ <br>
+La mère Chantemesse s'était décidée à acheter douze bottes de navets.
+ 
+ </p><p class="no-text">[43 phrases]</p><br><p>
+Et Florent s'étonnait du calme des maraîchères, avec leurs madras et leur teint hâlé, dans ce chipotage bavard <span class="mention" data-id="u-MENTION-1513" data-info="suj"><b>[des Halles]</b></span>  <br>
+ <br>
+ 
+ </p><p class="no-text">[15 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-1574" data-info="suj"><b>[Les Halles]</b></span> gardaient <span class="mention" data-id="u-MENTION-1576" data-info="suj"><b>[leur]</b></span> légèreté noire, avec les mille raies de flamme des persiennes ; sous les grandes rues couvertes, du monde passait, tandis que les pavillons, au loin, restaient déserts, au milieu du grouillement grandissant de leurs trottoirs.
+ 
+ </p><p class="no-text">[92 phrases]</p><br><p>
+Cependant, la fenêtre du pignon s'était ouverte, une petite vieille se penchait, regardait le ciel, puis <span class="mention" data-id="u-MENTION-1976" data-info="suj"><b>[les Halles]</b></span> , au loin. <br>
+ <br>
+ 
+ </p><p class="no-text">[39 phrases]</p><br><p>
+Maintenant, si cela vous plaît, nous allons faire un tour dans <span class="mention" data-id="u-MENTION-2179" data-info="suj"><b>[les Halles]</b></span>  <br>
+ <br>
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+La grande voix <span class="mention" data-id="u-MENTION-2188" data-info="suj"><b>[des Halles]</b></span> grondait plus haut ; par instants, des volées de cloche, dans un pavillon éloigné, coupaient cette clameur roulante et montante.
+ 
+ </p><p class="no-text">[28 phrases]</p><br><p>
+Ils y trouvèrent, attelé à une voiture grande comme une brouette, un tout petit âne qui s'ennuyait sans doute, et qui se mit à braire en les voyant, d'un ronflement si fort et si prolongé, que les vastes toitures <span class="mention" data-id="u-MENTION-2444" data-info="suj"><b>[des Halles]</b></span> en tremblaient.
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Ils causaient maintenant, en retournant sous <span class="mention" data-id="u-MENTION-2474" data-info="suj"><b>[les Halles]</b></span>  
+ </p><p class="no-text">[11 phrases]</p><br><p>
+Mais Baratte était bien tombé ; tout le carnaval de l'ancien marché des Innocents se trouvait enterré, à cette heure ; on en était <span class="mention" data-id="u-MENTION-2559" data-info="suj"><b>[aux Halles centrales]</b></span> , à ce colosse de fonte, à cette ville nouvelle, si originale.
+ 
+ </p><p class="no-text">[11 phrases]</p><br><p>
+Il y avait là des marchandes très-propres, des maraîchers en blouse, des porteurs sales, le paletot gras des charges de nourriture qui avaient traîné sur les épaules, de pauvres diables déguenillés, toutes les faims matinales <span class="mention" data-id="u-MENTION-2620" data-info="suj"><b>[des Halles]</b></span> , mangeant, se brûlant, écartant un peu le menton pour ne pas se tacher de la bavure des cuillers.
+ 
+ </p><p class="no-text">[15 phrases]</p><br><p>
+Quand on voulut l'envoyer à l'école, il tomba malade, il fallut le ramener <span class="mention" data-id="u-MENTION-2720" data-info="suj"><b>[aux Halles]</b></span>  
+ </p><p>
+Il <span class="mention" data-id="u-MENTION-2722" data-info="suj"><b>[en]</b></span> connaissait les moindres recoins, <span class="mention" data-id="u-MENTION-2724" data-info="suj"><b>[les]</b></span> aimait d'une tendresse de fils, vivait avec des agilités d'écureuil, au milieu de <span class="mention" data-id="u-MENTION-2730" data-info="suj"><b>[cette forêt de fonte]</b></span>  
+ </p><p class="no-text">[13 phrases]</p><br><p>
+Et Florent regardait <span class="mention" data-id="u-MENTION-2806" data-info="suj"><b>[les grandes Halles]</b></span> sortir de l'ombre, sortir du rêve, où il <span class="mention" data-id="u-MENTION-2811" data-info="suj"><b>[les]</b></span> avait vues, allongeant à l'infini <span class="mention" data-id="u-MENTION-2813" data-info="suj"><b>[leurs]</b></span> palais à jour.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2814" data-info="suj"><b>[Elles]</b></span> se solidifiaient, d'un gris verdâtre, plus géantes encore, avec <span class="mention" data-id="u-MENTION-2817" data-info="suj"><b>[leur]</b></span> mâture prodigieuse, supportant les nappes sans fin de <span class="mention" data-id="u-MENTION-2820" data-info="suj"><b>[leurs]</b></span> toits.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2821" data-info="suj"><b>[Elles]</b></span> entassaient <span class="mention" data-id="u-MENTION-2823" data-info="suj"><b>[leurs]</b></span> masses géométriques ; et, quand toutes les clartés intérieures furent éteintes, qu' <span class="mention" data-id="u-MENTION-2825" data-info="suj"><b>[elles]</b></span> baignèrent dans le jour levant, carrées, uniformes, <span class="mention" data-id="u-MENTION-2827" data-info="suj"><b>[elles]</b></span> apparurent comme une machine moderne, hors de toute mesure, quelque machine à vapeur, quelque chaudière destinée à la digestion d'un peuple, gigantesque ventre de métal, boulonné, rivé, fait de bois, de verre et de fonte, d'une élégance et d'une puissance de moteur mécanique, fonctionnant là, avec la chaleur du chauffage, l'étourdissement, le branle furieux des roues. <br>
+ <br>
+ 
+ </p><p class="no-text">[9 phrases]</p><br><p>
+Au carrefour de la rue <span class="mention" data-id="u-MENTION-2928" data-info="suj"><b>[des Halles]</b></span> , les choux faisaient des montagnes ; les énormes choux blancs, serrés et durs comme des boulets de métal pâle ; les choux frisés, dont les grandes feuilles ressemblaient à des vasques de bronze ; les choux rouges, que l'aube changeait en des floraisons superbes, lie de vin, avec des meurtrissures de carmin et de pourpre sombre.
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Et il soutenait qu'ils n'étaient pas morts, qu'arrachés de la veille, ils attendaient le soleil du lendemain pour lui dire adieu sur le pavé <span class="mention" data-id="u-MENTION-2978" data-info="suj"><b>[des Halles]</b></span>  
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/ventredeparis_RC_19-21_s-CHAINE-111.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

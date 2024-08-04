@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>madamedehautefort_RC_19-21_s-CHAINE-1</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Madame de Hautefort : s-CHAINE-1<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>534 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-1</b><br>
+        Id dernier maillon : <b>u-MENTION-3528</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/madamedehautefort_RC_19-21_s-CHAINE-1.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+ <span class="mention" data-id="u-MENTION-1" data-info="suj"><b>[Madame de Hautefort]</b></span> <br>
+Voici maintenant <span class="mention" data-id="u-MENTION-2" data-info="suj"><b>[une toute autre personne]</b></span> , <span class="mention" data-id="u-MENTION-3" data-info="suj"><b>[qui]</b></span> va nous ramener parmi les mêmes événemens, mais <span class="mention" data-id="u-MENTION-6" data-info="suj"><b>[qui]</b></span> y portera un bien différent caractère.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-9" data-info="suj"><b>[C’]</b></span> est encore <span class="mention" data-id="u-MENTION-10" data-info="suj"><b>[une ennemie]</b></span> , <span class="mention" data-id="u-MENTION-11" data-info="suj"><b>[ce]</b></span> n’ est plus <span class="mention" data-id="u-MENTION-12" data-info="suj"><b>[une rivale de Richelieu et de Mazarin]</b></span>  
+ </p><p>
+ <span class="mention" data-id="u-MENTION-16" data-info="suj"><b>[La noble femme]</b></span>  <span class="mention" data-id="u-MENTION-17" data-info="suj"><b>[dont]</b></span> nous allons retracer la vie n’ <span class="mention" data-id="u-MENTION-20" data-info="suj"><b>[appartient]</b></span> point à l’ histoire politique ; <span class="mention" data-id="u-MENTION-22" data-info="suj"><b>[elle]</b></span> n’ est point de la famille des hommes d’ état ; <span class="mention" data-id="u-MENTION-26" data-info="suj"><b>[elle]</b></span> n’ a point disputé aux deux grands cardinaux leur pouvoir et le gouvernement de la France ; <span class="mention" data-id="u-MENTION-33" data-info="suj"><b>[elle]</b></span> a refusé seulement de leur livrer <span class="mention" data-id="u-MENTION-36" data-info="suj"><b>[son]</b></span> âme, de trahir pour eux <span class="mention" data-id="u-MENTION-40" data-info="suj"><b>[ses]</b></span> amis et <span class="mention" data-id="u-MENTION-42" data-info="suj"><b>[sa]</b></span> cause, cette cause qui <span class="mention" data-id="u-MENTION-45" data-info="suj"><b>[lui]</b></span> semblait celle de la religion et de la vertu.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-51" data-info="suj"><b>[Son]</b></span> grand cœur, qu’ animait une flamme héroïque et que servaient une merveilleuse beauté et un esprit adorable, toujours contenu par la dignité et la pudeur, a paru surtout dans <span class="mention" data-id="u-MENTION-62" data-info="suj"><b>[ses]</b></span> sacrifices.
+ 
+ </p><p>
+Après avoir été <span class="mention" data-id="u-MENTION-63" data-info="suj"><b>[la favorite d’ un roi]</b></span> , <span class="mention" data-id="u-MENTION-65" data-info="suj"><b>[l’ amie d’ une reine]</b></span> , <span class="mention" data-id="u-MENTION-67" data-info="suj"><b>[l’ idole de la cour la plus brillante de l’ univers]</b></span> , dès que le devoir a parlé, <span class="mention" data-id="u-MENTION-70" data-info="suj"><b>[elle]</b></span> a été au-devant de la disgrâce, <span class="mention" data-id="u-MENTION-72" data-info="suj"><b>[elle]</b></span> s’ est retirée du monde, <span class="mention" data-id="u-MENTION-74" data-info="suj"><b>[elle]</b></span> a caché et comme enseveli sous les voiles et dans l’ ombre de la vertu les dons les plus rares que Dieu ait jamais départis à une créature humaine.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-82" data-info="suj"><b>[Elle]</b></span> n’ a point laissé de nom dans l’ histoire, et nous qui entreprenons de <span class="mention" data-id="u-MENTION-87" data-info="suj"><b>[la]</b></span> disputer à l’ oubli, si nous <span class="mention" data-id="u-MENTION-89" data-info="suj"><b>[la]</b></span> mettons à côté de Mme de Chevreuse, ce n’ est pas un parallèle, c’ est bien plutôt un contraste que nous voulons établir, pour faire paraître sous <span class="mention" data-id="u-MENTION-98" data-info="suj"><b>[ses]</b></span> aspects les plus divers la grandeur de la femme au XVIIe siècle, comme aussi, nous l’ avouons, avec le désir et l’ incertaine espérance d’ intéresser à cette fière et chaste mémoire quelques âmes d’ élite çà et là dispersées. <br>
+ 
+ </p><p>
+I <br>
+ <span class="mention" data-id="u-MENTION-110" data-info="suj"><b>[Marie de Hautefort]</b></span> naquit le 5 février 1616, dans un vieux château féodal du Périgord, qui tour à tour appartint à Gui le Noir, à Lastours, dit le Grand pour ses exploits dans les croisades, au fameux poète guerrier Bertrand de Born, à Pierre de Gontaut, et à d’ autres personnages illustres du moyen âge, qui servit souvent de rempart contre les incursions de l’ ennemi dans les guerres des Anglais au XVe et au XVIe siècle, et depuis est devenu une grande et noble résidence, diminuée aujourd’hui, mais encore fort bien conservée, et surtout très dignement habitée. <br>
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-137" data-info="suj"><b>[Marie]</b></span> était <span class="mention" data-id="u-MENTION-138" data-info="suj"><b>[le dernier enfant du marquis Charles de Hautefort]</b></span> , maréchal de camp des armées du roi et gentilhomme ordinaire de sa chambre.
+ 
+ </p><p class="no-text">[6 phrases]</p><br><p>
+En 1653, elle fut mariée à François de Choiseul, marquis de Praslin, fils du premier maréchal de ce nom : elle ne manquait ni de beauté ni d’ esprit, mais la figure qu’ elle fit dans le monde ainsi que ses deux frères, ils la devaient surtout à l’ éclat que jeta de bonne heure et à la haute renommée que garda toute <span class="mention" data-id="u-MENTION-240" data-info="suj"><b>[sa]</b></span> vie <span class="mention" data-id="u-MENTION-241" data-info="suj"><b>[leur sœur cadette Marie de Hautefort]</b></span>  <br>
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-243" data-info="suj"><b>[Celle -ci]</b></span> était à peine née quand mourut <span class="mention" data-id="u-MENTION-245" data-info="suj"><b>[son]</b></span> père, que <span class="mention" data-id="u-MENTION-247" data-info="suj"><b>[sa]</b></span> mère suivit bientôt, en sorte qu’ <span class="mention" data-id="u-MENTION-248" data-info="suj"><b>[elle]</b></span> resta en très bas âge, et presque sans biens, confiée aux soins de <span class="mention" data-id="u-MENTION-253" data-info="suj"><b>[sa]</b></span> grand mère, Mme de La Flotte Hauterive.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-255" data-info="suj"><b>[Ses]</b></span> premières années s’ écoulèrent dans l’ obscurité et la monotonie de la vie de province.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-261" data-info="suj"><b>[La jeune fille]</b></span> , <span class="mention" data-id="u-MENTION-262" data-info="suj"><b>[qui]</b></span> promettait d’ être belle et spirituelle, ne <span class="mention" data-id="u-MENTION-263" data-info="suj"><b>[tarda]</b></span> pas à s’ y ennuyer.
+ 
+ </p><p>
+Souvent, chez Mme de La Flotte, <span class="mention" data-id="u-MENTION-266" data-info="suj"><b>[elle]</b></span> entendait parler de la cour, de cette cour brillante et agitée vers laquelle étaient tournés tous les regards, et où se décidaient les destinées de la France.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-273" data-info="suj"><b>[Elle]</b></span> aussi <span class="mention" data-id="u-MENTION-274" data-info="suj"><b>[elle]</b></span> se sentit appelée à y jouer un rôle, et depuis <span class="mention" data-id="u-MENTION-277" data-info="suj"><b>[elle]</b></span> racontait plaisamment qu’ à douze ou treize ans, unissant déjà la plus sincère piété à cette ardeur de l’ âme qu’ on appelle l’ ambition, <span class="mention" data-id="u-MENTION-287" data-info="suj"><b>[elle]</b></span> s’ enfermait dans <span class="mention" data-id="u-MENTION-289" data-info="suj"><b>[sa]</b></span> chambre pour prier Dieu de <span class="mention" data-id="u-MENTION-291" data-info="suj"><b>[la]</b></span> faire aller à la cour.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-294" data-info="suj"><b>[Sa]</b></span> prière fut exaucée : les affaires de Mme de La Flotte l’ ayant appelée à Paris, elle y amena avec elle <span class="mention" data-id="u-MENTION-302" data-info="suj"><b>[l’ aimable enfant]</b></span> , <span class="mention" data-id="u-MENTION-303" data-info="suj"><b>[dont]</b></span> les grâces naissantes firent partout la plus heureuse impression.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-306" data-info="suj"><b>[Elle]</b></span> plut particulièrement à la princesse de Conti, Louise-Marguerite de Guise, fille du Balafré, si célèbre par sa beauté, son esprit et sa galanterie, la brillante maîtresse de Bassompierre, l’ auteur des Amours du grand Alcandre.
+ 
+ </p><p>
+La princesse <span class="mention" data-id="u-MENTION-320" data-info="suj"><b>[la]</b></span> trouva si jolie, qu’ elle voulut <span class="mention" data-id="u-MENTION-322" data-info="suj"><b>[la]</b></span> mener avec elle à la promenade, et tout le monde cherchait à deviner <span class="mention" data-id="u-MENTION-326" data-info="suj"><b>[quelle]</b></span> était <span class="mention" data-id="u-MENTION-327" data-info="suj"><b>[cette charmante personne]</b></span>  <span class="mention" data-id="u-MENTION-328" data-info="suj"><b>[que]</b></span> l’ on voyait à la portière de son carrosserie soir, on ne parla que de <span class="mention" data-id="u-MENTION-335" data-info="suj"><b>[Mme de Hautefort]</b></span> , et il ne fut pas difficile d’ engager la reine-mère, Marie de Médicis, à <span class="mention" data-id="u-MENTION-337" data-info="suj"><b>[la]</b></span> prendre parmi ses filles d’ honneur. <br>
+ 
+ </p><p>
+Voilà donc <span class="mention" data-id="u-MENTION-340" data-info="suj"><b>[Mlle de Hautefort]</b></span> sur le théâtre où <span class="mention" data-id="u-MENTION-343" data-info="suj"><b>[elle]</b></span> avait tant souhaité paraître ; <span class="mention" data-id="u-MENTION-344" data-info="suj"><b>[elle]</b></span> y montra des qualités qui en peu de temps <span class="mention" data-id="u-MENTION-350" data-info="suj"><b>[la]</b></span> firent aimer et admirer tout ensemble : un rare mélange de bonté et de fermeté, une piété vive avec infiniment d’ esprit, un très grand air tempéré par une retenue presque sévère que relevait une beauté précoce.
+ 
+ </p><p>
+On <span class="mention" data-id="u-MENTION-366" data-info="suj"><b>[l’]</b></span> appelait l’ Aurore, pour marquer <span class="mention" data-id="u-MENTION-370" data-info="suj"><b>[son]</b></span> extrême jeunesse et <span class="mention" data-id="u-MENTION-372" data-info="suj"><b>[son]</b></span> innocent éclat.
+ 
+ </p><p>
+En 1630, <span class="mention" data-id="u-MENTION-374" data-info="suj"><b>[elle]</b></span> suivit la reine-mère à Lyon, où le roi était tombé sérieusement malade, pendant que Richelieu était à la tête de l’ armée en Italie.
+ 
+ </p><p>
+C’ est là que Louis XIII <span class="mention" data-id="u-MENTION-385" data-info="suj"><b>[la]</b></span> vit pour la première fois et qu’ il commença à <span class="mention" data-id="u-MENTION-388" data-info="suj"><b>[la]</b></span> distinguer : <span class="mention" data-id="u-MENTION-389" data-info="suj"><b>[Mlle de Hautefort]</b></span> avait alors quatorze ans. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+La modestie aussi bien que la beauté de <span class="mention" data-id="u-MENTION-421" data-info="suj"><b>[Mlle de Hautefort]</b></span> le touchèrent ; peu la peu il ne put se passer du plaisir de <span class="mention" data-id="u-MENTION-425" data-info="suj"><b>[la]</b></span> voir et de s’ entretenir avec <span class="mention" data-id="u-MENTION-426" data-info="suj"><b>[elle]</b></span> , et lorsqu’ à son retour de Lyon, après la fameuse journée des dupes, l’ intérêt de l’ état et sa fidélité à Richelieu le forcèrent d’ éloigner sa mère, il lui ôta <span class="mention" data-id="u-MENTION-443" data-info="suj"><b>[la jeune Marie]</b></span> et <span class="mention" data-id="u-MENTION-444" data-info="suj"><b>[la]</b></span> donna à la reine Anne, en la priant de <span class="mention" data-id="u-MENTION-447" data-info="suj"><b>[l’]</b></span> aimer et de <span class="mention" data-id="u-MENTION-448" data-info="suj"><b>[la]</b></span> bien traiter pour l’ amour de lui.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Elle tenait à Mme du Fargis, qui, comme elle, était du parti de la reine-mère, de l’ Espagne et des mécontens, et elle regarda <span class="mention" data-id="u-MENTION-472" data-info="suj"><b>[sa nouvelle fille d’ honneur]</b></span> , non-seulement comme <span class="mention" data-id="u-MENTION-474" data-info="suj"><b>[une rivale]</b></span> auprès du roi, mais comme <span class="mention" data-id="u-MENTION-476" data-info="suj"><b>[une surveillante et une ennemie]</b></span>  
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Le trait particulier du caractère de <span class="mention" data-id="u-MENTION-483" data-info="suj"><b>[Mlle de Hautefort]</b></span> , par-dessus toutes <span class="mention" data-id="u-MENTION-487" data-info="suj"><b>[ses]</b></span> autres qualités, le fond même de <span class="mention" data-id="u-MENTION-490" data-info="suj"><b>[son]</b></span> âme, était une fierté généreuse, à moitié chevaleresque, à moitié chrétienne, qui <span class="mention" data-id="u-MENTION-496" data-info="suj"><b>[la]</b></span> poussait du côté des opprimés et des faibles.
+ 
+ </p><p>
+La toute-puissance n’ avait aucune séduction pour <span class="mention" data-id="u-MENTION-503" data-info="suj"><b>[elle]</b></span> , et la seule apparence de la sénilité <span class="mention" data-id="u-MENTION-506" data-info="suj"><b>[la]</b></span> révoltait.
+ 
+ </p><p>
+Dans <span class="mention" data-id="u-MENTION-507" data-info="suj"><b>[cette belle enfant]</b></span> était cachée <span class="mention" data-id="u-MENTION-508" data-info="suj"><b>[une héroïne]</b></span>  <span class="mention" data-id="u-MENTION-509" data-info="suj"><b>[qui]</b></span> parut bien vite dès que les occasions se présentèrent.
+ 
+ </p><p>
+Voyant <span class="mention" data-id="u-MENTION-512" data-info="suj"><b>[sa]</b></span> maîtresse persécutée et malheureuse, par cela seul <span class="mention" data-id="u-MENTION-514" data-info="suj"><b>[elle]</b></span> se sentit attirée vers <span class="mention" data-id="u-MENTION-515" data-info="suj"><b>[elle]</b></span> , et par goût comme par honneur <span class="mention" data-id="u-MENTION-518" data-info="suj"><b>[elle]</b></span> résolut de la bien servir.
+ 
+ </p><p>
+Peu à peu <span class="mention" data-id="u-MENTION-522" data-info="suj"><b>[sa]</b></span> loyauté, <span class="mention" data-id="u-MENTION-524" data-info="suj"><b>[sa]</b></span> parfaite candeur, <span class="mention" data-id="u-MENTION-526" data-info="suj"><b>[son]</b></span> esprit et <span class="mention" data-id="u-MENTION-528" data-info="suj"><b>[ses]</b></span> grâces charmèrent la reine presque autant que le roi, et <span class="mention" data-id="u-MENTION-531" data-info="suj"><b>[la favorite de Louis XIII]</b></span> devint aussi <span class="mention" data-id="u-MENTION-533" data-info="suj"><b>[celle d’ Anne d’ Autriche]</b></span>  <br>
+ 
+ </p><p>
+La première galanterie déclarée du roi envers <span class="mention" data-id="u-MENTION-537" data-info="suj"><b>[Mlle de Hautefort]</b></span> fut à un sermon où la reine était avec toute la cour.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Le roi prit le carreau de velours sur lequel il était à genoux, et l’ envoya à <span class="mention" data-id="u-MENTION-554" data-info="suj"><b>[Mlle de Hautefort]</b></span> pour qu’ <span class="mention" data-id="u-MENTION-555" data-info="suj"><b>[elle]</b></span> se pût commodément asseoir.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-556" data-info="suj"><b>[Elle]</b></span> , toute surprise, <span class="mention" data-id="u-MENTION-557" data-info="suj"><b>[rougit]</b></span> , et <span class="mention" data-id="u-MENTION-559" data-info="suj"><b>[sa]</b></span> rougeur augmenta <span class="mention" data-id="u-MENTION-561" data-info="suj"><b>[sa]</b></span> beauté.
+ 
+ </p><p>
+Ayant levé les yeux, <span class="mention" data-id="u-MENTION-563" data-info="suj"><b>[elle]</b></span> vit ceux de toute la cour arrêtés sur <span class="mention" data-id="u-MENTION-566" data-info="suj"><b>[elle]</b></span>  
+ </p><p>
+ <span class="mention" data-id="u-MENTION-567" data-info="suj"><b>[Elle]</b></span> reçut ce carreau d’ un air si modeste, si respectueux et si grand, qu’ il n’ y eut personne qui ne <span class="mention" data-id="u-MENTION-572" data-info="suj"><b>[l’]</b></span> admirât.
+ 
+ </p><p>
+La reine <span class="mention" data-id="u-MENTION-574" data-info="suj"><b>[lui]</b></span> ayant fait signe de le prendre, <span class="mention" data-id="u-MENTION-577" data-info="suj"><b>[elle]</b></span> le mit auprès d’ <span class="mention" data-id="u-MENTION-579" data-info="suj"><b>[elle]</b></span> sans vouloir s’ en servir.
+ 
+ </p><p>
+Il n’ en fallut pas davantage pour <span class="mention" data-id="u-MENTION-581" data-info="suj"><b>[lui]</b></span> attirer encore plus de considération qu’ auparavant.
+ 
+ </p><p>
+La reine fut la première à <span class="mention" data-id="u-MENTION-585" data-info="suj"><b>[la]</b></span> rassurer ; elle voyait tant d’ estime du côté du roi et tant de vertu du côté de <span class="mention" data-id="u-MENTION-592" data-info="suj"><b>[Mlle de Hautefort]</b></span> , qu’ elle devint leur confidente. <br>
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Les amours du roi pour <span class="mention" data-id="u-MENTION-605" data-info="suj"><b>[Mlle de Hautefort]</b></span> , qu’ il tâchoit de divertir tous les jours, y contribuaient beaucoup.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-617" data-info="suj"><b>[Mlle de Hautefort]</b></span> , Chémerault et Saint-Louis, filles de la reine ; d’ Escars, sœur de <span class="mention" data-id="u-MENTION-624" data-info="suj"><b>[Mlle de Hautefort]</b></span> , et Beaumont venoient avec moi.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+L’ on disposoit toujours la chasse du côté de quelques belles maisons, où l’ on trouvoit de grandes collations, et au retour le roi se mettoit dans son carrosse avec <span class="mention" data-id="u-MENTION-646" data-info="suj"><b>[Mlle de Hautefort]</b></span> et moi.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+, et la plupart des airs qu’ on chantoit étoient de la composition du roi ; il en faisoit même les paroles, et le sujet n’ étoit jamais que <span class="mention" data-id="u-MENTION-667" data-info="suj"><b>[Mlle de Hautefort]</b></span>  
+ </p><p class="no-text">[1 phrases]</p><br><p>
+On a des Stances pour le Roi à <span class="mention" data-id="u-MENTION-683" data-info="suj"><b>[madame de Hautefort]</b></span> , de la main de Benserade et de Boisset, qu’ un enfant, représentant l’ Amour, adressait à <span class="mention" data-id="u-MENTION-690" data-info="suj"><b>[un autre enfant]</b></span> , la jeune Marie.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Ne pouvant les chanter, nous les supprimons ; mais voici un couplet d’ une autre chanson dont l’ auteur est inconnu, et qui, ce nous semble, peint avec assez de grâce le charme qu’ exerçait <span class="mention" data-id="u-MENTION-706" data-info="suj"><b>[Mlle de Hautefort]</b></span> sur l’ humeur chagrine de <span class="mention" data-id="u-MENTION-709" data-info="suj"><b>[son]</b></span> royal amant : <br>
+ <span class="mention" data-id="u-MENTION-710" data-info="suj"><b>[Hautefort la merveille Réveille Tous les sens de Louis]</b></span> , Quand <span class="mention" data-id="u-MENTION-715" data-info="suj"><b>[sa]</b></span> bouche vermeille Lui fait voir un souris. <br>
+ 
+ </p><p>
+Quand <span class="mention" data-id="u-MENTION-718" data-info="suj"><b>[Mlle de Hautefort]</b></span> n’ aurait pas été aussi sage que belle, l’ amour du roi ne <span class="mention" data-id="u-MENTION-721" data-info="suj"><b>[lui]</b></span> aurait pas été fort dangereux.
+ 
+ </p><p>
+Tous les soirs, il <span class="mention" data-id="u-MENTION-724" data-info="suj"><b>[l’]</b></span> entretenait dans le salon de la reine, mais il ne <span class="mention" data-id="u-MENTION-728" data-info="suj"><b>[lui]</b></span> parlait la plupart du temps que de chiens, d’ oiseaux et de chasses, et, <span class="mention" data-id="u-MENTION-735" data-info="suj"><b>[la]</b></span> craignant et se craignant lui -même, il osait à peine en <span class="mention" data-id="u-MENTION-738" data-info="suj"><b>[lui]</b></span> parlant s’ approcher d’ <span class="mention" data-id="u-MENTION-739" data-info="suj"><b>[elle]</b></span>  
+ </p><p>
+On raconte qu’ un jour étant entré à l’ improviste chez la reine et ayant trouvé <span class="mention" data-id="u-MENTION-744" data-info="suj"><b>[Mlle de Hautefort]</b></span> tenant un billet qu’ on venait de <span class="mention" data-id="u-MENTION-748" data-info="suj"><b>[lui]</b></span> remettre, il <span class="mention" data-id="u-MENTION-750" data-info="suj"><b>[la]</b></span> pria de lui laisser voir ce billet.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-753" data-info="suj"><b>[Elle]</b></span> n’ avait garde de le faire, parce qu’ il contenait quelque plaisanterie sur sa faveur nouvelle, et pour le cacher <span class="mention" data-id="u-MENTION-760" data-info="suj"><b>[elle]</b></span> le mit dans <span class="mention" data-id="u-MENTION-763" data-info="suj"><b>[son]</b></span> sein.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Louis XIII n’ osa se servir de sa main et prit des pincettes d’ argent qui étaient auprès du feu pour essayer s’ il pourrait avoir ce billet ; mais <span class="mention" data-id="u-MENTION-781" data-info="suj"><b>[elle]</b></span> l’ avait mis trop avant, et il ne put l’ atteindre.
+ 
+ </p><p>
+La reine <span class="mention" data-id="u-MENTION-786" data-info="suj"><b>[la]</b></span> laissa aller en riant de <span class="mention" data-id="u-MENTION-789" data-info="suj"><b>[sa]</b></span> peur et de celle du roi. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Le roi savait quelle était la conduite de <span class="mention" data-id="u-MENTION-798" data-info="suj"><b>[Mlle de Hautefort]</b></span> , et que, parmi tous les jeunes seigneurs qui brillaient à la cour, <span class="mention" data-id="u-MENTION-802" data-info="suj"><b>[elle]</b></span> n’ en aimait aucun ; mais il aurait voulu que personne ne <span class="mention" data-id="u-MENTION-806" data-info="suj"><b>[l’]</b></span> aimât, que personne ne <span class="mention" data-id="u-MENTION-808" data-info="suj"><b>[lui]</b></span> parlât, que personne même ne <span class="mention" data-id="u-MENTION-810" data-info="suj"><b>[la]</b></span> regardât avec quelque attention.
+ 
+ </p><p>
+Souvent il <span class="mention" data-id="u-MENTION-813" data-info="suj"><b>[lui]</b></span> disait qu’ il serait mort de déplaisir si son père Henri le Grand eût été encore en vie, parce qu’ assurément il eût été amoureux d’ <span class="mention" data-id="u-MENTION-820" data-info="suj"><b>[elle]</b></span>  
+ </p><p>
+Ces bizarres jalousies, ces longues et fatigantes assiduités pesaient quelquefois un peu à <span class="mention" data-id="u-MENTION-824" data-info="suj"><b>[la jeune fille]</b></span> , et, avec <span class="mention" data-id="u-MENTION-827" data-info="suj"><b>[son]</b></span> indépendance et <span class="mention" data-id="u-MENTION-829" data-info="suj"><b>[sa]</b></span> fierté, <span class="mention" data-id="u-MENTION-830" data-info="suj"><b>[elle]</b></span> le témoignait.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+« C’ étoit, dit Mademoiselle, une mélancolie qui refroidissoit tout le monde, et, pendant ce chagrin, le roi passoit la plus grande partie du jour à écrire ce qu’ il avoit dit à <span class="mention" data-id="u-MENTION-859" data-info="suj"><b>[Mlle de Haute-fort]</b></span> et ce qu’ <span class="mention" data-id="u-MENTION-862" data-info="suj"><b>[elle]</b></span> lui avoit répondu : chose si véritable qu’ après sa mort on a trouvé dans sa cassette de grands procès-verbaux de tous les démêlés qu’ il avoit eus avec ses maîtresses, à la louange desquelles on peut dire aussi bien qu’ à la sienne qu’ il n’ en a jamais aimé que de très vertueuses.
+ 
+ </p><p>
+» Mme de Motteville déclare fort nettement que <span class="mention" data-id="u-MENTION-883" data-info="suj"><b>[Mlle de Hautefort]</b></span> , tout en étant sensible aux hommages de Louis XIII, n’ <span class="mention" data-id="u-MENTION-886" data-info="suj"><b>[avait]</b></span> aucun goût pour lui, et qu’ <span class="mention" data-id="u-MENTION-889" data-info="suj"><b>[elle]</b></span> le maltraitait autant qu’ on peut maltraiter un roi, en sorte qu’ il était, dit -elle, « malheureux de toutes les manières, car il n’ aimoit pas la reine, et il étoit le martyr de <span class="mention" data-id="u-MENTION-900" data-info="suj"><b>[Mlle de Hautefort]</b></span> , <span class="mention" data-id="u-MENTION-901" data-info="suj"><b>[qu’]</b></span> il aimoit malgré lui.
+ 
+ </p><p>
+Il avoit quelque scrupule de l’ attachement qu’ il avoit pour <span class="mention" data-id="u-MENTION-909" data-info="suj"><b>[elle]</b></span> , et il ne s’ aimoit pas lui -même.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+» <br>
+Le sujet ordinaire des querelles que faisait le roi à <span class="mention" data-id="u-MENTION-934" data-info="suj"><b>[Mlle de Hautefort]</b></span> était la reine.
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Il s’ efforça de détacher <span class="mention" data-id="u-MENTION-1005" data-info="suj"><b>[Mlle de Hautefort]</b></span> d’ une maîtresse qu’ il <span class="mention" data-id="u-MENTION-1009" data-info="suj"><b>[lui]</b></span> peignait sous les couleurs les plus défavorables, ne se doutant pas que plus il s’ emportait contre l’ une, moins il persuadait <span class="mention" data-id="u-MENTION-1014" data-info="suj"><b>[l’ autre]</b></span> , et que la persécution même dont Anne d’ Autriche ; était l’ objet exerçait sur <span class="mention" data-id="u-MENTION-1019" data-info="suj"><b>[ce jeune et noble cœur]</b></span> une séduction irrésistible.
+ 
+ </p><p>
+Voyant que tous ses discours ne réussissaient point, il finit par <span class="mention" data-id="u-MENTION-1024" data-info="suj"><b>[lui]</b></span> dire : « <span class="mention" data-id="u-MENTION-1025" data-info="suj"><b>[Vous]</b></span> aimez une ingrate, et <span class="mention" data-id="u-MENTION-1027" data-info="suj"><b>[vous]</b></span> verrez un jour comme elle paiera <span class="mention" data-id="u-MENTION-1031" data-info="suj"><b>[vos]</b></span> services.
+ 
+ </p><p>
+» <br>
+Richelieu avait vu d’ abord avec plaisir le goût du roi pour <span class="mention" data-id="u-MENTION-1035" data-info="suj"><b>[une jeune fille]</b></span>  <span class="mention" data-id="u-MENTION-1036" data-info="suj"><b>[qui]</b></span> n’ appartenait à aucun parti, et <span class="mention" data-id="u-MENTION-1038" data-info="suj"><b>[dont]</b></span> il n’ avait pu deviner le caractère.
+ 
+ </p><p>
+Il espérait qu’ une distraction agréable adoucirait un peu cette humeur sombre et bizarre, qui <span class="mention" data-id="u-MENTION-1044" data-info="suj"><b>[lui]</b></span> était un continuel sujet d’ inquiétude.
+ 
+ </p><p>
+Il prodigua les complimens et les caresses à <span class="mention" data-id="u-MENTION-1051" data-info="suj"><b>[la jeune favorite]</b></span> , il s’ employa même à dissiper les orages qui s’ élevaient souvent dans ce commerce agité, croyant bien en retour <span class="mention" data-id="u-MENTION-1056" data-info="suj"><b>[la]</b></span> gagner à sa cause et <span class="mention" data-id="u-MENTION-1059" data-info="suj"><b>[la]</b></span> mettre de son côté ; mais <span class="mention" data-id="u-MENTION-1062" data-info="suj"><b>[elle]</b></span> , <span class="mention" data-id="u-MENTION-1063" data-info="suj"><b>[qui]</b></span> n’ avait pas consenti à sacrifier <span class="mention" data-id="u-MENTION-1065" data-info="suj"><b>[sa]</b></span> maîtresse au roi lui -même, eût rougi d’ écouter <span class="mention" data-id="u-MENTION-1068" data-info="suj"><b>[son]</b></span> persécuteur : <span class="mention" data-id="u-MENTION-1069" data-info="suj"><b>[elle]</b></span> rejeta bien loin les avances du cardinal, et <span class="mention" data-id="u-MENTION-1072" data-info="suj"><b>[dédaigna]</b></span> son amitié dans un temps où il n’ y avait pas une femme à la cour qui ne fît des vœux pour en être seulement regardée. <br>
+ 
+ </p><p class="no-text">[6 phrases]</p><br><p>
+Disons -le : plus <span class="mention" data-id="u-MENTION-1182" data-info="suj"><b>[son]</b></span> cœur était noble, moins <span class="mention" data-id="u-MENTION-1184" data-info="suj"><b>[son]</b></span> esprit pouvait voir clair dans le fond des affaires du temps.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-1188" data-info="suj"><b>[Mlle de Hautefort]</b></span> ne connaissait ni les intérêts de la France, ni l’ état de l’ Europe, ni l’ histoire, ni la politique.
+ 
+ </p><p>
+Tout <span class="mention" data-id="u-MENTION-1197" data-info="suj"><b>[son]</b></span> esprit, si vanté pour <span class="mention" data-id="u-MENTION-1200" data-info="suj"><b>[sa]</b></span> vivacité et <span class="mention" data-id="u-MENTION-1202" data-info="suj"><b>[sa]</b></span> délicatesse, était incapable de percer les voiles du passé et de l’ avenir, et le présent <span class="mention" data-id="u-MENTION-1208" data-info="suj"><b>[la]</b></span> blessait dans tous <span class="mention" data-id="u-MENTION-1210" data-info="suj"><b>[ses]</b></span> instincts d’ honneur et de bonté.
+ 
+ </p><p>
+Gracieusement accueillie par Marie de Médicis, au bout de quelques mois <span class="mention" data-id="u-MENTION-1217" data-info="suj"><b>[elle]</b></span> l’ avait vue exilée, et <span class="mention" data-id="u-MENTION-1219" data-info="suj"><b>[elle]</b></span> apprenait que <span class="mention" data-id="u-MENTION-1221" data-info="suj"><b>[sa]</b></span> première protectrice, la femme d’ Henri le Grand, la mère de Louis XIII, dont les torts surpassaient son intelligence, était réduite à vivre en Belgique des secours de l’ étranger.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-1232" data-info="suj"><b>[Elle]</b></span> n’ avait pas connu la première jeunesse un peu légère d’ Anne d’ Autriche.
+ 
+ </p><p>
+Depuis 1630, <span class="mention" data-id="u-MENTION-1236" data-info="suj"><b>[elle]</b></span> n’ avait rien aperçu qui pût choquer la sévérité de ses regards.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-1241" data-info="suj"><b>[Elle]</b></span> trouvait fort naturel qu’ abandonnée et maltraitée par son mari, la reine en appelât à son frère le roi d’ Espagne, et qu’ opprimée par Richelieu, elle se défendît avec toutes les armes qui lui étaient offertes.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-1253" data-info="suj"><b>[Elle]</b></span> voyait les malheurs de la reine, et <span class="mention" data-id="u-MENTION-1256" data-info="suj"><b>[elle]</b></span> croyait à sa vertu.
+ 
+ </p><p>
+N’ oubliez pas la piété fervente qui <span class="mention" data-id="u-MENTION-1261" data-info="suj"><b>[lui]</b></span> faisait accompagner avec joie Anne d’ Autriche aux Carmélites et au Val-de-Grâce.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+En 1633, <span class="mention" data-id="u-MENTION-1314" data-info="suj"><b>[Mlle de Hautefort]</b></span> avait vu frapper et disperser tout l’ intérieur de la reine, Mme de Chevreuse, dont l’ intrépidité devait au moins <span class="mention" data-id="u-MENTION-1321" data-info="suj"><b>[lui]</b></span> plaire, chassée de la cour pour la deuxième fois, et le chevalier de Jars, condamné à mort, ne recevant sa grâce que sur l’ échafaud.
+ 
+ </p><p>
+Toutes ces cruautés indignaient <span class="mention" data-id="u-MENTION-1330" data-info="suj"><b>[Mlle de Hautefort]</b></span> ; la courageuse fidélité des amis de la reine excitait la sienne ; <span class="mention" data-id="u-MENTION-1335" data-info="suj"><b>[elle]</b></span> brava donc les menaces prophétiques de Louis XIII, <span class="mention" data-id="u-MENTION-1338" data-info="suj"><b>[elle]</b></span> repoussa toutes les offres de Richelieu, qui n’ était à <span class="mention" data-id="u-MENTION-1343" data-info="suj"><b>[ses]</b></span> yeux qu’ un tyran de génie, et <span class="mention" data-id="u-MENTION-1346" data-info="suj"><b>[elle]</b></span> se donna tout entière à la reine Anne, fermement résolue à partager jusqu’ au bout sa destinée. <br>
+ 
+ </p><p>
+Richelieu, n’ ayant pu <span class="mention" data-id="u-MENTION-1352" data-info="suj"><b>[la]</b></span> gagner, entreprit de <span class="mention" data-id="u-MENTION-1353" data-info="suj"><b>[la]</b></span> perdre dans l’ esprit du roi.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Aussi, quand Louis XIII était mécontent de <span class="mention" data-id="u-MENTION-1365" data-info="suj"><b>[la jeune fille]</b></span> , il <span class="mention" data-id="u-MENTION-1367" data-info="suj"><b>[la]</b></span> menaçait du cardinal.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-1369" data-info="suj"><b>[Celle -ci]</b></span> s’ en moquait avec l’ étourderie de <span class="mention" data-id="u-MENTION-1374" data-info="suj"><b>[son]</b></span> âge et la fierté de <span class="mention" data-id="u-MENTION-1376" data-info="suj"><b>[son]</b></span> caractère.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Des rapports perfidement exagérés lui apprirent que, dans l’ intérieur de la reine ; <span class="mention" data-id="u-MENTION-1386" data-info="suj"><b>[Mlle de Hautefort]</b></span> faisait avec elle des plaisanteries sur ses manières, sur son humeur et sur son amour.
+ 
+ </p><p>
+D’ autre part, lorsque, épris de plus en plus de la beauté toujours croissante de <span class="mention" data-id="u-MENTION-1396" data-info="suj"><b>[cette charmante fille]</b></span> , <span class="mention" data-id="u-MENTION-1397" data-info="suj"><b>[dont]</b></span> les grâces se développaient avec les années, il se reprochait un sentiment trop ardent pour être toujours entièrement pur, au lieu d’ apaiser comme autrefois les scrupules de sa conscience, on les nourrissait, et on finit par lui faire un crime d’ un attachement immodéré, condamné par la religion.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+1635, à la suite d’ une querelle plus vive qu’ à l’ ordinaire, le triste amant prit le parti de rompre avec <span class="mention" data-id="u-MENTION-1418" data-info="suj"><b>[une maîtresse aussi peu complaisante]</b></span> , et pendant plusieurs jours il ne <span class="mention" data-id="u-MENTION-1421" data-info="suj"><b>[lui]</b></span> parla plus.
+ 
+ </p><p>
+Il ne <span class="mention" data-id="u-MENTION-1423" data-info="suj"><b>[l’]</b></span> aimait pas moins, et le soir, chez la reine, ses regards mélancoliques et passionnés avaient peine à s’ éloigner de l’ attrayant visage.
+ 
+ </p><p>
+Il <span class="mention" data-id="u-MENTION-1430" data-info="suj"><b>[la]</b></span> contemplait en silence, et, quand il voyait qu’ on y prenait garde, il détournait sa vue d’ un autre côté.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Il y avait alors parmi les autres filles d’ honneur de la reine une jeune personne de fort bonne naissance, qui, sans avoir toute la beauté de <span class="mention" data-id="u-MENTION-1447" data-info="suj"><b>[Mlle de Hautefort]</b></span> , était aussi très agréable.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-1448" data-info="suj"><b>[Marie]</b></span> était <span class="mention" data-id="u-MENTION-1449" data-info="suj"><b>[une blonde éblouissante]</b></span> , parée de bonne heure des charmes les plus redoutables ; Louise-Angélique de La Fayette était brune et délicate.
+ 
+ </p><p>
+Si elle n’ avait pas le grand air de <span class="mention" data-id="u-MENTION-1455" data-info="suj"><b>[sa compagne]</b></span> , si elle n’ enlevait pas l’ admiration, elle plaisait par sa douceur et sa modestie.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Louis XIII commença à lui parler pour faire dépit à <span class="mention" data-id="u-MENTION-1500" data-info="suj"><b>[Mlle de Hautefort]</b></span> ; mais, comme il était homme d’ habitude, à force de la voir, l’ inclination lui vint pour elle, et il l’ aima sérieusement.
+ 
+ </p><p class="no-text">[11 phrases]</p><br><p>
+En vain il essaya de gagner Mlle de La Fayette, il ne réussit pas mieux auprès d’ elle qu’ auprès de <span class="mention" data-id="u-MENTION-1645" data-info="suj"><b>[Mlle de Hautefort]</b></span>  
+ </p><p class="no-text">[3 phrases]</p><br><p>
+Mais, depuis la retraite de Mlle de La Fayette, et jusqu’ au jour où la grossesse d’ Anne d’ Autriche parut et mit un terme ou du moins apporta quelque adoucissement à ses malheurs, les plus étranges événemens s’ étaient accomplis : la reine avait été à deux doigts de sa perte, et n’ avait été sauvée que par l’ intrépide dévouement de <span class="mention" data-id="u-MENTION-1708" data-info="suj"><b>[sa jeune et fidèle amie Marie de Hautefort]</b></span>  <br>
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+Lui -même a raconté quel agrément il trouvait alors à servir une reine sans crédit, mais environnée de femmes charmantes, et quelle liaison il forma avec <span class="mention" data-id="u-MENTION-1752" data-info="suj"><b>[Mlle de Hautefort]</b></span> , <span class="mention" data-id="u-MENTION-1753" data-info="suj"><b>[dont]</b></span> il célèbre la surprenante beauté, ajoutant, comme s’ il avait peur de <span class="mention" data-id="u-MENTION-1757" data-info="suj"><b>[la]</b></span> compromettre, qu’ <span class="mention" data-id="u-MENTION-1758" data-info="suj"><b>[elle]</b></span> avait beaucoup de vertu.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+sur un point bien autrement délicat, montre ici quelque embarras à nous dire qu’ il devint amoureux de <span class="mention" data-id="u-MENTION-1770" data-info="suj"><b>[la belle Marie]</b></span>  
+ </p><p>
+C’ est peut-être qu’ il eût fallu avouer que, loin d’ être accueillie, cette passion dut se borner à une adoration respectueuse, selon les mœurs de la galanterie du temps ou plutôt selon le goût particulier de <span class="mention" data-id="u-MENTION-1778" data-info="suj"><b>[l’ héroïne]</b></span>  
+ </p><p>
+La Rochefoucauld aima <span class="mention" data-id="u-MENTION-1780" data-info="suj"><b>[Mlle de Hautefort]</b></span> sans oser le <span class="mention" data-id="u-MENTION-1782" data-info="suj"><b>[lui]</b></span> dire ; mais quelque temps après, étant à l’ armée et à la veille d’ une bataille, il alla trouver le marquis de Hautefort avec lequel il servait, lui fit confidence de sa passion, et lui donna une lettre pour <span class="mention" data-id="u-MENTION-1797" data-info="suj"><b>[sa sœur]</b></span> , en lui faisant promettre que, s’ il périssait dans le combat, il la <span class="mention" data-id="u-MENTION-1804" data-info="suj"><b>[lui]</b></span> remettrait et <span class="mention" data-id="u-MENTION-1805" data-info="suj"><b>[lui]</b></span> dirait de sa part ce qu’ il ne <span class="mention" data-id="u-MENTION-1812" data-info="suj"><b>[lui]</b></span> avait jamais dit, et que, s’ il n’ était pas tué, il lui rendrait sa lettre à lui -même et lui garderait fidèlement son secret.
+ 
+ </p><p>
+C’ était là comme on faisait la cour à <span class="mention" data-id="u-MENTION-1826" data-info="suj"><b>[Mlle de Hautefort]</b></span>  
+ </p><p class="no-text">[9 phrases]</p><br><p>
+C’ est alors, si on en croit La Rochefoucauld, que la reine, dans les angoisses de sa première terreur, se croyant menacée d’ être répudiée, déchue de tout droit, enfermée dans quelque couvent ou même dans le château du Havre, qui était à Richelieu, lui aurait proposé de l’ enlever, elle et <span class="mention" data-id="u-MENTION-1942" data-info="suj"><b>[Mlle de Hautefort]</b></span> , et de les conduire à Bruxelles, proposition trop extravagante pour avoir été faite sérieusement, et que La Rochefoucauld ne rapporte sans doute que pour peindre le danger du moment et aussi pour relever son importance.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Dans cette grave conjoncture, <span class="mention" data-id="u-MENTION-1962" data-info="suj"><b>[Marie de Hautefort]</b></span> entreprit de sauver <span class="mention" data-id="u-MENTION-1964" data-info="suj"><b>[sa]</b></span> maîtresse ou de se perdre avec elle.
+ 
+ </p><p>
+Déjà <span class="mention" data-id="u-MENTION-1966" data-info="suj"><b>[elle]</b></span> lui avait sacrifié la faveur du roi, celle de Richelieu, <span class="mention" data-id="u-MENTION-1974" data-info="suj"><b>[son]</b></span> avenir, <span class="mention" data-id="u-MENTION-1975" data-info="suj"><b>[elle]</b></span>  <span class="mention" data-id="u-MENTION-1976" data-info="suj"><b>[qui]</b></span> n’ avait rien que <span class="mention" data-id="u-MENTION-1978" data-info="suj"><b>[sa]</b></span> beauté et <span class="mention" data-id="u-MENTION-1980" data-info="suj"><b>[son]</b></span> esprit, et <span class="mention" data-id="u-MENTION-1981" data-info="suj"><b>[qui]</b></span> aimait naturellement la magnificence et l’ éclat ; <span class="mention" data-id="u-MENTION-1985" data-info="suj"><b>[elle]</b></span> fit plus cette fois, <span class="mention" data-id="u-MENTION-1987" data-info="suj"><b>[elle]</b></span> risqua pour elle quelque chose qui <span class="mention" data-id="u-MENTION-1991" data-info="suj"><b>[lui]</b></span> était mille fois plus cher que la fortune et la vie, <span class="mention" data-id="u-MENTION-1996" data-info="suj"><b>[elle]</b></span> risqua <span class="mention" data-id="u-MENTION-1998" data-info="suj"><b>[sa]</b></span> réputation ; <span class="mention" data-id="u-MENTION-1999" data-info="suj"><b>[elle]</b></span> rejeta cet instinct de pudeur et de retenue qui faisait <span class="mention" data-id="u-MENTION-2007" data-info="suj"><b>[son]</b></span> charme et <span class="mention" data-id="u-MENTION-2009" data-info="suj"><b>[sa]</b></span> gloire, qui jusque -là avait fermé <span class="mention" data-id="u-MENTION-2012" data-info="suj"><b>[son]</b></span> oreille à tout propos flatteur, et ne <span class="mention" data-id="u-MENTION-2014" data-info="suj"><b>[lui]</b></span> avait pas même permis d’ écrire, sous quelque prétexte que ce fût, le moindre billet à aucun homme, et <span class="mention" data-id="u-MENTION-2018" data-info="suj"><b>[la superbe créature]</b></span> se condamna au rôle le plus opposé à tous <span class="mention" data-id="u-MENTION-2022" data-info="suj"><b>[ses]</b></span> goûts et à toutes <span class="mention" data-id="u-MENTION-2024" data-info="suj"><b>[ses]</b></span> habitudes.
+ 
+ </p><p>
+D’ abord <span class="mention" data-id="u-MENTION-2025" data-info="suj"><b>[elle]</b></span> persuada à un gentilhomme de <span class="mention" data-id="u-MENTION-2028" data-info="suj"><b>[ses]</b></span> parens, M.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Puis <span class="mention" data-id="u-MENTION-2041" data-info="suj"><b>[elle -même]</b></span> , <span class="mention" data-id="u-MENTION-2042" data-info="suj"><b>[elle]</b></span> se déguise en <span class="mention" data-id="u-MENTION-2043" data-info="suj"><b>[grisette]</b></span> , <span class="mention" data-id="u-MENTION-2044" data-info="suj"><b>[barbouille]</b></span>  <span class="mention" data-id="u-MENTION-2046" data-info="suj"><b>[son]</b></span> beau visage, <span class="mention" data-id="u-MENTION-2047" data-info="suj"><b>[cache]</b></span>  <span class="mention" data-id="u-MENTION-2049" data-info="suj"><b>[ses]</b></span> blonds cheveux sous une grande coiffe, et de grand matin, quand personne n’ est encore éveillé au Louvre, <span class="mention" data-id="u-MENTION-2055" data-info="suj"><b>[elle]</b></span> en sort à la dérobée, <span class="mention" data-id="u-MENTION-2056" data-info="suj"><b>[prend]</b></span> un fiacre et se <span class="mention" data-id="u-MENTION-2058" data-info="suj"><b>[fait]</b></span> conduire à la Bastille.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2060" data-info="suj"><b>[Elle]</b></span> savait qu’ il y avait là un prisonnier qui déjà une fois avait joué sa tête pour la reine, déployé dans les fers une constance magnanime, et venait à peine de descendre de l’ échafaud, le chevalier de Jars.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2079" data-info="suj"><b>[La noble fille]</b></span> , jugeant du chevalier par <span class="mention" data-id="u-MENTION-2081" data-info="suj"><b>[elle -même]</b></span> , crut qu’ <span class="mention" data-id="u-MENTION-2082" data-info="suj"><b>[elle]</b></span> pouvait lui demander de jouer sa tête une seconde fois.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2087" data-info="suj"><b>[Elle]</b></span> se donna pour <span class="mention" data-id="u-MENTION-2088" data-info="suj"><b>[la sœur de son valet de chambre]</b></span> , <span class="mention" data-id="u-MENTION-2091" data-info="suj"><b>[qui]</b></span> venait lui apprendre que cet homme était à la mort, et l’ entretenir de <span class="mention" data-id="u-MENTION-2097" data-info="suj"><b>[sa]</b></span> part de choses pressantes.
+ 
+ </p><p>
+Le chevalier de Jars, qui savait son domestique en bonne santé, répugnait à se déranger pour une telle visite, et <span class="mention" data-id="u-MENTION-2106" data-info="suj"><b>[l’ altière Marie de Hautefort]</b></span> dut attendre quelque temps dans le corps de garde qui était à la porte de la Bastille, exposée aux regards et aux plaisanteries de tous ceux qui étaient là, et qui, à <span class="mention" data-id="u-MENTION-2120" data-info="suj"><b>[son]</b></span> costume, <span class="mention" data-id="u-MENTION-2121" data-info="suj"><b>[la]</b></span> prenaient pour une demoiselle très équivoque.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2124" data-info="suj"><b>[Elle]</b></span> supporta tout en silence, appliquant bien <span class="mention" data-id="u-MENTION-2128" data-info="suj"><b>[ses]</b></span> mains sur <span class="mention" data-id="u-MENTION-2130" data-info="suj"><b>[sa]</b></span> coiffe pour qu’ on n’ aperçût pas <span class="mention" data-id="u-MENTION-2133" data-info="suj"><b>[sa]</b></span> figure et <span class="mention" data-id="u-MENTION-2135" data-info="suj"><b>[ses]</b></span> yeux.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Ne <span class="mention" data-id="u-MENTION-2137" data-info="suj"><b>[la]</b></span> reconnaissant pas d’ abord, il allait <span class="mention" data-id="u-MENTION-2139" data-info="suj"><b>[la]</b></span> traiter assez mal, lorsque, le tirant à part et entrant avec lui dans la cour, pour toute réponse à <span class="mention" data-id="u-MENTION-2145" data-info="suj"><b>[ses]</b></span> propos, <span class="mention" data-id="u-MENTION-2146" data-info="suj"><b>[elle]</b></span> leva <span class="mention" data-id="u-MENTION-2148" data-info="suj"><b>[sa]</b></span> coiffe, et lui <span class="mention" data-id="u-MENTION-2150" data-info="suj"><b>[montra]</b></span> cet adorable visage qu’ on ne pouvait oublier quand on l’ avait vu une fois : « Ah!!
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+Elle le fit taire, et lui <span class="mention" data-id="u-MENTION-2162" data-info="suj"><b>[expliqua]</b></span> en peu de mots ce que la reine lui demandait.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2178" data-info="suj"><b>[Elle]</b></span> remit cette lettre au chevalier en lui disant : « Voilà, monsieur, ce que la reine <span class="mention" data-id="u-MENTION-2186" data-info="suj"><b>[m’]</b></span> a donné pour vous ; il faut employer votre adresse et votre crédit dans ce lieu -ci pour faire arriver cette lettre jusqu’ à ce prisonnier.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2196" data-info="suj"><b>[Je]</b></span> vous demande beaucoup, mais <span class="mention" data-id="u-MENTION-2198" data-info="suj"><b>[j’]</b></span> ai compté que vous ne <span class="mention" data-id="u-MENTION-2200" data-info="suj"><b>[m’]</b></span> abandonneriez pas dans le dessein que <span class="mention" data-id="u-MENTION-2203" data-info="suj"><b>[j’]</b></span> ai de tirer la reine de l’ extrême péril où elle est.
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2214" data-info="suj"><b>[Mlle de Hautefort]</b></span> , le voyant chanceler, lui <span class="mention" data-id="u-MENTION-2217" data-info="suj"><b>[dit]</b></span> : « Eh quoi!!
+ 
+ </p><p>
+vous balancez, et vous voyez ce que <span class="mention" data-id="u-MENTION-2222" data-info="suj"><b>[je]</b></span> hasarde!!
+ 
+ </p><p>
+car, si <span class="mention" data-id="u-MENTION-2223" data-info="suj"><b>[je]</b></span> viens à être découverte, que dira-t -on de <span class="mention" data-id="u-MENTION-2225" data-info="suj"><b>[moi]</b></span> ??
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2226" data-info="suj"><b>[lui]</b></span> répondit le chevalier, il faut donc faire ce que la reine demande ; il n’ y a point de remède ; je ne fais que sortir de dessus l’ échafaud, je vais m’ y remettre.
+ 
+ </p><p>
+» <span class="mention" data-id="u-MENTION-2237" data-info="suj"><b>[Mlle de Hautefort]</b></span> fut assez heureuse pour n’ être pas plus reconnue en rentrant au Louvre que le matin lorsqu’ <span class="mention" data-id="u-MENTION-2240" data-info="suj"><b>[elle]</b></span> en était sortie.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2241" data-info="suj"><b>[Elle]</b></span> retrouva dans un petit endroit auprès de <span class="mention" data-id="u-MENTION-2244" data-info="suj"><b>[sa]</b></span> chambre la fille qu’ <span class="mention" data-id="u-MENTION-2247" data-info="suj"><b>[elle]</b></span> y avait mise en sentinelle avant de partir, afin que, si le roi, passant près de là pour aller à la messe, demandait de <span class="mention" data-id="u-MENTION-2254" data-info="suj"><b>[ses]</b></span> nouvelles, on ne manquât pas de lui dire que, s’ étant trouvée un peu mal la nuit, <span class="mention" data-id="u-MENTION-2258" data-info="suj"><b>[elle]</b></span> reposait encore ; mais, quand <span class="mention" data-id="u-MENTION-2259" data-info="suj"><b>[elle]</b></span> fut dans <span class="mention" data-id="u-MENTION-2261" data-info="suj"><b>[sa]</b></span> chambre, et qu’ <span class="mention" data-id="u-MENTION-2262" data-info="suj"><b>[elle]</b></span> réfléchit à l’ aventure qu’ <span class="mention" data-id="u-MENTION-2265" data-info="suj"><b>[elle]</b></span> venait de courir, <span class="mention" data-id="u-MENTION-2266" data-info="suj"><b>[elle]</b></span> en fut épouvantée : <span class="mention" data-id="u-MENTION-2267" data-info="suj"><b>[la jeune fille modeste]</b></span> remplaça <span class="mention" data-id="u-MENTION-2268" data-info="suj"><b>[l’ héroïne]</b></span> , et <span class="mention" data-id="u-MENTION-2269" data-info="suj"><b>[elle]</b></span> tomba à genoux pour remercier Dieu de <span class="mention" data-id="u-MENTION-2272" data-info="suj"><b>[l’]</b></span> avoir conduite et protégée. <br>
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+La fermeté qu’ avait d’ abord montrée La Porte eût tourné contre la reine, si à la fin elle n’ eût été éclairée et guidée par la lettre qui parvint jusqu’ à lui, grâce à la courageuse industrie du chevalier de Jars, dont le dévouement était dû à celui de <span class="mention" data-id="u-MENTION-2336" data-info="suj"><b>[Mlle de Hautefort]</b></span>  <br>
+ 
+ </p><p>
+Dès que <span class="mention" data-id="u-MENTION-2337" data-info="suj"><b>[celle -ci]</b></span> avait espéré le succès, <span class="mention" data-id="u-MENTION-2339" data-info="suj"><b>[elle]</b></span> s’ était empressée d’ envoyer à Mme de Chevreuse, selon ce qui avait été convenu, des Heures à la couleur favorable qui devait la rassurer et la retenir.
+ 
+ </p><p>
+Se trompa-t <span class="mention" data-id="u-MENTION-2348" data-info="suj"><b>[-elle]</b></span> sur la couleur, ou Mme de Chevreuse s’ y méprit -elle elle -même??
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+Est -il besoin de dire de quelle vive reconnaissance la reine fut pénétrée pour Jars, pour La Porte, et surtout pour <span class="mention" data-id="u-MENTION-2419" data-info="suj"><b>[sa jeune et intrépide amie]</b></span> , et quelles promesses elle <span class="mention" data-id="u-MENTION-2423" data-info="suj"><b>[lui]</b></span> fit, si jamais elle voyait de meilleurs jours??
+ 
+ </p><p>
+Mais <span class="mention" data-id="u-MENTION-2426" data-info="suj"><b>[Marie de Hautefort]</b></span> avait déjà reçu <span class="mention" data-id="u-MENTION-2428" data-info="suj"><b>[sa]</b></span> récompense.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2429" data-info="suj"><b>[Elle]</b></span> avait senti battre dans <span class="mention" data-id="u-MENTION-2431" data-info="suj"><b>[son]</b></span> cœur l’ énergie qui fait les héros ; <span class="mention" data-id="u-MENTION-2435" data-info="suj"><b>[elle]</b></span> s’ était oubliée pour une autre, <span class="mention" data-id="u-MENTION-2437" data-info="suj"><b>[elle]</b></span> s’ était mise avec l’ opprimée contre l’ oppresseur ; <span class="mention" data-id="u-MENTION-2440" data-info="suj"><b>[elle]</b></span> avait été compatissante, charitable, généreuse, chrétienne enfin, selon l’ idée qu’ <span class="mention" data-id="u-MENTION-2443" data-info="suj"><b>[elle]</b></span> s’ était faite et qu’ <span class="mention" data-id="u-MENTION-2445" data-info="suj"><b>[elle]</b></span> soutint jusqu’ à <span class="mention" data-id="u-MENTION-2447" data-info="suj"><b>[son]</b></span> dernier soupir de la religion du crucifié. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-2464" data-info="suj"><b>[Mlle de Hautefort]</b></span> avait alors vingt-deux ans.
+ 
+ </p><p>
+Quelques années avaient augmenté l’ éclat de <span class="mention" data-id="u-MENTION-2469" data-info="suj"><b>[ses]</b></span> charmes.
+ 
+ </p><p>
+Louis XIII, qui s’ en était détaché avec tant de peine, sentit en <span class="mention" data-id="u-MENTION-2473" data-info="suj"><b>[la]</b></span> revoyant <span class="mention" data-id="u-MENTION-2475" data-info="suj"><b>[ses]</b></span> anciens feux se rallumer, et Mlle de La Fayette n’ étant plus là pour le distraire, il redevint plus amoureux que jamais de <span class="mention" data-id="u-MENTION-2480" data-info="suj"><b>[Mlle de Hautefort]</b></span>  
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Nous n’ y insisterons point, et nous nous bornerons à dire que <span class="mention" data-id="u-MENTION-2488" data-info="suj"><b>[Mlle de Hautefort]</b></span> ne mit point à profit pour <span class="mention" data-id="u-MENTION-2491" data-info="suj"><b>[sa]</b></span> fortune ce retour de la tendresse du roi.
+ 
+ </p><p>
+La seule grâce qu’ elle consentit à recevoir, et encore de la main de la reine autant que de celle du roi, fut la survivance de la charge de dame d’ atours qu’ occupait <span class="mention" data-id="u-MENTION-2508" data-info="suj"><b>[sa]</b></span> grand’mère, Mme de La Flotte ; dès ce moment, elle eut le droit d’ être appelée madame, et désormais nous -même <span class="mention" data-id="u-MENTION-2514" data-info="suj"><b>[l’]</b></span> appellerons ainsi.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2516" data-info="suj"><b>[Sa]</b></span> sœur, Mlle d’ Escars, devint une des filles d’ honneur de la reine, et <span class="mention" data-id="u-MENTION-2521" data-info="suj"><b>[son]</b></span> jeune frère, le comte de Montignac, qui était déjà dans les cadets aux gardes, entra dans la compagnie des mousquetaires du comte de Tréville.
+ 
+ </p><p>
+Après les couches de la reine, Mme de La Flotte, qui n’ avait pas l’ humeur aussi désintéressée que <span class="mention" data-id="u-MENTION-2534" data-info="suj"><b>[sa petite-fille]</b></span> , désira vivement monter de sa place de dame d’ atours à celle de gouvernante du petit dauphin.
+ 
+ </p><p>
+On poussa <span class="mention" data-id="u-MENTION-2544" data-info="suj"><b>[Mme de Hautefort]</b></span> à en parler à Louis XIII et même à Richelieu ; <span class="mention" data-id="u-MENTION-2549" data-info="suj"><b>[elle]</b></span> le fit, mais avec une fierté maladroite qui ne réussit pas.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Ses anciens ombrages s’ étaient réveillés avec la passion du roi, et, comme la conduite de <span class="mention" data-id="u-MENTION-2569" data-info="suj"><b>[Mme de Hautefort]</b></span> n’ avait fait que les fortifier, au lieu de <span class="mention" data-id="u-MENTION-2571" data-info="suj"><b>[la]</b></span> servir, il travaillait à <span class="mention" data-id="u-MENTION-2573" data-info="suj"><b>[la]</b></span> perdre.
+ 
+ </p><p>
+Cette fois, instruit par l’ expérience, il avait compris que, tant que Louis XIII pourrait voir <span class="mention" data-id="u-MENTION-2578" data-info="suj"><b>[cette ravissante figure]</b></span> et approcher de <span class="mention" data-id="u-MENTION-2579" data-info="suj"><b>[ce noble cœur]</b></span> , avec des brouilleries plus ou moins longues, <span class="mention" data-id="u-MENTION-2581" data-info="suj"><b>[Mme de Hautefort]</b></span> reprendrait toujours <span class="mention" data-id="u-MENTION-2583" data-info="suj"><b>[son]</b></span> empire, et que, pour <span class="mention" data-id="u-MENTION-2584" data-info="suj"><b>[la]</b></span> détruire, il fallait <span class="mention" data-id="u-MENTION-2585" data-info="suj"><b>[lui]</b></span> faire quitter la cour et Paris.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Il savait que <span class="mention" data-id="u-MENTION-2596" data-info="suj"><b>[sa jeune confidente]</b></span> s’ était liée par ses ordres avec le comte de Soissons et avec Monsieur, et qu’ <span class="mention" data-id="u-MENTION-2603" data-info="suj"><b>[elle]</b></span> était <span class="mention" data-id="u-MENTION-2604" data-info="suj"><b>[leur intermédiaire auprès de sa maîtresse]</b></span>  
+ </p><p class="no-text">[2 phrases]</p><br><p>
+Dans cette correspondance, trouvée après la mort de Richelieu parmi ses papiers et livrée à la publicité pendant la fronde, le roi et la reine sont appelés Céphale et Procris ; <span class="mention" data-id="u-MENTION-2641" data-info="suj"><b>[Mme de Hautefort]</b></span> y est toujours l’ Aurore, Mme de La Flotte est la Vieille, Mlle de La Fayette la Délaissée, Richelieu l’ Oracle, bien entendu, et elle -même se met sous le nom du bon Ange.
+ 
+ </p><p>
+Cet ange -là, avec sa jolie figure, sa gaieté et sa candeur apparente, trompa longtemps <span class="mention" data-id="u-MENTION-2662" data-info="suj"><b>[Mme de Hautefort]</b></span> par des raffinemens de perfidie et de bassesse que <span class="mention" data-id="u-MENTION-2668" data-info="suj"><b>[la noble femme]</b></span> était incapable de soupçonner. <br>
+ 
+ </p><p>
+Richelieu n’ avait pas sous la main une autre Mlle de La Fayette pour balancer <span class="mention" data-id="u-MENTION-2672" data-info="suj"><b>[Mme de Hautefort]</b></span> ; mais, sachant qu’ il fallait toujours à Louis XIII une sorte de distraction sentimentale, un amusement de cœur, il avait mis depuis quelque temps auprès de lui un jeune homme de la tournure la plus agréable, le fils d’ un de ses amis les plus dévoués et les plus capables, le marquis et maréchal d’ Effiat, et, se croyant aussi sûr du fils que du père, il lui avait fait faire un chemin si rapide qu’ à dix-neuf ans, en 1639, Cinq-Mars était déjà grand-écuyer.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Ainsi que Richelieu l’ avait prévu et espéré, cette inclination nouvelle amortit peu à peu dans le cœur de Louis XIII son amour pour <span class="mention" data-id="u-MENTION-2710" data-info="suj"><b>[Mme de Hautefort]</b></span> , ou plutôt elle devint un autre amour qui, comme le premier, avait ses vivacités, ses jalousies, ses orages.
+ 
+ </p><p>
+Le roi demandait à Cinq-Mars de n’ aimer que lui ; celui -ci, poussé par sa propre ambition et par Richelieu, demandait à son tour au roi de ne pas partager ses affections, et il se plaignait de l’ empire qu’ exerçait encore sur lui <span class="mention" data-id="u-MENTION-2740" data-info="suj"><b>[Mme de Hautefort]</b></span>  
+ </p><p>
+Dans les commencemens, il suffisait d’ une soirée que le roi venait passer chez la reine pour déjouer toutes ces manœuvres, et rendre le cœur de Louis à <span class="mention" data-id="u-MENTION-2748" data-info="suj"><b>[sa première et irrésistible maîtresse]</b></span> ; mais il n’ en était point ainsi dans les voyages : là, seul entre son redouté ministre et son nouvel ami, le roi était bien autrement facile aux impressions qu’ on lui voulait donner, et c’ est dans un de ces voyages que les yeux de la belle dame n’ étant plus là pour plaider sa cause, Richelieu <span class="mention" data-id="u-MENTION-2769" data-info="suj"><b>[l’]</b></span> accusa d’ avoir la main dans les intrigues de Monsieur, de troubler et de diviser la cour et de faire obstacle au gouvernement par l’ absolu crédit qu’ on <span class="mention" data-id="u-MENTION-2779" data-info="suj"><b>[lui]</b></span> supposait sur le roi ; il fit entendre qu’ il était fort inutile d’ avoir exilé Mme de Chevreuse pour garder <span class="mention" data-id="u-MENTION-2783" data-info="suj"><b>[une personne tout aussi dangereuse]</b></span> qu’ <span class="mention" data-id="u-MENTION-2784" data-info="suj"><b>[elle]</b></span>  
+ </p><p>
+Louis XIII résista longtemps ; pour l’ emporter, le cardinal fut obligé de lui donner à choisir entre <span class="mention" data-id="u-MENTION-2790" data-info="suj"><b>[Mme de Hautefort]</b></span> et lui, et de déclarer qu’ il aimait mieux se retirer que de se consumer dans des luttes obscures, où l’ appui du roi lui manquait.
+ 
+ </p><p>
+Cette menace épouvanta Louis XIII ; Richelieu, le voyant ébranlé, pour le décider, lui dit qu’ il ne s’ agissait pas d’ éloigner à jamais <span class="mention" data-id="u-MENTION-2803" data-info="suj"><b>[Mme de Hautefort]</b></span> , mais seulement pour une quinzaine de jours, afin qu’ on vît que <span class="mention" data-id="u-MENTION-2807" data-info="suj"><b>[sa]</b></span> faveur n’ était pas aussi grande qu’ on le croyait.
+ 
+ </p><p>
+Le roi finit par céder en insistant bien sur cette condition que ce serait seulement pour quinze jours ; le cardinal l’ assura qu’ il n’ en demandait pas davantage, mais, redoutant l’ ascendant accoutumé de <span class="mention" data-id="u-MENTION-2818" data-info="suj"><b>[Mme de Hautefort]</b></span> , il fit promettre au roi de ne pas <span class="mention" data-id="u-MENTION-2821" data-info="suj"><b>[la]</b></span> voir.
+ 
+ </p><p>
+À peine le marché conclu, Richelieu se hâta de l’ exécuter ; il envoya, de la part du roi, à <span class="mention" data-id="u-MENTION-2828" data-info="suj"><b>[l’ ancienne favorite]</b></span> , l’ ordre de se retirer pour quelque temps, et aux gardes celui de ne <span class="mention" data-id="u-MENTION-2833" data-info="suj"><b>[la]</b></span> point laisser entrer chez le roi.
+ 
+ </p><p>
+Quand <span class="mention" data-id="u-MENTION-2835" data-info="suj"><b>[Mme de Hautefort]</b></span> reçut le commandement qui <span class="mention" data-id="u-MENTION-2838" data-info="suj"><b>[lui]</b></span> était apporté, <span class="mention" data-id="u-MENTION-2839" data-info="suj"><b>[elle]</b></span> eut de la peine à y croire.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2841" data-info="suj"><b>[Elle]</b></span> se rappelait que, dans plusieurs de <span class="mention" data-id="u-MENTION-2844" data-info="suj"><b>[ses]</b></span> querelles avec <span class="mention" data-id="u-MENTION-2846" data-info="suj"><b>[son]</b></span> royal amant, souvent <span class="mention" data-id="u-MENTION-2847" data-info="suj"><b>[elle]</b></span> lui avait dit que de l’ humeur dont <span class="mention" data-id="u-MENTION-2851" data-info="suj"><b>[elle]</b></span> le connaissait, <span class="mention" data-id="u-MENTION-2853" data-info="suj"><b>[elle]</b></span> s’ attendait à être un jour ou l’ autre chassée de la cour par la jalousie du cardinal, et que Louis XIII <span class="mention" data-id="u-MENTION-2861" data-info="suj"><b>[lui]</b></span> avait toujours répondu que cela ne serait jamais, et que, reçût <span class="mention" data-id="u-MENTION-2863" data-info="suj"><b>[-elle]</b></span> un pareil ordre, il <span class="mention" data-id="u-MENTION-2866" data-info="suj"><b>[la]</b></span> conjurait de ne pas y ajouter foi et de ne croire qu’ à ce qu’ il <span class="mention" data-id="u-MENTION-2872" data-info="suj"><b>[lui]</b></span> dirait lui -même.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2874" data-info="suj"><b>[Elle]</b></span> voulut donc entendre de la bouche même du roi l’ ordre qu’ <span class="mention" data-id="u-MENTION-2879" data-info="suj"><b>[elle]</b></span> venait de recevoir.
+ 
+ </p><p>
+« <span class="mention" data-id="u-MENTION-2880" data-info="suj"><b>[Elle]</b></span> étoit si bonne et si aimée de tout le monde, dit l’ histoire de <span class="mention" data-id="u-MENTION-2884" data-info="suj"><b>[sa]</b></span> vie, que, lorsqu’ <span class="mention" data-id="u-MENTION-2885" data-info="suj"><b>[elle]</b></span> se présenta à la porte du roi, les gardes après <span class="mention" data-id="u-MENTION-2889" data-info="suj"><b>[lui]</b></span> avoir fait part de leur ordre, n’ osèrent s’ opposer à ce qu’ <span class="mention" data-id="u-MENTION-2892" data-info="suj"><b>[elle]</b></span> entrât.
+ 
+ </p><p>
+La surprise du roi fut extrême en <span class="mention" data-id="u-MENTION-2895" data-info="suj"><b>[la]</b></span> voyant avec un air de grandeur et de fierté tout ensemble que le dépit <span class="mention" data-id="u-MENTION-2901" data-info="suj"><b>[lui]</b></span> donnoit et qui augmentoit <span class="mention" data-id="u-MENTION-2904" data-info="suj"><b>[sa]</b></span> beauté.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2905" data-info="suj"><b>[Elle]</b></span> lui dit qu’ avant de partir de la cour par son ordre, <span class="mention" data-id="u-MENTION-2910" data-info="suj"><b>[elle]</b></span> avoit voulu connoitre quel crime <span class="mention" data-id="u-MENTION-2912" data-info="suj"><b>[elle]</b></span> avoit commis pour mériter d’ être exilée.
+ 
+ </p><p>
+Le roi <span class="mention" data-id="u-MENTION-2914" data-info="suj"><b>[lui]</b></span> dit que <span class="mention" data-id="u-MENTION-2916" data-info="suj"><b>[son]</b></span> exil n’ étoit que pour quinze jours, qu’ il l’ avoit accordé avec une violence extrême aux raisons d’ état, à cause des intrigues qui troubloient toute la cour, et que l’ on faisoit sous <span class="mention" data-id="u-MENTION-2928" data-info="suj"><b>[son]</b></span> nom, qu’ <span class="mention" data-id="u-MENTION-2929" data-info="suj"><b>[elle]</b></span> le devoit plaindre de la violence que l’ on avoit faite à son inclination et de la douleur qu’ il en souffriroit pendant ce temps.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2939" data-info="suj"><b>[Elle]</b></span> lui répondit que ces quinze jours dureroient le reste de <span class="mention" data-id="u-MENTION-2944" data-info="suj"><b>[sa]</b></span> vie, qu’ ainsi <span class="mention" data-id="u-MENTION-2945" data-info="suj"><b>[elle]</b></span> prenoit congé de lui pour toujours.
+ 
+ </p><p>
+Le roi <span class="mention" data-id="u-MENTION-2949" data-info="suj"><b>[l’]</b></span> assura, comme il le croyoit, que rien au monde ne pourroit l’ obliger à se priver de <span class="mention" data-id="u-MENTION-2954" data-info="suj"><b>[la]</b></span> voir un jour de plus.
+ 
+ </p><p>
+» <br>
+On comprend quelle dut être la douleur d’ Anne d’ Autriche en perdant <span class="mention" data-id="u-MENTION-2959" data-info="suj"><b>[une pareille amie]</b></span> , <span class="mention" data-id="u-MENTION-2960" data-info="suj"><b>[dont]</b></span> elle sentait bien qu’ elle causait elle -même le malheur.
+ 
+ </p><p>
+Elle pleura, sanglota, <span class="mention" data-id="u-MENTION-2967" data-info="suj"><b>[l’]</b></span> embrassa plusieurs fois, et, dans le trouble où elle était, ne sachant que <span class="mention" data-id="u-MENTION-2973" data-info="suj"><b>[lui]</b></span> offrir, elle défit ses pendans d’ oreilles, qui valaient bien dix ou douze mille écus, et les <span class="mention" data-id="u-MENTION-2982" data-info="suj"><b>[lui]</b></span> donna, en <span class="mention" data-id="u-MENTION-2984" data-info="suj"><b>[la]</b></span> priant de les garder pour l’ amour d’ elle. <br>
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-2988" data-info="suj"><b>[Mme de Hautefort]</b></span> se retira près du Mans, dans une terre qui appartenait à <span class="mention" data-id="u-MENTION-2993" data-info="suj"><b>[sa]</b></span> grand’mère, emmenant avec <span class="mention" data-id="u-MENTION-2994" data-info="suj"><b>[elle]</b></span>  <span class="mention" data-id="u-MENTION-2996" data-info="suj"><b>[son]</b></span> jeune frère, M.
+ 
+ </p><p>
+de Montignac, et <span class="mention" data-id="u-MENTION-2998" data-info="suj"><b>[sa]</b></span> sœur, Mlle l’ Escars, sans oublier celle quelle croyait <span class="mention" data-id="u-MENTION-3002" data-info="suj"><b>[sa]</b></span> meilleure amie, Mlle de Chémerault, que Richelieu avait aussi mise en disgrâce pour couvrir sa trahison, et qui, sous le masque du dévouement, avait accepté l’ odieuse mission de surveiller <span class="mention" data-id="u-MENTION-3011" data-info="suj"><b>[l’ exilée]</b></span> comme elle avait fait la favorite.
+ 
+ </p><p>
+Tel était, à son égard, l’ aveuglement de <span class="mention" data-id="u-MENTION-3017" data-info="suj"><b>[Mme de Hautefort]</b></span> , qu’ avant de quitter Paris, ayant appris que la reine s’ était bornée à donner 4, 000 écus à Mlle de Chémerault, sans aucune autre marque d’ attachement et d’ estime, <span class="mention" data-id="u-MENTION-3026" data-info="suj"><b>[elle]</b></span> se sentit blessée dans l’ opinion qu’ <span class="mention" data-id="u-MENTION-3029" data-info="suj"><b>[elle]</b></span> s’ était faite de la générosité de la reine, et lui écrivit une dernière fois pour lui rappeler, dans les termes les plus vifs, ce quelle devait à Mlle de Chémerault, oubliant <span class="mention" data-id="u-MENTION-3041" data-info="suj"><b>[sa]</b></span> propre infortune et le rang de celle à laquelle <span class="mention" data-id="u-MENTION-3045" data-info="suj"><b>[elle]</b></span> écrivait pour ne songer qu’ à la jeune fille.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-3047" data-info="suj"><b>[Elle]</b></span> avait appris aussi qu’ Anne d’ Autriche n’ avait pas témoigné une assez haute indignation de l’ outrage qui lui était fait à elle -même en <span class="mention" data-id="u-MENTION-3055" data-info="suj"><b>[sa]</b></span> personne, et qu’ elle avait trop paru se résigner au triomphe de Richelieu.
+ 
+ </p><p>
+Cette conduite avait été un coup douloureux à <span class="mention" data-id="u-MENTION-3063" data-info="suj"><b>[sa]</b></span> fierté et à <span class="mention" data-id="u-MENTION-3065" data-info="suj"><b>[sa]</b></span> tendresse ; <span class="mention" data-id="u-MENTION-3066" data-info="suj"><b>[elle]</b></span> en souffrait plus que de l’ exil, et la façon dont <span class="mention" data-id="u-MENTION-3071" data-info="suj"><b>[elle]</b></span> en parle à la reine se ressent du trouble et de l’ amertume de <span class="mention" data-id="u-MENTION-3077" data-info="suj"><b>[son]</b></span> cœur.
+ 
+ </p><p>
+La lettre où <span class="mention" data-id="u-MENTION-3080" data-info="suj"><b>[elle]</b></span> exhale <span class="mention" data-id="u-MENTION-3082" data-info="suj"><b>[ses]</b></span> chagrins, pleine à la fois d’ affection, de hauteur et de dépit, peint à merveille le caractère de <span class="mention" data-id="u-MENTION-3089" data-info="suj"><b>[Mme de Hautefort]</b></span> , et montre en <span class="mention" data-id="u-MENTION-3091" data-info="suj"><b>[elle]</b></span> , à vingt-quatre ans, à cet âge heureux des grands sentimens portés jusqu’ à l’ exagération, une sorte d’ Emilie outrée et sublime.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+On y sent que la plus grande douleur de <span class="mention" data-id="u-MENTION-3104" data-info="suj"><b>[Mme de Hautefort]</b></span> est de voir <span class="mention" data-id="u-MENTION-3106" data-info="suj"><b>[sa]</b></span> royale amie au-dessous de l’ idéal de générosité et de noblesse qu’ <span class="mention" data-id="u-MENTION-3112" data-info="suj"><b>[elle]</b></span> s’ était formé, et la hardiesse de <span class="mention" data-id="u-MENTION-3115" data-info="suj"><b>[son]</b></span> langage en cette occasion marque déjà jusqu’ où <span class="mention" data-id="u-MENTION-3118" data-info="suj"><b>[elle]</b></span> pourra se porter plus tord, lorsqu’ <span class="mention" data-id="u-MENTION-3119" data-info="suj"><b>[elle]</b></span> croira la réputation de la reine bien autrement compromise. <br>
+ 
+ </p><p>
+« Madame, s’ il <span class="mention" data-id="u-MENTION-3123" data-info="suj"><b>[m’]</b></span> étoit permis de juger des sentimens de votre majesté par les miens, <span class="mention" data-id="u-MENTION-3127" data-info="suj"><b>[je]</b></span> n’ oserois vous dire adieu pour jamais, de crainte que cette parole ne mît votre vie au même péril où elle met la mienne en vous l’ écrivant.
+ 
+ </p><p>
+Mais puisque Dieu vous fait avoir en cet accident la résignation que vous avez eue en tant d’ autres, <span class="mention" data-id="u-MENTION-3146" data-info="suj"><b>[je]</b></span> ferois injure à la Providence et à votre courage, si <span class="mention" data-id="u-MENTION-3151" data-info="suj"><b>[je]</b></span> croyois que <span class="mention" data-id="u-MENTION-3154" data-info="suj"><b>[mes]</b></span> disgrâces et <span class="mention" data-id="u-MENTION-3156" data-info="suj"><b>[mes]</b></span> déplaisirs pussent donner quelque atteinte à votre santé et à votre repos.
+ 
+ </p><p>
+C’ est donc pour jamais, madame, que <span class="mention" data-id="u-MENTION-3164" data-info="suj"><b>[je]</b></span> dis adieu à votre majesté, et <span class="mention" data-id="u-MENTION-3167" data-info="suj"><b>[je]</b></span> vous supplie très humblement de croire qu’ en quelque endroit du monde que la persécution <span class="mention" data-id="u-MENTION-3172" data-info="suj"><b>[me]</b></span> puisse jeter, <span class="mention" data-id="u-MENTION-3173" data-info="suj"><b>[j’]</b></span> y passerai <span class="mention" data-id="u-MENTION-3176" data-info="suj"><b>[mes]</b></span> jours dans la fidélité et dans l’ attachement qui sont les véritables causes qu’ on <span class="mention" data-id="u-MENTION-3184" data-info="suj"><b>[me]</b></span> persécute, et n’ <span class="mention" data-id="u-MENTION-3185" data-info="suj"><b>[aurai]</b></span> de regret, parmi les ennuis qui <span class="mention" data-id="u-MENTION-3189" data-info="suj"><b>[m’]</b></span> accablent, que de n’ en pouvoir pas souffrir davantage pour l’ amour de vous.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-3193" data-info="suj"><b>[Ma]</b></span> douleur <span class="mention" data-id="u-MENTION-3194" data-info="suj"><b>[me]</b></span> feroit ici achever <span class="mention" data-id="u-MENTION-3196" data-info="suj"><b>[ma]</b></span> lettre, si le zèle que <span class="mention" data-id="u-MENTION-3199" data-info="suj"><b>[j’]</b></span> ai pour votre gloire ne <span class="mention" data-id="u-MENTION-3202" data-info="suj"><b>[me]</b></span> défendoit de taire une chose qui la peut ternir, et de vous dissimuler l’ étonnement que chacun témoigne de l’ état où vous laissez Mlle de Chémerault.
+ 
+ </p><p class="no-text">[3 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-3278" data-info="suj"><b>[Je]</b></span> suis si délicate en ce qui regarde l’ opinion que toute la terre doit avoir de vous, que si Mlle de Chémerault n’ avoit pas su le présent que vous <span class="mention" data-id="u-MENTION-3288" data-info="suj"><b>[m’]</b></span> avez fait, <span class="mention" data-id="u-MENTION-3289" data-info="suj"><b>[je]</b></span> n’ eusse pu <span class="mention" data-id="u-MENTION-3290" data-info="suj"><b>[m’]</b></span> empêcher de le lui donner de votre part.
+ 
+ </p><p>
+Encore que <span class="mention" data-id="u-MENTION-3295" data-info="suj"><b>[j’]</b></span> aie appris avec dépit la peur que vous avez de déplaire à celui qui <span class="mention" data-id="u-MENTION-3302" data-info="suj"><b>[m’]</b></span> arrache d’ auprès de vous, <span class="mention" data-id="u-MENTION-3304" data-info="suj"><b>[je]</b></span> proteste que vos timidités et vos complaisances <span class="mention" data-id="u-MENTION-3310" data-info="suj"><b>[me]</b></span> piquent beaucoup plus pour vous que pour <span class="mention" data-id="u-MENTION-3312" data-info="suj"><b>[moi]</b></span> , et que <span class="mention" data-id="u-MENTION-3313" data-info="suj"><b>[je]</b></span> me consolerois du mal qu’ il <span class="mention" data-id="u-MENTION-3317" data-info="suj"><b>[m’]</b></span> a fait, si <span class="mention" data-id="u-MENTION-3318" data-info="suj"><b>[j’]</b></span> étois bien certaine que ce fût le dernier qu’ il voulût vous faire.
+ 
+ </p><p>
+Adieu pour la dernière fois, madame ; <span class="mention" data-id="u-MENTION-3327" data-info="suj"><b>[je]</b></span> ne puis plus penser à ne vous voir jamais, et si cette mortelle imagination ne <span class="mention" data-id="u-MENTION-3330" data-info="suj"><b>[me]</b></span> donne relâche pour un moment, <span class="mention" data-id="u-MENTION-3333" data-info="suj"><b>[je]</b></span> ne vivrais même pas assez pour vous dire que <span class="mention" data-id="u-MENTION-3335" data-info="suj"><b>[je]</b></span> suis, madame, de votre majesté, <span class="mention" data-id="u-MENTION-3338" data-info="suj"><b>[la très fidèle]</b></span> , etc.
+ 
+ </p><p>
+. » <br>
+Tous ceux qui, à la cour et à Paris, avaient connu <span class="mention" data-id="u-MENTION-3344" data-info="suj"><b>[Mme de Hautefort]</b></span> , <span class="mention" data-id="u-MENTION-3347" data-info="suj"><b>[sa]</b></span> vertu, <span class="mention" data-id="u-MENTION-3349" data-info="suj"><b>[son]</b></span> désintéressement, <span class="mention" data-id="u-MENTION-3351" data-info="suj"><b>[son]</b></span> obligeance, <span class="mention" data-id="u-MENTION-3353" data-info="suj"><b>[sa]</b></span> libéralité, ne <span class="mention" data-id="u-MENTION-3354" data-info="suj"><b>[la]</b></span> virent pas s’ éloigner sans un extrême déplaisir.
+ 
+ </p><p>
+Les plus inconsolables furent <span class="mention" data-id="u-MENTION-3357" data-info="suj"><b>[ses]</b></span> amans, comme on disait alors.
+ 
+ </p><p>
+L’ un d’ eux, le marquis de Noirmoutiers, ne pouvant résister à la violence de sa passion, s’ échappa de Paris et courut au Mans pour <span class="mention" data-id="u-MENTION-3366" data-info="suj"><b>[la]</b></span> voir encore et dans l’ espérance de <span class="mention" data-id="u-MENTION-3368" data-info="suj"><b>[la]</b></span> toucher ; mais <span class="mention" data-id="u-MENTION-3369" data-info="suj"><b>[Mme de Hautefort]</b></span> ne l’ aimait point, et <span class="mention" data-id="u-MENTION-3371" data-info="suj"><b>[elle]</b></span> comprenait trop la dignité du malheur pour la compromettre en recevant une visite équivoque.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-3380" data-info="suj"><b>[Elle]</b></span> s’ ensevelit dans une solitude profonde, ne recevant qu’ un très petit nombre d’ amis, entre autres le pauvre La Porte, qu’ <span class="mention" data-id="u-MENTION-3386" data-info="suj"><b>[elle]</b></span> avait fort contribué, pendant le retour de <span class="mention" data-id="u-MENTION-3389" data-info="suj"><b>[son]</b></span> crédit, à tirer de la Bastille, et qui, exilé comme <span class="mention" data-id="u-MENTION-3392" data-info="suj"><b>[elle]</b></span> , habitait dans le voisinage.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+La Porte avait vu <span class="mention" data-id="u-MENTION-3411" data-info="suj"><b>[Mme de Hautefort]</b></span> si intrépide, et il <span class="mention" data-id="u-MENTION-3413" data-info="suj"><b>[la]</b></span> savait si pure, si désintéressée, si bienfaisante, qu’ il s’ était donné à <span class="mention" data-id="u-MENTION-3415" data-info="suj"><b>[elle]</b></span> tout autant qu’ à la reine et bien plus qu’ à Mme de Chevreuse.
+ 
+ </p><p>
+Il n’ était pas dupe de la feinte amitié de Mlle de Chémerault, et plus d’ une fois il tenta d’ éclairer <span class="mention" data-id="u-MENTION-3423" data-info="suj"><b>[Mme de Hautefort]</b></span> ; mais <span class="mention" data-id="u-MENTION-3424" data-info="suj"><b>[celle -ci]</b></span> rejetait bien loin ses soupçons, « ne pouvant pas seulement, dit La Porte, souffrir la pensée d’ un tel crime, » et elle ne fut désabusée qu’ à la mort de Richelieu, lorsque la reine <span class="mention" data-id="u-MENTION-3434" data-info="suj"><b>[lui]</b></span> envoya les lettres de Mlle de Chémerault, trouvées dans la cassette du cardinal. <br>
+ 
+ </p><p>
+C’ est pendant ce séjour auprès du Mans qu’ <span class="mention" data-id="u-MENTION-3441" data-info="suj"><b>[elle]</b></span> entendit parler de Scarron, de ses cruelles infirmités, et de la gaieté courageuse avec laquelle il les supportait Scarron souffrait ; c’ était assez, <span class="mention" data-id="u-MENTION-3450" data-info="suj"><b>[elle]</b></span> s’ intéressa au bouffon malade et lui vint en aide de toutes les manières.
+ 
+ </p><p>
+De là, tant de vers adressés par Scarron à <span class="mention" data-id="u-MENTION-3458" data-info="suj"><b>[Mme de Hautefort]</b></span> et à <span class="mention" data-id="u-MENTION-3460" data-info="suj"><b>[sa]</b></span> sœur. <br>
+ 
+ </p><p>
+Cependant les événemens se pressaient sur la scène mobile qu’ <span class="mention" data-id="u-MENTION-3464" data-info="suj"><b>[elle]</b></span> venait de quitter.
+ 
+ </p><p>
+Du fond de <span class="mention" data-id="u-MENTION-3467" data-info="suj"><b>[sa]</b></span> retraite, pendant trois années, <span class="mention" data-id="u-MENTION-3469" data-info="suj"><b>[elle]</b></span> assista de loin à bien des spectacles qui tour à tour agitèrent <span class="mention" data-id="u-MENTION-3474" data-info="suj"><b>[son]</b></span> âme de rares joies, d’ inquiètes espérances, d’ effroi, de compassion, d’ horreur.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-3481" data-info="suj"><b>[Elle]</b></span> recevait de fréquens et secrets messages d’ Anne d’ Autriche, qui <span class="mention" data-id="u-MENTION-3485" data-info="suj"><b>[l’]</b></span> assuraient de sa constante amitié.
+ 
+ </p><p>
+Un jour, <span class="mention" data-id="u-MENTION-3489" data-info="suj"><b>[elle]</b></span> reçut de sa part le portrait du petit dauphin comme un présage de jours meilleurs.
+ 
+ </p><p>
+Quels durent être <span class="mention" data-id="u-MENTION-3497" data-info="suj"><b>[ses]</b></span> sentimens, lorsqu’ <span class="mention" data-id="u-MENTION-3498" data-info="suj"><b>[elle]</b></span> apprit l’ audacieuse entreprise du comte de Soissons, son triomphe à la Marfée et sa mort!!
+ 
+ </p><p>
+Bientôt aussi <span class="mention" data-id="u-MENTION-3506" data-info="suj"><b>[elle]</b></span> vit l’ ambitieux étourdi qui <span class="mention" data-id="u-MENTION-3509" data-info="suj"><b>[l’]</b></span> avait remplacée dans le cœur du roi, parvenu au faîte de la faveur, s’ en précipiter lui -même, conspirer la perte de celui auquel il devait tout, et, retombé sous la main puissante qui l’ avait tiré du néant, porter, à vingt-deux ans, sa tête sur un échafaud.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-3528" data-info="suj"><b>[Elle]</b></span> vit enfin ce terrible cardinal, vainqueur de tous ses ennemis au dedans et au dehors, maître du roi et de la France, et, méditant les plus hardis desseins, succomber à ses soucis et à ses infirmités, et Louis XIII, épuisé et languissant, tout prêt à le suivre dans la tombe.
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/madamedehautefort_RC_19-21_s-CHAINE-1.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    

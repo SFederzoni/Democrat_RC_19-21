@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>mademoisellefifi-1_RC_19-21_s-CHAINE-1</title>
+    <style> 
+        body {
+        padding: 1em 1em 1em 1em;
+				  margin: 0;
+				  font-family: Arial, sans-serif;
+				  font-size: normal;
+				  color: black;
+				  background: withe;
+				  background-position: top left;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  text-align: justify;
+        }
+        td {
+    		vertical-align: top;
+    		text-align: center;
+        }
+        td p{
+        margin: .5rem .5rem .5rem .5rem;
+	    text-align: justify;
+	    font-size: 18px; 
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .left-panel {
+            width: 30%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 50%;
+            padding: 10px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+        }
+.mention {
+    color: #00887f;
+    position: relative;
+    cursor: pointer; /* Ajoute un pointeur pour indiquer qu'il y a une interaction possible */
+}
+
+.mention:hover::after{
+    content: attr(data-id); /* Affiche l'ID par défaut */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap; /* Assure que le texte de l'ID ne soit pas coupé */
+    display: block;
+}
+
+.mention:hover::before {
+    content: attr(data-info); /* Affiche les informations supplémentaires */
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    top: 42px; /* Ajuste la position en fonction du besoin */
+    left: 0;
+    z-index: 100;
+    white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
+    display: block;
+    width: max-content; /* Ajuste la largeur en fonction du contenu */
+}
+        .no-text {
+            color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../style_1.css">
+
+</head>
+<body>
+<header class="container">
+
+    <div class="navigation">
+        <div class="logo_navigation"><a href="./index.html"><img class="logo" src="../images/logoDemocratRC.png" alt="demRC"/></a></div>
+        <div class="menu-container">
+            <div class="menu-button"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Présentation</a></li>
+                    <li><a href="../constitution.html">Constitution</a></li>
+                    <li><a href="../exploration.html">Exploration</a></li>
+                    <li><a href="../telechargement.html">Téléchargement</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                var menu = document.querySelector('.menu');
+                menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+            });
+        </script>
+    </div>
+
+</header>
+<div class="contenu_page">
+    <h2>Mademoiselle Fifi, nouveaux contes (1) : s-CHAINE-1<font size="-3"> (<a href="../exploration.html">Retour à la page d'exploration</a>)</font></h2>
+    <table border="1">
+    <tr>
+<td><div id="stats_texte"><p>
+        Longueur nb maillons : <b>99 mentions</b><br>
+        Id premier maillon : <b>u-MENTION-1</b><br>
+        Id dernier maillon : <b>u-MENTION-1420</b><br>
+        Type de référent : <b></b><br>
+</div>
+</td>
+<td> <img src="../images/sequences_individuelles/mademoisellefifi-1_RC_19-21_s-CHAINE-1.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+</tr>
+    <tr>
+    <td width="80%"><div id="texte_normalise">
+    <p>
+ <span class="mention" data-id="u-MENTION-1" data-info="suj"><b>[MADEMOISELLE FIFI]</b></span> <br>
+Le major, commandant prussien, comte de Farlsberg, achevait de lire son courrier, le dos au fond d'un grand fauteuil de tapisserie et ses pieds bottés sur le marbre élégant de la cheminée, où ses éperons, depuis trois mois qu'il occupait le château d'Uville, avaient tracé deux trous profonds, fouillés un peu plus tous les jours. <br>
+ 
+ </p><p class="no-text">[11 phrases]</p><br><p>
+Dans la salle ils trouvèrent les trois officiers de moindre grade : un lieutenant, Otto de Grossling ; deux sous-lieutenants, Fritz Scheunaubourg et <span class="mention" data-id="u-MENTION-180" data-info="suj"><b>[le marquis Wilhem d'Eyrik]</b></span> , un tout petit blondin fier et brutal avec les hommes, dur aux vaincus, et violent comme une arme à feu. <br>
+ 
+ </p><p>
+Depuis <span class="mention" data-id="u-MENTION-182" data-info="suj"><b>[son]</b></span> entrée en France, <span class="mention" data-id="u-MENTION-185" data-info="suj"><b>[ses]</b></span> camarades ne <span class="mention" data-id="u-MENTION-186" data-info="suj"><b>[l']</b></span> appelaient plus que Mlle Fifi.
+ 
+ </p><p>
+Ce surnom <span class="mention" data-id="u-MENTION-189" data-info="suj"><b>[lui]</b></span> venait de <span class="mention" data-id="u-MENTION-191" data-info="suj"><b>[sa]</b></span> tournure coquette, de <span class="mention" data-id="u-MENTION-193" data-info="suj"><b>[sa]</b></span> taille fine qu'on aurait dit tenue en un corset, de <span class="mention" data-id="u-MENTION-198" data-info="suj"><b>[sa]</b></span> figure pâle où <span class="mention" data-id="u-MENTION-201" data-info="suj"><b>[sa]</b></span> naissante moustache apparaissait à peine, et aussi de l'habitude qu' <span class="mention" data-id="u-MENTION-204" data-info="suj"><b>[il]</b></span> avait prise, pour exprimer <span class="mention" data-id="u-MENTION-206" data-info="suj"><b>[son]</b></span> souverain mépris des êtres et des choses, d'employer à tout moment la locution française--fi, XXXfi doncXXX, qu' <span class="mention" data-id="u-MENTION-212" data-info="suj"><b>[il]</b></span> prononçait avec un léger sifflement. <br>
+ 
+ </p><p>
+La salle à manger du château d'Uville était une longue et royale pièce dont les glaces de cristal ancien, étoilées de balles, et les hautes tapisseries des Flandres, tailladées à coups de sabre et pendantes par endroits, disaient les occupations de <span class="mention" data-id="u-MENTION-229" data-info="suj"><b>[Mlle Fifi]</b></span> , en <span class="mention" data-id="u-MENTION-231" data-info="suj"><b>[ses]</b></span> heures de désoeuvrement. <br>
+ 
+ </p><p class="no-text">[5 phrases]</p><br><p>
+Mais <span class="mention" data-id="u-MENTION-292" data-info="suj"><b>[Mlle Fifi]</b></span> cassait à tout moment le sien, et un soldat immédiatement <span class="mention" data-id="u-MENTION-296" data-info="suj"><b>[lui]</b></span> en présentait un autre. <br>
+ 
+ </p><p class="no-text">[16 phrases]</p><br><p>
+Bien que l'averse continuât avec autant de furie, le major affirma qu'il faisait moins sombre, et le lieutenant Otto annonçait avec conviction que le ciel allait s'éclaircir, <span class="mention" data-id="u-MENTION-406" data-info="suj"><b>[Mlle Fifi]</b></span>  <span class="mention" data-id="u-MENTION-407" data-info="suj"><b>[elle -même]</b></span> ne semblait pas tenir en place.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-409" data-info="suj"><b>[Elle]</b></span> se levait, se rasseyait.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-412" data-info="suj"><b>[Son]</b></span> oeil clair et dur cherchait quelque chose à briser.
+ 
+ </p><p>
+Soudain, fixant la dame aux moustaches, <span class="mention" data-id="u-MENTION-415" data-info="suj"><b>[le jeune blondin]</b></span> tira <span class="mention" data-id="u-MENTION-417" data-info="suj"><b>[son]</b></span> revolver.
+ 
+ </p><p>
+« Tu ne verras pas cela toi », dit <span class="mention" data-id="u-MENTION-421" data-info="suj"><b>[-il]</b></span> ; et, sans quitter <span class="mention" data-id="u-MENTION-423" data-info="suj"><b>[son]</b></span> siège, <span class="mention" data-id="u-MENTION-424" data-info="suj"><b>[il]</b></span> visa.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Puis <span class="mention" data-id="u-MENTION-428" data-info="suj"><b>[il]</b></span> s'écria : « Faisons la mine!!
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+La mine, c'était <span class="mention" data-id="u-MENTION-438" data-info="suj"><b>[son]</b></span> invention, <span class="mention" data-id="u-MENTION-440" data-info="suj"><b>[sa]</b></span> manière de détruire, <span class="mention" data-id="u-MENTION-442" data-info="suj"><b>[son]</b></span> amusement préféré. <br>
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Non qu'on les eût pillés, le major comte de Farlsberg ne l'aurait point permis ; mais <span class="mention" data-id="u-MENTION-492" data-info="suj"><b>[Mlle Fifi]</b></span> , de temps en temps, faisait la XXXmineXXX ; et tous les officiers, ce jour -là, s'amusaient vraiment pendant cinq minutes. <br>
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-497" data-info="suj"><b>[Le petit marquis]</b></span> alla chercher dans le salon ce qu'il <span class="mention" data-id="u-MENTION-500" data-info="suj"><b>[lui]</b></span> fallait.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-501" data-info="suj"><b>[Il]</b></span> rapporta une toute mignonne théière de Chine famille Rose qu' <span class="mention" data-id="u-MENTION-505" data-info="suj"><b>[il]</b></span> emplit de poudre à canon, et, par le bec, <span class="mention" data-id="u-MENTION-509" data-info="suj"><b>[il]</b></span> introduisit délicatement un long morceau d'amadou, l' <span class="mention" data-id="u-MENTION-513" data-info="suj"><b>[alluma]</b></span> , et <span class="mention" data-id="u-MENTION-514" data-info="suj"><b>[courut]</b></span> reporter cette machine infernale dans l'appartement voisin. <br>
+ 
+ </p><p>
+Puis <span class="mention" data-id="u-MENTION-517" data-info="suj"><b>[il]</b></span> revint bien vite, en fermant la porte.
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-525" data-info="suj"><b>[Mlle Fifi]</b></span> , entrée <span class="mention" data-id="u-MENTION-526" data-info="suj"><b>[la première]</b></span> , battait des mains avec délire devant une Vénus de terre cuite dont la tête avait enfin sauté ; et chacun ramassa des morceaux de porcelaine, s'étonnant aux dentelures étranges des éclats, examinant les dégâts nouveaux, contestant certains ravages comme produits par l'explosion précédente ; et le major considérait d'un air paternel le vaste salon bouleversé par cette mitraille à la Néron et sablé de débris d'objets d'art.
+ 
+ </p><p class="no-text">[12 phrases]</p><br><p>
+Seul, <span class="mention" data-id="u-MENTION-667" data-info="suj"><b>[le petit marquis Wilhem]</b></span> aurait bien voulu forcer la cloche à sonner.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-669" data-info="suj"><b>[Il]</b></span> enrageait de la condescendance politique de <span class="mention" data-id="u-MENTION-672" data-info="suj"><b>[son]</b></span> supérieur pour le prêtre ; et chaque jour <span class="mention" data-id="u-MENTION-675" data-info="suj"><b>[il]</b></span> suppliait le commandant de le laisser faire « Ding-don-don, » une fois, une seule petite fois, pour rire un peu seulement.
+ 
+ </p><p>
+Et <span class="mention" data-id="u-MENTION-678" data-info="suj"><b>[il]</b></span> demandait cela avec des grâces de chatte, des cajoleries de femme, des douceurs de voix d'une maîtresse affolée par une envie ; mais le commandant ne cédait point, et <span class="mention" data-id="u-MENTION-689" data-info="suj"><b>[Mlle Fifi]</b></span> , pour se consoler, faisait la XXXmineXXX dans le château d'Uville. <br>
+ 
+ </p><p class="no-text">[17 phrases]</p><br><p>
+» <br>
+Ayant ensuite embrassé Blondine, la seconde, en signe de propriété, il offrit au lieutenant Otto la grosse Amanda, Éva XXXla TomateXXX au sous-lieutenant Fritz, et la plus petite de toutes, Rachel, une brune toute jeune, à l'oeil noir comme une tache d'encre, une juive dont le nez retroussé confirmait la règle qui donne des becs courbes à toute sa race, <span class="mention" data-id="u-MENTION-849" data-info="suj"><b>[au plus jeune des officiers]</b></span> , au frêle marquis Wilhem d'Eyrik. <br>
+ 
+ </p><p class="no-text">[5 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-884" data-info="suj"><b>[Le marquis]</b></span> , sous prétexte de l'embrasser, venait de lui souffler un jet de tabac dans la bouche.
+ 
+ </p><p>
+Elle ne se fâcha point, ne dit pas un mot, mais elle regarda fixement <span class="mention" data-id="u-MENTION-894" data-info="suj"><b>[son possesseur]</b></span> avec une colère éveillée tout au fond de son oeil noir. <br>
+ 
+ </p><p class="no-text">[9 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-1009" data-info="suj"><b>[Mlle Fifi]</b></span> avait pris Rachel sur <span class="mention" data-id="u-MENTION-1012" data-info="suj"><b>[ses]</b></span> genoux, et, s'animant à froid, tantôt <span class="mention" data-id="u-MENTION-1013" data-info="suj"><b>[il]</b></span> embrassait follement les frisons d'ébène de son cou, humant par le mince intervalle entre la robe et la peau la douce chaleur de son corps et tout le fumet de sa personne ; tantôt à travers l'étoffe, <span class="mention" data-id="u-MENTION-1030" data-info="suj"><b>[il]</b></span> la pinçait avec fureur, la faisant crier, saisi d'une férocité rageuse, travaillé par son besoin de ravage.
+ 
+ </p><p>
+Souvent aussi, la tenant à pleins bras, l'étreignant comme pour la mêler à <span class="mention" data-id="u-MENTION-1041" data-info="suj"><b>[lui]</b></span> , <span class="mention" data-id="u-MENTION-1042" data-info="suj"><b>[il]</b></span> appuyait longuement <span class="mention" data-id="u-MENTION-1044" data-info="suj"><b>[ses]</b></span> lèvres sur la bouche fraîche de la juive, la baisait à perdre haleine ; mais soudain <span class="mention" data-id="u-MENTION-1049" data-info="suj"><b>[il]</b></span> la mordit si profondément qu'une traînée de sang descendit sur le menton de la jeune femme et coula dans son corsage. <br>
+ 
+ </p><p>
+Encore une fois, elle <span class="mention" data-id="u-MENTION-1060" data-info="suj"><b>[le]</b></span> regarda bien en face, et, lavant la plaie, murmura : « Ça se paye, cela.
+ 
+ </p><p>
+» <span class="mention" data-id="u-MENTION-1066" data-info="suj"><b>[Il]</b></span> se mit à rire, d'un rire dur.
+ 
+ </p><p>
+« <span class="mention" data-id="u-MENTION-1068" data-info="suj"><b>[Je]</b></span> payerai », dit <span class="mention" data-id="u-MENTION-1069" data-info="suj"><b>[-il]</b></span>  <br>
+ 
+ </p><p class="no-text">[8 phrases]</p><br><p>
+» <br>
+Mais <span class="mention" data-id="u-MENTION-1128" data-info="suj"><b>[le petit marquis]</b></span> , la tenant toujours sur <span class="mention" data-id="u-MENTION-1131" data-info="suj"><b>[ses]</b></span> genoux, se mit à rire, rendu très gai par le vin : « Ah!!
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+ <span class="mention" data-id="u-MENTION-1133" data-info="suj"><b>[je]</b></span> n'en ai jamais vu, <span class="mention" data-id="u-MENTION-1134" data-info="suj"><b>[moi]</b></span>  
+ </p><p class="no-text">[1 phrases]</p><br><p>
+» <br>
+La fille, exaspérée, <span class="mention" data-id="u-MENTION-1139" data-info="suj"><b>[lui]</b></span> cria dans la figure : « <span class="mention" data-id="u-MENTION-1141" data-info="suj"><b>[Tu]</b></span> mens, <span class="mention" data-id="u-MENTION-1142" data-info="suj"><b>[salop]</b></span> !!
+ 
+ </p><p>
+» <br>
+Durant une seconde, <span class="mention" data-id="u-MENTION-1144" data-info="suj"><b>[il]</b></span> fixa sur elle <span class="mention" data-id="u-MENTION-1147" data-info="suj"><b>[ses]</b></span> yeux clairs, comme <span class="mention" data-id="u-MENTION-1148" data-info="suj"><b>[il]</b></span> les fixait sur les tableaux dont <span class="mention" data-id="u-MENTION-1152" data-info="suj"><b>[il]</b></span> crevait la toile à coups de revolver, puis <span class="mention" data-id="u-MENTION-1156" data-info="suj"><b>[il]</b></span> se mit à rire : « Ah!!
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+» Et <span class="mention" data-id="u-MENTION-1162" data-info="suj"><b>[il]</b></span> s'animait : « Nous sommes leurs maîtres!!
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+» <br>
+Elle quitta <span class="mention" data-id="u-MENTION-1170" data-info="suj"><b>[ses]</b></span> genoux d'une secousse et retomba sur sa chaise.
+ 
+ </p><p>
+ <span class="mention" data-id="u-MENTION-1175" data-info="suj"><b>[Il]</b></span> se leva, tendit <span class="mention" data-id="u-MENTION-1177" data-info="suj"><b>[son]</b></span> verre jusqu'au milieu de la table et <span class="mention" data-id="u-MENTION-1180" data-info="suj"><b>[répéta]</b></span> : « A nous la France et les Français, les bois, les champs et les maisons de France!!
+ 
+ </p><p class="no-text">[4 phrases]</p><br><p>
+Alors, <span class="mention" data-id="u-MENTION-1201" data-info="suj"><b>[le petit marquis]</b></span> posa sur la tête de la juive <span class="mention" data-id="u-MENTION-1205" data-info="suj"><b>[sa]</b></span> coupe de Champagne emplie à nouveau : « A nous aussi, cria-t <span class="mention" data-id="u-MENTION-1208" data-info="suj"><b>[-il]</b></span> , toutes les femmes de France!!
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Les lèvres tremblantes, elle bravait du regard <span class="mention" data-id="u-MENTION-1223" data-info="suj"><b>[l'officier]</b></span>  <span class="mention" data-id="u-MENTION-1224" data-info="suj"><b>[qui]</b></span> riait toujours, et <span class="mention" data-id="u-MENTION-1225" data-info="suj"><b>[elle]</b></span> balbutia, d'une voix étranglée de colère : « Ça, ça, ça n'est pas vrai, par exemple, vous n'aurez pas les femmes de France.
+ 
+ </p><p>
+» <br>
+ <span class="mention" data-id="u-MENTION-1232" data-info="suj"><b>[Il]</b></span> s'assit pour rire à <span class="mention" data-id="u-MENTION-1234" data-info="suj"><b>[son]</b></span> aise, et, cherchant l'accent parisien : « Elle est pien ponne, pien ponne, qu'est -ce alors que tu viens faire ici, petite??
+ 
+ </p><p>
+» <br>
+Interdite, elle se tut d'abord, comprenant mal dans <span class="mention" data-id="u-MENTION-1240" data-info="suj"><b>[son]</b></span> trouble, puis, dès qu'elle eut bien saisi ce qu' <span class="mention" data-id="u-MENTION-1242" data-info="suj"><b>[il]</b></span> disait, elle <span class="mention" data-id="u-MENTION-1244" data-info="suj"><b>[lui]</b></span> jeta, indignée et véhémente : « Moi!!
+ 
+ </p><p class="no-text">[2 phrases]</p><br><p>
+» <br>
+Elle n'avait point fini qu' <span class="mention" data-id="u-MENTION-1256" data-info="suj"><b>[il]</b></span> la giflait à toute volée ; mais comme <span class="mention" data-id="u-MENTION-1259" data-info="suj"><b>[il]</b></span> levait encore une fois la main, affolée de rage, elle saisit sur la table un petit couteau de dessert à lame d'argent, et si brusquement, qu'on ne vit rien d'abord, elle le <span class="mention" data-id="u-MENTION-1272" data-info="suj"><b>[lui]</b></span> piqua droit dans le cou, juste au creux où la poitrine commence. <br>
+ 
+ </p><p>
+Un mot qu' <span class="mention" data-id="u-MENTION-1279" data-info="suj"><b>[il]</b></span> prononçait fut coupé dans <span class="mention" data-id="u-MENTION-1281" data-info="suj"><b>[sa]</b></span> gorge ; et <span class="mention" data-id="u-MENTION-1282" data-info="suj"><b>[il]</b></span> resta béant, avec un regard effroyable. <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+En deux minutes, <span class="mention" data-id="u-MENTION-1302" data-info="suj"><b>[Mlle Fifi]</b></span> fut morte.
+ 
+ </p><p class="no-text">[16 phrases]</p><br><p>
+Comme il lui fallait un prétexte afin de sévir sans contrainte, il fit venir le curé et lui ordonna de sonner la cloche à l'enterrement <span class="mention" data-id="u-MENTION-1414" data-info="suj"><b>[du marquis d'Eyrik]</b></span>  <br>
+ 
+ </p><p class="no-text">[1 phrases]</p><br><p>
+Et quand le corps de <span class="mention" data-id="u-MENTION-1420" data-info="suj"><b>[Mlle Fifi]</b></span> , porté par des soldats, précédé, entouré, suivi de soldats qui marchaient le fusil chargé, quitta le château d'Uville, allant au cimetière, pour la première fois la cloche tinta son glas funèbre avec une allure allègre, comme si une main amie l'eût caressée. <br>
+ 
+ </p>
+    </div>
+    </td>
+    <td width="40%">
+   
+        <img src="../images/CR_visualisation_texte/mademoisellefifi-1_RC_19-21_s-CHAINE-1.svg" style='"width: 300px; height: auto; object-fit: contain'/>
+ 
+    </td>
+    </tr>
+    <tr>
+<td><p>Il est possible de télécharger la ressource sur la page 
+						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
+<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
+
+					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+    
