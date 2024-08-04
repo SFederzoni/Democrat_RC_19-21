@@ -243,12 +243,15 @@ rs:hover::after {
 }
 /* tableau Tabulator */
 
-
+#tabulator-table2{
+  width: 100%;
+}
 
 #tabulator-table2 {
-  width:100%;
-  padding-left: 0px;
+  width:98%;
+  padding-left: 0px; 
   background: #F1F1F1;
+
 }
 
 
@@ -258,13 +261,15 @@ rs:hover::after {
      0px 10px 20px rgba(0,0,0,0.05),
      0px 20px 20px rgba(0,0,0,0.05),
      0px 30px 20px rgba(0,0,0,0.05);
-    height: 520px !important
-
+    height: 650px !important
 }
 
 #tabulator-table2 .tabulator-header .tabulator-col {
 	background:#158095;
 	height:60px;
+}
+#tabulator-table2 .tabulator-row  {
+	height:65px;
 }
 
 
@@ -276,15 +281,15 @@ rs:hover::after {
 #tabulator-table2 .tabulator-cell {
 	cursor: auto;
     font-size: 16px ;
-    color: #4A4A4A;
+    color: #4A4A4A;   
 }
 
 
 #tabulator-table2 .tabulator-header div{
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Arial';
-    text-align: center;
+  text-align: center;
   display: inline-block;
   vertical-align: middle;
 }
