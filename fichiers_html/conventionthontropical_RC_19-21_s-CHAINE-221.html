@@ -64,7 +64,7 @@
     display: block;
 }
 
-.mention:hover::before {
+/*.mention:hover::before {
     content: attr(data-info); /* Affiche les informations supplémentaires */
     position: absolute;
     background-color: #f0f0f0;
@@ -76,7 +76,7 @@
     white-space: normal; /* Permet le retour à la ligne pour les informations supplémentaires */
     display: block;
     width: max-content; /* Ajuste la largeur en fonction du contenu */
-}
+} */
         .no-text {
             color: grey;
         }
@@ -96,7 +96,6 @@
                     <li><a href="../index.html">Présentation</a></li>
                     <li><a href="../constitution.html">Constitution</a></li>
                     <li><a href="../exploration.html">Exploration</a></li>
-                    <li><a href="../telechargement.html">Téléchargement</a></li>
                 </ul>
             </nav>
         </div>
@@ -117,17 +116,18 @@
     </div>
     <table>
     <tr>
-<td><div id="stats_texte"><p>
+<td><div id="stats_CR"><p>
         Longueur nb maillons : <b>25 mentions</b><br>
         Id premier maillon : <b>u-MENTION-320</b><br>
         Id dernier maillon : <b>u-MENTION-3353</b><br>
         Type de référent : <b></b><br>
 </div>
+
 </td>
-<td> <img src="../images/sequences_individuelles/conventionthontropical_RC_19-21_s-CHAINE-221.svg" style="width: 450px; height: auto; object-fit: fill"/></td>
+<td> <img src="../images/sequences_individuelles/conventionthontropical_RC_19-21_s-CHAINE-221.svg" style="width: 450px; height: auto; object-fit: fill"/>  <img  src="../images/legend_new_v.png" style="width:10%; float:right;"/></td>
 </tr>
     <tr>
-    <td width="80%"><div id="texte_normalise">
+    <td width="80%"><div id="texte_CR">
     <p>
 0010 -0025 <br>
 Convention relative au renforcement de la Commission interaméricaine du thon tropical établie par la convention de 1949 entre les États-Unis d'Amérique et la République du Costa Rica ( " convention d'Antigua " ) <br>
@@ -155,13 +155,13 @@ b ) la poursuite de toute activité dont on peut raisonnablement attendre qu'ell
 c ) la pose, la recherche ou la récupération de tout dispositif de concentration du poisson ou de matériel connexe, y compris de radiobalises ; <br>
 d ) toute opération en mer menée en soutien ou en préparation à toute activité décrite aux points a ), b ) et c ) du présent paragraphe, à l'exception de toute opération d'urgence dans les situations impliquant un risque pour la santé et la sécurité de l'équipage ou la sécurité du navire ; <br>
 e ) l'utilisation de tout autre véhicule, aérien ou marin, en relation avec toute activité décrite dans la présente définition, sauf dans les situations d'urgence impliquant un risque pour la santé et la sécurité de l'équipage ou la sécurité du navire ; <br>
-3 ) " navire " : tout navire utilisé ou destiné à être utilisé pour <span class="mention" data-id="u-MENTION-320" data-info="suj"><b>[la pêche]</b></span> , y compris les navires de soutien, les navires auxiliaires et tout autre navire participant directement à de telles opérations de <span class="mention" data-id="u-MENTION-326" data-info="suj"><b>[pêche]</b></span> ; <br>
+3 ) " navire " : tout navire utilisé ou destiné à être utilisé pour <span class="mention" data-id="u-MENTION-320"><b>[la pêche]</b></span> , y compris les navires de soutien, les navires auxiliaires et tout autre navire participant directement à de telles opérations de <span class="mention" data-id="u-MENTION-326"><b>[pêche]</b></span> ; <br>
 4 ) " État du pavillon ", sauf indication contraire : <br>
 a ) un État dont les navires sont autorisés à battre le pavillon, ou <br>
 b ) une organisation régionale d'intégration économique au sein de laquelle les navires sont autorisés à battre le pavillon d'un État membre de cette organisation régionale d'intégration économique ; <br>
 5 ) " consensus " : l'adoption d'une décision sans vote ni formulation expresse d'aucune objection ; <br>
 6 ) " parties " : les États et les organisations régionales d'intégration économique qui ont accepté d'être liés par la présente convention et pour lesquels la présente convention est en vigueur, conformément aux dispositions des articles XXVII, XXIX et XXX de la présente convention ; <br>
-7 ) " membres de la Commission " : les parties et toute entité de <span class="mention" data-id="u-MENTION-374" data-info="suj"><b>[pêche]</b></span> qui s'est expressément engagée, conformément aux dispositions de l'article XXVIII de la présente convention, à respecter les dispositions de la présente convention et à observer toute mesure de conservation et de gestion adoptée en vertu de celle -ci ; <br>
+7 ) " membres de la Commission " : les parties et toute entité de <span class="mention" data-id="u-MENTION-374"><b>[pêche]</b></span> qui s'est expressément engagée, conformément aux dispositions de l'article XXVIII de la présente convention, à respecter les dispositions de la présente convention et à observer toute mesure de conservation et de gestion adoptée en vertu de celle -ci ; <br>
 8 ) " organisation régionale d'intégration économique " : une organisation régionale d'intégration économique à laquelle ses États membres ont transféré des compétences sur les questions relevant de la présente convention, y compris le pouvoir de prendre des décisions sur ces questions qui engagent ses États membres ; <br>
 9 ) " convention de 1949 " : la convention entre les États-Unis d'Amérique et la République du Costa Rica établissant la Commission interaméricaine du thon tropical ; <br>
 10 ) " Commission " : la Commission interaméricaine du thon tropical ; <br>
@@ -174,54 +174,54 @@ b ) une organisation régionale d'intégration économique au sein de laquelle l
 La Commission exerce les fonctions suivantes, en accordant la priorité aux thons et aux espèces apparentées : <br>
 a ) promouvoir, mener et coordonner les recherches scientifiques sur l'abondance, la biologie et la biométrie dans la zone de la convention des stocks de poissons visés par la présente convention et, en tant que de besoin, des espèces associées ou dépendantes, ainsi que sur l'incidence des facteurs naturels et des activités humaines sur les populations de ces stocks et espèces ; <br>
 b ) adopter des normes en vue de la collecte, de la vérification, et de l'échange et de la communication en temps opportun des données relatives à la pêche des stocks de poissons visés par la présente convention ; <br>
-c ) adopter des mesures fondées sur les meilleures données scientifiques disponibles pour garantir la conservation et l'utilisation durable à long terme des stocks de poissons visés par la présente convention et pour maintenir ou rétablir les populations des espèces exploitées à des niveaux d'abondance susceptibles de produire un rendement constant maximal, entre autres, en définissant un volume admissible des captures des stocks de poissons déterminé par la Commission et / ou un niveau total de capacité de <span class="mention" data-id="u-MENTION-790" data-info="suj"><b>[pêche]</b></span> et / ou le niveau d'effort de <span class="mention" data-id="u-MENTION-793" data-info="suj"><b>[pêche]</b></span> admissible pour la zone de la convention dans son ensemble ; <br>
-d ) déterminer si, au vu des meilleures informations scientifiques disponibles, un stock de poissons donné visé par la présente convention est totalement exploité ou surexploité et, sur cette base, si une augmentation de la capacité de <span class="mention" data-id="u-MENTION-806" data-info="suj"><b>[pêche]</b></span> ou du niveau de l'effort de <span class="mention" data-id="u-MENTION-809" data-info="suj"><b>[pêche]</b></span> est susceptible de mettre en péril la conservation de ce stock ; <br>
-e ) s'agissant des stocks visés au point d ) du présent paragraphe, déterminer, sur la base de critères adoptés ou appliqués par la Commission, dans quelle mesure les intérêts en matière de <span class="mention" data-id="u-MENTION-822" data-info="suj"><b>[pêche]</b></span> des nouveaux membres de la Commission pourraient être pris en considération, en tenant compte des normes et pratiques internationales pertinentes ; <br>
+c ) adopter des mesures fondées sur les meilleures données scientifiques disponibles pour garantir la conservation et l'utilisation durable à long terme des stocks de poissons visés par la présente convention et pour maintenir ou rétablir les populations des espèces exploitées à des niveaux d'abondance susceptibles de produire un rendement constant maximal, entre autres, en définissant un volume admissible des captures des stocks de poissons déterminé par la Commission et / ou un niveau total de capacité de <span class="mention" data-id="u-MENTION-790"><b>[pêche]</b></span> et / ou le niveau d'effort de <span class="mention" data-id="u-MENTION-793"><b>[pêche]</b></span> admissible pour la zone de la convention dans son ensemble ; <br>
+d ) déterminer si, au vu des meilleures informations scientifiques disponibles, un stock de poissons donné visé par la présente convention est totalement exploité ou surexploité et, sur cette base, si une augmentation de la capacité de <span class="mention" data-id="u-MENTION-806"><b>[pêche]</b></span> ou du niveau de l'effort de <span class="mention" data-id="u-MENTION-809"><b>[pêche]</b></span> est susceptible de mettre en péril la conservation de ce stock ; <br>
+e ) s'agissant des stocks visés au point d ) du présent paragraphe, déterminer, sur la base de critères adoptés ou appliqués par la Commission, dans quelle mesure les intérêts en matière de <span class="mention" data-id="u-MENTION-822"><b>[pêche]</b></span> des nouveaux membres de la Commission pourraient être pris en considération, en tenant compte des normes et pratiques internationales pertinentes ; <br>
 f ) adopter, en tant que de besoin, des mesures et des recommandations en matière de conservation et de gestion pour les espèces appartenant au même écosystème et qui sont affectées par la pêche d'espèces de poissons visées par la présente convention, ou qui sont dépendantes de ces espèces ou associées avec elles, afin de maintenir ou de rétablir les populations de ces espèces au dessus du niveau auquel leur reproduction pourrait être sérieusement menacée ; <br>
 g ) adopter les mesures appropriées pour éviter, limiter et réduire au minimum le gaspillage, les rejets, les captures par engins perdus ou abandonnés, la capture d'espèces non visées ( de poissons ou autres espèces ) ainsi que les effets sur les espèces associées ou dépendantes, en particulier les espèces menacées d'extinction ; <br>
-h ) adopter les mesures appropriées en vue d'empêcher ou de faire cesser la surexploitation et la surcapacité de <span class="mention" data-id="u-MENTION-875" data-info="suj"><b>[pêche]</b></span> et faire en sorte que l'effort de <span class="mention" data-id="u-MENTION-877" data-info="suj"><b>[pêche]</b></span> n'atteigne pas un niveau incompatible avec l'utilisation durable des stocks de poissons visés par la présente convention ; <br>
+h ) adopter les mesures appropriées en vue d'empêcher ou de faire cesser la surexploitation et la surcapacité de <span class="mention" data-id="u-MENTION-875"><b>[pêche]</b></span> et faire en sorte que l'effort de <span class="mention" data-id="u-MENTION-877"><b>[pêche]</b></span> n'atteigne pas un niveau incompatible avec l'utilisation durable des stocks de poissons visés par la présente convention ; <br>
 i ) établir un programme exhaustif de collecte des données et de suivi comprenant les éléments que la Commission juge nécessaires.
  
  </p><p>
 Chaque membre de la Commission peut également conserver son propre programme, conforme aux directives adoptées par la Commission ; <br>
 j ) garantir que l'élaboration des mesures qui seront adoptées conformément aux points a ) à i ) du présent paragraphe prenne dûment en considération le besoin de coordination et de compatibilité avec les mesures adoptées conformément à l'APICD ; <br>
-k ) promouvoir, pour autant que possible, la mise au point et l'utilisation d'engins et de techniques de <span class="mention" data-id="u-MENTION-920" data-info="suj"><b>[pêche]</b></span> sélectifs, sans danger pour l'environnement et d'un bon rapport coût-efficacité, ainsi que d'autres activités associées, y compris les activités liées, entre autres, au transfert de technologie et à la formation ; <br>
-l ) définir, en tant que de besoin, des critères et prendre des décisions, portant sur la répartition du volume admissible de captures, ou la capacité de <span class="mention" data-id="u-MENTION-937" data-info="suj"><b>[pêche]</b></span> totale admissible, y compris la capacité de charge, ou le niveau de l'effort de <span class="mention" data-id="u-MENTION-942" data-info="suj"><b>[pêche]</b></span> , en tenant compte de tous les facteurs pertinents ; <br>
+k ) promouvoir, pour autant que possible, la mise au point et l'utilisation d'engins et de techniques de <span class="mention" data-id="u-MENTION-920"><b>[pêche]</b></span> sélectifs, sans danger pour l'environnement et d'un bon rapport coût-efficacité, ainsi que d'autres activités associées, y compris les activités liées, entre autres, au transfert de technologie et à la formation ; <br>
+l ) définir, en tant que de besoin, des critères et prendre des décisions, portant sur la répartition du volume admissible de captures, ou la capacité de <span class="mention" data-id="u-MENTION-937"><b>[pêche]</b></span> totale admissible, y compris la capacité de charge, ou le niveau de l'effort de <span class="mention" data-id="u-MENTION-942"><b>[pêche]</b></span> , en tenant compte de tous les facteurs pertinents ; <br>
 m ) appliquer l'approche de précaution conformément aux dispositions de l'article IV de la présente convention.
  
  </p><p class="no-text">[106 phrases]</p><br><p>
 La Commission, dans son processus de prise de décisions et dans ses autres activités, promeut la transparence quant à l'application de la présente convention, entre autres, par le biais de : <br>
 a ) la diffusion publique des informations pertinentes non confidentielles, et <br>
-b ) le cas échéant, la facilitation des consultations avec les organisations non gouvernementales, les représentants de l'industrie de <span class="mention" data-id="u-MENTION-2080" data-info="suj"><b>[la pêche]</b></span> , en particulier de la flotte de <span class="mention" data-id="u-MENTION-2082" data-info="suj"><b>[pêche]</b></span> , et d'autres instances et personnes intéressées, ainsi que leur participation effective. <br>
+b ) le cas échéant, la facilitation des consultations avec les organisations non gouvernementales, les représentants de l'industrie de <span class="mention" data-id="u-MENTION-2080"><b>[la pêche]</b></span> , en particulier de la flotte de <span class="mention" data-id="u-MENTION-2082"><b>[pêche]</b></span> , et d'autres instances et personnes intéressées, ainsi que leur participation effective. <br>
  
  </p><p class="no-text">[7 phrases]</p><br><p>
-Chaque partie fournit à la Commission toutes les informations nécessaires à la réalisation de l'objectif de la présente convention, y compris les informations statistiques et biologiques et celles relatives à ses activités de <span class="mention" data-id="u-MENTION-2196" data-info="suj"><b>[pêche]</b></span> dans la zone de la convention, et met à disposition de la Commission les informations concernant les actions entreprises pour appliquer les mesures adoptées conformément à la présente convention, lorsque la Commission le requiert et en tant que de besoin, sous réserve des dispositions de l'article XXII de la présente convention et conformément aux règles de procédure élaborées et adoptées par la Commission. <br>
+Chaque partie fournit à la Commission toutes les informations nécessaires à la réalisation de l'objectif de la présente convention, y compris les informations statistiques et biologiques et celles relatives à ses activités de <span class="mention" data-id="u-MENTION-2196"><b>[pêche]</b></span> dans la zone de la convention, et met à disposition de la Commission les informations concernant les actions entreprises pour appliquer les mesures adoptées conformément à la présente convention, lorsque la Commission le requiert et en tant que de besoin, sous réserve des dispositions de l'article XXII de la présente convention et conformément aux règles de procédure élaborées et adoptées par la Commission. <br>
  
  </p><p class="no-text">[18 phrases]</p><br><p>
-Article XIX : Application, respect de la réglementation et pouvoirs de police des entités de <span class="mention" data-id="u-MENTION-2468" data-info="suj"><b>[pêche]</b></span> <br>
-L'article XVIII de la présente convention s'applique mutatis mutandis aux entités de <span class="mention" data-id="u-MENTION-2472" data-info="suj"><b>[pêche]</b></span> membres de la Commission. <br>
+Article XIX : Application, respect de la réglementation et pouvoirs de police des entités de <span class="mention" data-id="u-MENTION-2468"><b>[pêche]</b></span> <br>
+L'article XVIII de la présente convention s'applique mutatis mutandis aux entités de <span class="mention" data-id="u-MENTION-2472"><b>[pêche]</b></span> membres de la Commission. <br>
  
  </p><p class="no-text">[7 phrases]</p><br><p>
-Article XXI : Obligations des entités de <span class="mention" data-id="u-MENTION-2550" data-info="suj"><b>[pêche]</b></span> <br>
-L'article XX de la présente convention s'applique mutatis mutandis aux entités de <span class="mention" data-id="u-MENTION-2554" data-info="suj"><b>[pêche]</b></span> membres de la Commission. <br>
+Article XXI : Obligations des entités de <span class="mention" data-id="u-MENTION-2550"><b>[pêche]</b></span> <br>
+L'article XX de la présente convention s'applique mutatis mutandis aux entités de <span class="mention" data-id="u-MENTION-2554"><b>[pêche]</b></span> membres de la Commission. <br>
  
  </p><p class="no-text">[26 phrases]</p><br><p>
-La Commission et ses membres encouragent tous les États et les organisations régionales d'intégration économique visés à l'article XXVII de la présente convention et, le cas échéant, les entités de <span class="mention" data-id="u-MENTION-2787" data-info="suj"><b>[pêche]</b></span> visées à l'article XXVIII de la présente convention qui ne sont pas membres de la Commission, à le devenir ou à adopter des lois et règlements conformes à la présente convention. <br>
+La Commission et ses membres encouragent tous les États et les organisations régionales d'intégration économique visés à l'article XXVII de la présente convention et, le cas échéant, les entités de <span class="mention" data-id="u-MENTION-2787"><b>[pêche]</b></span> visées à l'article XXVIII de la présente convention qui ne sont pas membres de la Commission, à le devenir ou à adopter des lois et règlements conformes à la présente convention. <br>
  
  </p><p class="no-text">[9 phrases]</p><br><p>
-Article XXVIII : Entités de <span class="mention" data-id="u-MENTION-2911" data-info="suj"><b>[pêche]</b></span> <br>
+Article XXVIII : Entités de <span class="mention" data-id="u-MENTION-2911"><b>[pêche]</b></span> <br>
 1.
  
  </p><p>
-Toute entité de <span class="mention" data-id="u-MENTION-2914" data-info="suj"><b>[pêche]</b></span> dont les navires ont pêché des stocks de poissons visés par la présente convention à un quelconque moment au cours des quatre ans ayant précédé l'adoption de la présente convention peut exprimer son engagement ferme à respecter les dispositions de la présente convention et à observer toute mesure de conservation et de gestion adoptée en vertu de celle -ci : <br>
+Toute entité de <span class="mention" data-id="u-MENTION-2914"><b>[pêche]</b></span> dont les navires ont pêché des stocks de poissons visés par la présente convention à un quelconque moment au cours des quatre ans ayant précédé l'adoption de la présente convention peut exprimer son engagement ferme à respecter les dispositions de la présente convention et à observer toute mesure de conservation et de gestion adoptée en vertu de celle -ci : <br>
 a ) en signant, pendant la période visée à l'article XXVII, paragraphe 1, de la présente convention, un instrument rédigé à cette fin conformément à une résolution que la Commission doit adopter en vertu de la convention de 1949, et / ou <br>
 b ) pendant la période susvisée ou postérieurement, par le biais d'une communication écrite adressée au dépositaire, conformément à une résolution que la Commission doit adopter en vertu de la convention de 1949.
  
  </p><p class="no-text">[4 phrases]</p><br><p>
-Toute entité de <span class="mention" data-id="u-MENTION-2978" data-info="suj"><b>[pêche]</b></span> susvisée peut exprimer son engagement ferme à respecter les dispositions de la présente convention si elle était amendée conformément à l'article XXXIV ou à l'article XXXV de la présente convention par le biais d'une communication écrite adressée à cette fin au dépositaire, conformément à la résolution visée au paragraphe 1 du présent article. <br>
+Toute entité de <span class="mention" data-id="u-MENTION-2978"><b>[pêche]</b></span> susvisée peut exprimer son engagement ferme à respecter les dispositions de la présente convention si elle était amendée conformément à l'article XXXIV ou à l'article XXXV de la présente convention par le biais d'une communication écrite adressée à cette fin au dépositaire, conformément à la résolution visée au paragraphe 1 du présent article. <br>
  
  </p><p class="no-text">[45 phrases]</p><br><p>
-Le présent article s'applique, mutatis mutandis, à toute entité de <span class="mention" data-id="u-MENTION-3353" data-info="suj"><b>[pêche]</b></span> en ce qui concerne son engagement en vertu de l'article XXVIII de la présente convention. <br>
+Le présent article s'applique, mutatis mutandis, à toute entité de <span class="mention" data-id="u-MENTION-3353"><b>[pêche]</b></span> en ce qui concerne son engagement en vertu de l'article XXVIII de la présente convention. <br>
  
  </p>
     </div>
@@ -232,14 +232,12 @@ Le présent article s'applique, mutatis mutandis, à toute entité de <span clas
  
     </td>
     </tr>
-    <tr>
-<td><p>Il est possible de télécharger la ressource sur la page 
-						<a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a></p></td>
-<td><font color="gray">Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à 
-
-					<a href="mailto:silvia.federzoni89@gmail.com">silvia.federzoni89@gmail.com</a></font></td>
-</tr>
 </table>
+
+<p>La ressource peut être téléchargée sur la page <a href="https://hdl.handle.net/11403/democrat_rc_19-21">Ortolang</a><br>
+Si vous avez des questions ou vous voyez des erreurs, merci d'envoyer un mail à <a href="mailto:silvia.federzoni89@gmail.com?subject=Questions&body=DemRC19-21 Questions">silvia.federzoni89@gmail.com</a></p>
+<hr>
+	<p><font size="-1">Site développé par S. Federzoni  (<a href="mailto:silvia.federzoni89@gmail.com?subject=Questions&body=DemRC19-21 Questions">contact</a>)</font></p>
 </div>
 </body>
 </html>
