@@ -369,3 +369,6 @@ rs:hover::after {
     pointer-events: none;
 }
 
+.liste_filtres {
+    list-style-type: circle;
+}
