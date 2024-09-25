@@ -46,41 +46,7 @@
 	<hr>
     <p>Cette page permet d'explorer les chaînes de référence de la ressource Democrat-RC 19-21.
         <br> 
-        Le tableau permet d'effectuer des recherhces sur les chaînes selon les options suivantes : <br>
-        <ul>
-            <li>rechercer une chaîne par son identifiant (colonne <i>ID</i>)</li> 
-
-            <li>filtrer les chaînes selon leur longueur en nombre de maillons. Vous pouvez filtrer selon : </li>
-                <ul class="liste_filtres">
-                <li>la longueur des chaînes égale au nombre de maillon souhaité (==) ;</li>
-                <li>la longueur des chaînes supérieure au nombre de maillon souhaité (>) ;</li>
-                <li>la longueur des chaînes supérieure ou égale au nombre de maillon souhaité (>=) ;</li>
-                <li>la longueur des chaînes inférieure au nombre de maillon souhaité (<) ;</li>
-                <li>la longueur des chaînes inférieure ou égale au nombre de maillon souhaité (<=) ;</li>
-                <b>N.B. :</b> Une fois que vous avez sélectionné le filtre et le nombre de maillon souhaité, il faut cliquer sur le bouton <b>Apply</b> pour que le filtrage soit fait.
-                </ul>
-            <li>filtrer les chaînes selon le type de texte (<i>narratif</i> ou <i>non narratif</i>) ;</li>
-            <li>filtrer les chaînes selon le genre textuel (<i>articles de presse, articles encyclopédiques, biographie, nouvelle, pamphlet, roman, textes juridiques</i>) ;</li>
-            <li>filtrer les chaînes selon la nature du référent (<i>concret</i> ou <i>abstrait</i>) ;</li>
-            <li>filtrer les chaînes selon la nature du référent (<i>humain individuel, huamin collectif, non humain</i>. La valeur <i>###</i> indique les référents abstrait pour lesquels une classification supplémetnaire n'est pas proposée (voir la page <i><a href="./constitution.html">Constitution</a></i>) ;</li>
-            <li>rechercher des chaînes en fonction du patron associé à la chaîne (en cours).</li>
-        </ul>
-        Il est également possible de trier les chaînes par ordre alaphabétique des valeurs possibles dans chacune des colonnes. La colonne <i>Nb maillons</i> permet de trier les chaînes selon leur longueur, par ordre croissant ou décroissant.<br><br>
-        La colonne <i>Séquences 7 maillons</i> est une représentation graphique de l'enchaînement des premiers 7 maillons des chaînes (voir la page voir la page <i><a href="./analyse_sequencesCR.html">Analyse des séquences</a></i>). Chaque maillon est représenté par un rectangle. Les couleurs correspondent chacune à la catégorie des maillons (nature des maillons), comme indiqué dans la légende ci-dessous. 
-        <p><img  src="../images/legend_new_h.png" style="width: 40%; float:center;"/></p>
-    </p> 
-	<p>
-    Pour acceder au texte des chaînes, vous pouvez cliquer sur leurs identifiants. Vous serez rédirigés vers une nouvelle page qui contient plusieurs informations : 
-    <ul>
-        <b>Sur le côté gauche : </b>
-        <li>Des informations sur la chaînes (nombre de maillons, id du premier maillon et du dernier maillon de la chaine, etc.) ; </li>
-        <li>Le texte de la chaîne. Les maillons sont en couleur. Lorsque l'on survole la mention avec la souris, l'identifiant du maillon s'affiche. Le texte des phrases qui ne contiennent pas de maillons ne figure pas : à la place, nous indiquons entre crochet le nombre de phrases sans maillons ; </li>
-        <b>Sur le côté droit : </b>
-        <li>La visualisation en séquence et la légende qui indique la nature du maillon correspondant à chaque couleur ; </li>
-        <li>Une visualisation de la couverture de la chaîne et de la répartition des maillons dans le texte. Chaque carré correspond à un token. Les carrés gris indiquent les mots du texte qui ne sont pas des maillons. En couleur, les mots constituant des maillons de la chaîne. Dans cette visualisation, tous les mots des phrases sans maillons sont quand même représentés par des carrés gris, permettant ainsi d'avoir une vision de la distance entre les maillons et de leur repartition dans le texte. 
-    </ul>  
-    </p> 
-    <p>L'interface permet de naviguer entre les chaînes sans revenir au tableau d'exploration. Les chaînes sont organisées par texte : ainsi, si vous consultez la page d'une chaîne appartenant à un texte encyclopédique, les chaînes précédente et suivante seront des chaînes de ce même texte. Toutefois, si vous êtes sur la page de la première chaîne d'un texte et vous passez à la chaîne précédente, vous serez dirigé vers la dernière chaîne du texte précédent ; si vous consultez la dernière chaîne d'un texte, la chaîne suivate correspondra à la première du texte suivant.</p>
+    </p>
 		
 		
     <table>
@@ -358,7 +324,44 @@ const table = new Tabulator("#tabulator-table2", {
 	  });
 	});
 </script>
+<div class="contenu_page">
+    Le tableau permet d'effectuer des recherhces sur les chaînes selon les options suivantes : <br>
+    <ul>
+        <li>rechercer une chaîne par son identifiant (colonne <i>ID</i>)</li> 
+
+        <li>filtrer les chaînes selon leur longueur en nombre de maillons. Vous pouvez filtrer selon : </li>
+            <ul class="liste_filtres">
+            <li>la longueur des chaînes égale au nombre de maillon souhaité (==) ;</li>
+            <li>la longueur des chaînes supérieure au nombre de maillon souhaité (>) ;</li>
+            <li>la longueur des chaînes supérieure ou égale au nombre de maillon souhaité (>=) ;</li>
+            <li>la longueur des chaînes inférieure au nombre de maillon souhaité (<) ;</li>
+            <li>la longueur des chaînes inférieure ou égale au nombre de maillon souhaité (<=) ;</li>
+            <b>N.B. :</b> Une fois que vous avez sélectionné le filtre et le nombre de maillon souhaité, il faut cliquer sur le bouton <b>Apply</b> pour que le filtrage soit fait.
+            </ul>
+        <li>filtrer les chaînes selon le type de texte (<i>narratif</i> ou <i>non narratif</i>) ;</li>
+        <li>filtrer les chaînes selon le genre textuel (<i>articles de presse, articles encyclopédiques, biographie, nouvelle, pamphlet, roman, textes juridiques</i>) ;</li>
+        <li>filtrer les chaînes selon la nature du référent (<i>concret</i> ou <i>abstrait</i>) ;</li>
+        <li>filtrer les chaînes selon la nature du référent (<i>humain individuel, huamin collectif, non humain</i>. La valeur <i>###</i> indique les référents abstrait pour lesquels une classification supplémetnaire n'est pas proposée (voir la page <i><a href="./constitution.html">Constitution</a></i>) ;</li>
+        <li>rechercher des chaînes en fonction du patron associé à la chaîne (en cours).</li>
+    </ul>
+    Il est également possible de trier les chaînes par ordre alaphabétique des valeurs possibles dans chacune des colonnes. La colonne <i>Nb maillons</i> permet de trier les chaînes selon leur longueur, par ordre croissant ou décroissant.<br><br>
+    La colonne <i>Séquences 7 maillons</i> est une représentation graphique de l'enchaînement des premiers 7 maillons des chaînes (voir la page voir la page <i><a href="./analyse_sequencesCR.html">Analyse des séquences</a></i>). Chaque maillon est représenté par un rectangle. Les couleurs correspondent chacune à la catégorie des maillons (nature des maillons), comme indiqué dans la légende ci-dessous. 
+    <p><img  src="../images/legend_new_h.png" style="width: 40%; float:center;"/></p>
+</p> 
+<p>
+Pour acceder au texte des chaînes, vous pouvez cliquer sur leurs identifiants. Vous serez rédirigés vers une nouvelle page qui contient plusieurs informations : 
+<ul>
+    <b>Sur le côté gauche : </b>
+    <li>Des informations sur la chaînes (nombre de maillons, id du premier maillon et du dernier maillon de la chaine, etc.) ; </li>
+    <li>Le texte de la chaîne. Les maillons sont en couleur. Lorsque l'on survole la mention avec la souris, l'identifiant du maillon s'affiche. Le texte des phrases qui ne contiennent pas de maillons ne figure pas : à la place, nous indiquons entre crochet le nombre de phrases sans maillons ; </li>
+    <b>Sur le côté droit : </b>
+    <li>La visualisation en séquence et la légende qui indique la nature du maillon correspondant à chaque couleur ; </li>
+    <li>Une visualisation de la couverture de la chaîne et de la répartition des maillons dans le texte. Chaque carré correspond à un token. Les carrés gris indiquent les mots du texte qui ne sont pas des maillons. En couleur, les mots constituant des maillons de la chaîne. Dans cette visualisation, tous les mots des phrases sans maillons sont quand même représentés par des carrés gris, permettant ainsi d'avoir une vision de la distance entre les maillons et de leur repartition dans le texte. 
+</ul>  
+</p> 
+<p>L'interface permet de naviguer entre les chaînes sans revenir au tableau d'exploration. Les chaînes sont organisées par texte : ainsi, si vous consultez la page d'une chaîne appartenant à un texte encyclopédique, les chaînes précédente et suivante seront des chaînes de ce même texte. Toutefois, si vous êtes sur la page de la première chaîne d'un texte et vous passez à la chaîne précédente, vous serez dirigé vers la dernière chaîne du texte précédent ; si vous consultez la dernière chaîne d'un texte, la chaîne suivate correspondra à la première du texte suivant.</p></div>
 <div>
+
 	<hr>
 	<p><font size="-1">Site développé par S. Federzoni  (<a href="mailto:silvia.federzoni89@gmail.com?subject=Questions&body=DemRC19-21 Questions">contact</a>)</font></p>
 </div>
