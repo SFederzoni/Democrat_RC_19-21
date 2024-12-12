@@ -292,22 +292,18 @@ const table = new Tabulator("#tabulator-table2", {
             width: "14%"
            
         },
-        {
-            title: 'Sequences 7 maillons',
-            field: "id",
-             formatter: function(cell, formatterParams, onRendered) {
+        { 
+                title: `<div style="text-align: center;">
+                            Sequences 7 maillons
+                            <br>
+                            <img src="./images/legend_new_h.png" alt="Légende" style="width: 60%; cursor: pointer;" onclick="openPopup('./images/legend_new_h.png')" />
+                        </div>`,
+                field: "id",
+                formatter: function(cell, formatterParams, onRendered) {
                     const id = cell.getValue();
                     const imgSrc = "./images/sequences_individuelles/" + id + ".svg";
-                    const legendSrc = "./images/legend_new_h.png"; // Chemin vers l'image de la légende
-                    return `
-                        <div style="text-align: center;">
-                            <img src="${imgSrc}" alt="Image individuelle" style="height: 65px; width: 150px; display: block; margin: 0 auto;" />
-                            <button 
-                                style="margin-top: 5px; padding: 5px 10px; font-size: 12px; cursor: pointer;" 
-                                onclick="openPopupLegend('${legendSrc}')">
-                                Voir légende
-                            </button>
-                        </div>`;},
+                    return `<img src="${imgSrc}" alt="Image" style="height: 65px; width: 150px;" />`;
+                },
             width: "15%"
            
         }, 
