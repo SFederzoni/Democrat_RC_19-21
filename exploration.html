@@ -211,6 +211,13 @@ function imagesLoaded(images, callback) {
     }
 }
 
+// Fonction JavaScript pour ouvrir une popup avec l'image
+function openPopup(imageUrl) {
+    const popupWindow = window.open("", "ImagePopup", "width=600,height=400");
+    popupWindow.document.write(`<img src="${imageUrl}" alt="Popup Image" style="width: 100%; height: auto;" />`);
+}
+
+	
 document.addEventListener("DOMContentLoaded", function() {
     var images = document.querySelectorAll("img");
     imagesLoaded(images, function() {
@@ -281,7 +288,10 @@ const table = new Tabulator("#tabulator-table2", {
            
         },
         {
-            title: 'Sequences 7 maillons' <br>  return `<img  src="./images/legend_new_h.png" style="width: 40%; float:center;"/>`,
+            title: 'Sequences 7 maillons',
+		formatter: function() {
+      			  return `<img src="./images/legend_new_h.png" alt="Legend" style="width: 40%; cursor: pointer;" onclick="openPopup('./images/legend_new_h.png')" />`;
+    			},
             field: "id",
             formatter: function(cell, formatterParams, onRendered) {
                 const id = cell.getValue();
