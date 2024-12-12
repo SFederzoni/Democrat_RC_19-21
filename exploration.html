@@ -211,10 +211,15 @@ function imagesLoaded(images, callback) {
     }
 }
 
-// Fonction JavaScript pour ouvrir une popup avec l'image
-function openPopup(imageUrl) {
+// Fonction JavaScript pour ouvrir une popup avec la légende
+function openPopupLegend(imageUrl) {
     const popupWindow = window.open("", "ImagePopup", "width=600,height=400");
-    popupWindow.document.write(`<img src="${imageUrl}" alt="Popup Image" style="width: 100%; height: auto;" />`);
+    popupWindow.document.write(`
+        <div style="text-align: center;">
+            <h3>Légende de l'image</h3>
+            <img src="${imageUrl}" alt="Popup Legend" style="width: 100%; height: auto;" />
+        </div>
+    `);
 }
 
 	
@@ -293,11 +298,19 @@ const table = new Tabulator("#tabulator-table2", {
       			  return `<img src="./images/legend_new_h.png" alt="Legend" style="width: 40%; cursor: pointer;" onclick="openPopup('./images/legend_new_h.png')" />`;
     			},
             field: "id",
-            formatter: function(cell, formatterParams, onRendered) {
-                const id = cell.getValue();
-                const imgSrc = "./images/sequences_individuelles/" + id + ".svg";
-                return `<img src="${imgSrc}" alt="Image" style="height: 65px; width: 150px;" />`;
-            },
+             formatter: function(cell, formatterParams, onRendered) {
+                    const id = cell.getValue();
+                    const imgSrc = "./images/sequences_individuelles/" + id + ".svg";
+                    const legendSrc = "./images/legend_new_h.png"; // Chemin vers l'image de la légende
+                    return `
+                        <div style="text-align: center;">
+                            <img src="${imgSrc}" alt="Image individuelle" style="height: 65px; width: 150px; display: block; margin: 0 auto;" />
+                            <button 
+                                style="margin-top: 5px; padding: 5px 10px; font-size: 12px; cursor: pointer;" 
+                                onclick="openPopupLegend('${legendSrc}')">
+                                Voir légende
+                            </button>
+                        </div>`;
             width: "15%"
            
         }, 
