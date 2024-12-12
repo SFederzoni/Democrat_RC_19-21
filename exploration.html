@@ -281,7 +281,7 @@ const table = new Tabulator("#tabulator-table2", {
            
         },
         {
-            title: 'Sequences 7 maillons' <br> <img  src="./images/legend_new_h.png" style="width: 40%; float:center;"/>',
+            title: 'Sequences 7 maillons' <br>  return `<img  src="./images/legend_new_h.png" style="width: 40%; float:center;"/>`,
             field: "id",
             formatter: function(cell, formatterParams, onRendered) {
                 const id = cell.getValue();
