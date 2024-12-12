@@ -294,9 +294,6 @@ const table = new Tabulator("#tabulator-table2", {
         },
         {
             title: 'Sequences 7 maillons',
-		formatter: function() {
-      			  return `<img src="./images/legend_new_h.png" alt="Legend" style="width: 40%; cursor: pointer;" onclick="openPopup('./images/legend_new_h.png')" />`;
-    			},
             field: "id",
              formatter: function(cell, formatterParams, onRendered) {
                     const id = cell.getValue();
