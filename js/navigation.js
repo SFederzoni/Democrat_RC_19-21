@@ -27,3 +27,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     nextButton.disabled = true;
   }
 });
+
+document.querySelector('.menu-button').addEventListener('click', function() {
+document.querySelector('.menu-container').classList.toggle('active');
+});
