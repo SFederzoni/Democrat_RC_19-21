@@ -7,7 +7,21 @@ body {
 	margin-bottom: 30px;
 	background: #F1F1F1; 
 	}
-	
+
+.contenu_page, .general-background {
+  width: 96%;
+  max-width: 1200px; /* Évite les textes trop larges sur grand écran */
+  margin: 0 auto;
+}
+.chaine_construction {
+  width: 100%;
+  max-width: 70%; /* Conserve l'aspect responsive */
+}
+
+#tabulator-table2 {
+  overflow-x: auto;
+  display: block;
+}
 
 hr {
     display: block;
@@ -77,7 +91,7 @@ hr {
 
 .navigation_pages{ 
   height: 9.5px;
-  width:1050px;
+  width:100%; /*1050px;*/
   position: flex; 
   top: 72px;
   display: flex; 
@@ -89,6 +103,10 @@ hr {
   border-radius: 30px;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
   z-index: 1;
+  max-width: 1050px; /* Assure une largeur max */
+  margin: 0 auto; /* Centre l'élément */
+}
+
   
 }
 
@@ -152,6 +170,18 @@ button {
 /* Style du menu principal */
 .menu-container ul {
     list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #FA9038;
+    z-index: 10;
+}
+/* Afficher le menu lorsqu'on active la classe "active" */
+.menu-container.active ul {
+    display: flex;
 }
 
 .menu-container li {
@@ -196,11 +226,13 @@ button {
 
 /* Style pour le bouton du menu réduit */
 .menu-button {
-    display: none; /* Cacher par défaut sur les écrans plus larges */
+    display: block; /* Cacher par défaut sur les écrans plus larges */
+    background: none;
     font-size: 20px;
     border: none;
     color: #fff;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 /* Style pour le menu principal sur les petits écrans */
@@ -371,4 +403,54 @@ rs:hover::after {
 
 .liste_filtres {
     list-style-type: circle;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .navigation_pages {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-container ul {
+    display: none;
+  }
+
+  .menu-container.active ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-container li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    flex-direction: column;
+  }
+
+  #left, #right {
+    width: 100%;
+  }
+
+  .general-background {
+    padding: 10px;
+  }
 }
