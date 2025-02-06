@@ -126,7 +126,7 @@ body, h1, h2, h3, p, ul, li {
 .container {
     height: 155px;
     position: sticky;
-	width: 100%;
+   width: 100%;
     top: 0px;
     align-items: center;
     box-shadow: 0 0 10px rgba(0.3,0.3,0.3,0.9);
@@ -167,7 +167,7 @@ button {
     
 }
 
-/* Style du menu principal */
+/* Style du menu principal 
 .menu-container ul {
     list-style: none;
     display: none;
@@ -178,11 +178,11 @@ button {
     width: 100%;
     background: #FA9038;
     z-index: 10;
-}
-/* Afficher le menu lorsqu'on active la classe "active" */
+}*/
+/* Afficher le menu lorsqu'on active la classe "active" 
 .menu-container.active ul {
     display: flex;
-}
+}*/
 
 .menu-container li {
     display: inline-block; /* Afficher en ligne horizontale */
